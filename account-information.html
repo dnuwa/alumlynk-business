@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+
+    <title>Alumlynk business</title>
+</head>
+
+<body>
+
+    <!-- NavBar END -->
+    <!-- Bootstrap row -->
+    <div class="row" id="body-row">
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+            <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+            <!-- Bootstrap List Group -->
+            <ul class="list-group">
+                <!-- Separator with title -->
+                <li class="p-2">
+                    <Button class="btn btn-primary w-100 my-2"> Alumlynk</Button>
+                </li>
+                <!-- /END Separator -->
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzh-igiG0SBBwkFcIEEx_OjbPs3KY7Vq97QA&usqp=CAU"
+                    alt="" width="220" class="mx-auto">
+                <button class="btn btn-sm btn-light mx-1 my-2">
+                    <strong>School Name</strong>
+                </button>
+                <a href="/" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-dashboard fa-fw mr-3"></span>
+                        <span class="menu-collapsed"><small>Dashboard</small></span>
+                    </div>
+                </a>
+                <!-- Menu with submenu -->
+                <a href="#submenu1" data-toggle="collapse" aria-expanded="false"
+                    class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-cogs fa-fw mr-3"></span>
+                        <span class="menu-collapsed"><small>Business information</small></span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu1' class="collapse sidebar-submenu">
+                    <a href="school-information.html" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> School information</small></span>
+                    </a>
+                    <a href="account-information-2.html" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Account information</small></span>
+                    </a>
+                    <a href="galary.html" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Gallary</small></span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Video</small></span>
+                    </a>
+                    <a href="alyumlynl-business-info.html" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Profile page</small></span>
+                    </a>
+                </div>
+                <a href="#submenu2" data-toggle="collapse" aria-expanded="false"
+                    class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-cogs fa-fw mr-3"></span>
+                        <span class="menu-collapsed"><small>Alumni</small></span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu2' class="collapse sidebar-submenu">
+                    <a href="alumni-reviews.html" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Alumni Reviews</small></span>
+                        <span class="text-warning"><small>xx</small></span>
+                    </a>>
+                    <a href="./alumni-feedback.html" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Alumni Feedback</small></span>
+                        <span class="text-warning"><small>xx</small></span>
+                    </a>
+                    <a href="alumni-messages.html" class="list-group-item list-group-item-action bg-dark text-white">
+                        <!-- <span class="fa fa-chevron-right fa-fw mr-1"></span> -->
+                        <span class="menu-collapsed"><small>> Alumni Messages </small></span>
+                        <span class="text-warning"><small>xx</small></span>
+                    </a>
+                </div>
+
+                <a href="#submenu3" data-toggle="collapse" aria-expanded="false"
+                    class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-cogs fa-fw mr-3"></span>
+                        <span class="menu-collapsed"><small>Features</small></span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu3' class="collapse sidebar-submenu">
+                    <a href="account-features.html" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Account Directory</small></span>
+                    </a>
+                    <a href="cutomize-features.html" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Customize Features</small></span>
+                    </a>
+                    <a href="alumni-directory.html" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Alumni Directory</small></span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Alumni Network</small></span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> School news posts </small></span>
+                    </a>
+                    <a href="./class-notes.html" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Class Notes </small></span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Alumni Events </small></span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Reunion Information </small></span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> ShopOnline </small></span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Support School </small></span>
+                    </a>
+                </div>
+
+                <a href="#submenu4" data-toggle="collapse" aria-expanded="false"
+                    class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-certificate fa-fw mr-3"></span>
+                        <span class="menu-collapsed"><small>Marketing</small></span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu4' class="collapse sidebar-submenu">
+                    <a href="alumni-posts.html" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Posts</small></span>
+                    </a>
+                    <a href="push-notification.html" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Push Notifications</small></span>
+                    </a>
+                </div>
+                <a href="#submenu5" data-toggle="collapse" aria-expanded="false"
+                    class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-clipboard fa-fw mr-3"></span>
+                        <span class="menu-collapsed"><small>Reporting</small></span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu5' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Alumni Activity</small></span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Push Notifications report</small></span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Events report</small></span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed"><small>> Fundraising report</small></span>
+                    </a>
+                </div>
+
+                <!-- <li class="list-group-item sidebar-separator menu-collapsed"></li> -->
+
+                <!-- /END Separator -->
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-user-plus fa-fw mr-3"></span>
+                        <span class="menu-collapsed"><small>Subscription</small></span>
+                    </div>
+                </a>
+                <a href="./change-passowrd.html" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-key fa-fw mr-3"></span>
+                        <span class="menu-collapsed"><small>Change Password</small>
+                            <!-- <span class="badge badge-pill badge-primary ml-2">5</span></span> -->
+                    </div>
+                </a>
+
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-envelope-o fa-fw mr-3"></span>
+                        <span class="menu-collapsed"><small>Contact Us</small></span>
+                    </div>
+                </a>
+
+                <!-- /END Separator -->
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-question-circle fa-fw mr-3"></span>
+                        <span class="menu-collapsed"><small>Support</small></span>
+                    </div>
+                </a>
+                <!-- <a href="#top" data-toggle="sidebar-colapse"
+                    class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                        <span id="collapse-text" class="menu-collapsed"><small>Collapse</small></span>
+                    </div>
+                </a> -->
+            </ul><!-- List Group END-->
+        </div><!-- sidebar-container END -->
+        <!-- MAIN -->
+        <div class="col p-4">
+            <!-- <h1 class="display-4">Dashboard</h1> -->
+            <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between">
+                    <h5 class="font-weight-light sec-title">Video</h5>
+                </div>
+            </div>
+            <p><small>Add video to your profile</small></p>
+            <div class="d-flex bg-light-grey mb-3">
+                <div class="col-sm sec-title"><strong>Video</strong></div>
+            </div>
+            <p><small>Ideal dimensions 500 x 400 pixels in anyone of these file formats JPG, PNG, GIF, 5MB file
+                    limit.</small></p>
+
+            <div class="form-group w-25">
+                <select class="form-control form-control-sm" id="exampleSelect">
+                    <option><small>Select Location</small></option>
+                </select>
+            </div>
+
+            <div class="form-group w-25">
+                <input type="file" name="" id="">
+            </div>
+
+            <div class="d-flex d-flex">
+                <div class="col-sm">
+                    <p class="text-center"><small>Lorem ipsum dolor sit amet </small></p>
+                    <div class="mb-1">
+                        <img src="https://via.placeholder.com/150" alt="" class="w-100">
+                    </div>
+                    <div>
+                        <button class="btn btn-sm btn-danger"><small>Remove</small></button>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <p class="text-center"><small>Lorem ipsum dolor sit amet </small></p>
+                    <div class="mb-1">
+                        <img src="https://via.placeholder.com/150" alt="" class="w-100">
+                    </div>
+                    <div>
+                        <button class="btn btn-sm btn-danger"><small>Remove</small></button>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <p class="text-center"><small>Lorem ipsum dolor sit amet </small></p>
+                    <div class="mb-1">
+                        <img src="https://via.placeholder.com/150" alt="" class="w-100">
+                    </div>
+                    <div>
+                        <button class="btn btn-sm btn-danger"><small>Remove</small></button>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <p class="text-center"><small>Lorem ipsum dolor sit amet </small></p>
+                    <div class="mb-1">
+                        <img src="https://via.placeholder.com/150" alt="" class="w-100">
+                    </div>
+                    <div>
+                        <button class="btn btn-sm btn-danger"><small>Remove</small></button>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <p class="text-center"><small>Lorem ipsum dolor sit amet </small></p>
+                    <div class="mb-1">
+                        <img src="https://via.placeholder.com/150" alt="" class="w-100">
+                    </div>
+                    <div>
+                        <button class="btn btn-sm btn-danger"><small>Remove</small></button>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <p class="text-center"><small>Lorem ipsum dolor sit amet </small></p>
+                    <div class="mb-1">
+                        <img src="https://via.placeholder.com/150" alt="" class="w-100">
+                    </div>
+                    <div>
+                        <button class="btn btn-sm btn-danger"><small>Remove</small></button>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <p class="text-center"><small>Lorem ipsum dolor sit amet </small></p>
+                    <div class="mb-1">
+                        <img src="https://via.placeholder.com/150" alt="" class="w-100">
+                    </div>
+                    <div>
+                        <button class="btn btn-sm btn-danger"><small>Remove</small></button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div><!-- Main Col END -->
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/main-scripts.js"></script>
+
+</body>
+
+</html>

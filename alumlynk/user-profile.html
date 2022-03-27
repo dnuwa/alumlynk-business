@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="intelTelInput/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/page-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+
+    <title>Alumlynk</title>
+    <style type="text/css">
+        .profileImgBgSmall {
+            background-image: url("./images/img04.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 78px;
+            display: flex;
+            position: relative;
+        }
+
+        .profileImgBgSmall>div {
+            position: absolute;
+            top: 8px;
+            display: flex;
+        }
+
+        .profileImgBgSmall div img {
+            border: 2px solid #fff;
+        }
+
+        .rounded-custom {
+            border-radius: 10px;
+        }
+    </style>
+
+    <script>// Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: -25.344, lng: 131.036 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="fixed bg-white mb-5">
+        <div class="d-flex bg-white px-2 py-18 w-100">
+            <div class="d-flex">
+                <a href="#" class="text-success w-50 mr-2">
+                    <img src="./images/preview-school-logo-free-vector-design.jpg" class="w-100" />
+                </a>
+                <a href="search-page.html">
+                    <i class="fa fa-search fa-lg text-center text-dark my-auto"></i>
+                </a>
+            </div>
+            <div class="w-50 d-flex justify-content-between">
+                <a href="calendar.html" class="d-flex">
+                    <i class="fa fa-calendar fa-lg text-center text-dark my-auto"></i>
+                </a>
+                <div class="col-sm text-center d-flex">
+                    <a href="chat-list-recent.html" class="d-flex">
+                        <i class="fa fa-bell fa-lg text-center text-dark my-auto"></i>
+
+                    </a>
+                    <div class="icon-value"><small><strong>0</strong></small></div>
+                </div>
+                <div>
+                    <span class="text-center">
+                        <div id="side-menu">
+                            <i class="fa fa-bars fa-lg text-center text-dark"></i>
+                        </div>
+                    </span>
+                    <div id="overlay" class="overlay hidden" role="navigation">
+                        <div class="mobileNav">
+                            <!--.mobile-menu-->
+                            <div class="d-flex flex-column">
+                                <h5 class="p-3 mb-0">Navigation</h5>
+                                <ul class="list-unstyled px-3 gn-menu">
+                                    <li> <a href="./friends-page.html"><small>Alumni Directory</small></a></li>
+                                    <li> <a href="./alumni-connection-requests.html"><small> Alumni Connection Requests
+                                                (xxx)</small></a></li>
+                                    <li> <a href="./index.html"><small>Alumni Network</small></a></li>
+                                    <li> <a href="#"><small>Alum Mentoring</small></a></li>
+                                    <li> <a href="./chat-list-recent.html"><small>Messages</small></a></li>
+                                    <li> <a href="#"><small>Notices(xxx)</small></a></li>
+                                    <li> <a href="#"><small>Profile Page</small></a></li>
+                                    <li> <a href="./alumni-events.html"><small>Alumni Events</small></a></li>
+                                    <li> <a href="./class-notes.html"><small>Class Notes</small></a></li>
+                                    <li> <a href="#"><small>Reunion Information</small></a></li>
+                                    <li> <a href="#"><small>Shop Online</small></a></li>
+                                    <li> <a href="./support.html"><small>Support (School Name)</small></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex bg-dark text-white justify-content-between pl-2">
+            <div class="w-75 my-auto"><strong>(School Name) Alumni Directory</strong></div>
+            <div class="w-25 d-flex justify-content-between">
+                <button class="btn btn-sm btn-light m-1" data-toggle="modal" data-target="#location">
+                    <i class="fa fa-map-marker fa-lg text-center"></i>
+                </button>
+                <a class="btn btn-secondary search-btn" href="/search-page.html"><i
+                        class="fa fa-search fa-lg text-center text-white my-auto"></i></a>
+            </div>
+        </div>        
+
+        <a class="d-flex px-2 py-2 w-100 text-dark" href="friends-page.html">
+            <i class="fa fa-arrow-left my-auto mr-2"></i> back
+        </a>
+    </div>
+    <div class="d-flex flex-wrap p-2 mt-145">
+        <div class="bg-white p-3 m-auto border w-100 d-flex flex-column">
+            <div class="d-flex flex-column">
+                <div class="d-flex w-100">
+                    <img src="./images/img04.jpg" alt="" height="100" class="w-100">
+                </div>
+                <div class="d-flex profile-header">
+                    <div class="col-4">
+                        <img src="./images/ss2.PNG" alt="" width="100" height="100" class="rounded-circle">
+                    </div>
+                    <div class="col-8 mt-auto mb-3">
+                        <strong> 1st Name Last Name </strong>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3">
+                <p class="m-0 f-14">{title} at {Company Name}</p>
+                <p class="m-0 f-14">{University Name} {University Name}</p>
+                <p class="m-0 f-14">{High School Name} {High school name}</p>
+                <p class="m-0 f-14">{Middle School Name}</p>
+            </div>
+            <div class="d-flex mt-2">
+                <div class="col-sm pl-0">
+                    <p class="mb-0 sm-font text-secondary"><i class="fa fa-users mr-1"></i><small> 3 Alumni connections</small>
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <p class="mb-0 sm-font text-secondary"><small> 922 followers</small>
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex mt-1">
+                <p class="mb-0">
+                    <img src="./images/ss5.PNG" alt="" width="20" height="20" class="rounded-circle">
+                    <img src="./images/ss4.PNG" alt="" width="20" height="20" class="rounded-circle ml--1">
+                   <span class="text-secondary sm-font">
+                        <small>10 mutual connections, Team lorem, jane plasma and 8 others</small>
+                   </span>
+                </p>
+            </div>
+            <div class="d-flex w-75 m-auto justify-content-center">
+                <a class="btn btn-connect-outline mr-3 my-2 font-11" href="./chat-inbox.html"><i
+                        class="fa fa-comment mr-1"></i>Message</a>
+                <button class="btn btn-connect-outline my-2 font-11" id="follow1" data-toggle="modal"
+                    data-target="#follow"><i class="fa fa-rss mr-1"></i>Follow</button>
+
+                <button class="btn btn-sm btn-primary my-2 font-11 d-none" id="follow-1"><i
+                        class="fa fa-rss mr-1"></i>Following</button>
+            </div>
+            <div class="d-flex flex-column border-top pt-2">
+                <h5>
+                    <strong>About</strong>
+                </h5>
+                <p class="mb-0"><small>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid quisquam a esse vel
+                        iusto asperiores incidunt quibusdam. Quis ab velit molestias vel,
+                    </small>
+                </p>
+                <p class="ml-auto">
+                    <small>... see more</small>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-bottom border-top">
+        <div class="d-flex bg-white tinypb-1">
+            <div class="col-sm p-1 tiny-m">
+                <a href="posts-page.html" class="text-dark font-weight-bold text-center">
+                    <div class="text-center">
+                        <img src="./images/svg000-home.svg" width="30" class="my-auto" />
+                    </div>
+                    <p class="xm-font text-center mb-0">Posts</p>
+                </a>
+            </div>
+            <div class="col-sm p-1 tiny-m border">
+                <a href="index.html" class="text-dark font-weight-bold text-success">
+                    <div class="text-center">
+                        <img src="./images/svg000-friends.svg" width="30" class="my-auto" />
+                    </div>
+                    <p class="xm-font text-center mb-0">Network</p>
+                </a>
+            </div>
+            <div class="col-sm p-1 tiny-m border active-tab">
+                <a href="friends-page.html" class="text-dark font-weight-bold">
+                    <div class="text-center">
+                        <img src="./images/svg000-connect-white.svg" width="30" class="my-auto" />
+                    </div>
+                    <p class="xm-font text-center mb-0 text-white">Alumni</p>
+                </a>
+            </div>
+            <div class="col-sm p-1 tiny-m border">
+                <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
+                    <div class="text-center">
+                        <img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
+                    </div>
+                    <p class="xm-font text-center mb-0">Mentors</p>
+                </a>
+            </div>
+            <div class="col-sm p-1 tiny-m border">
+                <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
+                    <div class="text-center">
+                        <img src="./images/svg000-message.svg" width="30" class="my-auto" />
+                        <div class="icon-value-footer"><small><strong>0</strong></small></div>
+                    </div>
+                    <p class="xm-font text-center mb-0">Messages</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="follow" tabindex="-1" role="dialog" aria-labelledby="follow" aria-hidden="true"
+        data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered p-2" role="document">
+            <div class="modal-content">
+                <div class="bg-white p-3 m-auto border w-100 d-flex flex-column">
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="d-flex"><strong>Confirm</strong></div>
+                        <button type="button" class="close l-font" data-dismiss="modal" aria-label="Close">
+                            <strong><span aria-hidden="true">&times;</span></strong>
+                        </button>
+                    </div>
+                    <div class="d-flex flex-column l-font">
+                        <strong> Are you sure you want to follow {1st name}{last name} </strong>
+                    </div>
+                    <div class="d-flex">
+                        <div class="w-50 d-flex ml-auto">
+                            <div class="btn btn-sm btn-outline-secondary w-50 mr-2" id="follow-ok" data-dismiss="modal">
+                                OK</div>
+                            <div class="btn btn-sm btn-outline-secondary w-50" data-dismiss="modal" aria-label="Close">
+                                Cancle</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- added just for demo but unneccessary -->
+    <div class="modal fade" id="fmodal2" tabindex="-1" role="dialog" aria-labelledby="fmodal2" aria-hidden="true"
+        data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered p-2" role="document">
+            <div class="modal-content">
+                <div class="bg-white p-3 m-auto border w-100 d-flex flex-column">
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="d-flex"><strong>Confirm</strong></div>
+                        <button type="button" class="close l-font" data-dismiss="modal" aria-label="Close">
+                            <strong><span aria-hidden="true">&times;</span></strong>
+                        </button>
+                    </div>
+                    <div class="d-flex flex-column l-font">
+                        <strong> Are you sure you want to follow {1st name}{last name} </strong>
+                    </div>
+                    <div class="d-flex">
+                        <div class="w-50 d-flex ml-auto">
+                            <div class="btn btn-sm btn-outline-secondary w-50 mr-2" id="follow-ok-2"
+                                data-dismiss="modal">
+                                OK</div>
+                            <div class="btn btn-sm btn-outline-secondary w-50" data-dismiss="modal" aria-label="Close">
+                                Cancle</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="location" tabindex="-1" role="dialog" aria-labelledby="location" aria-hidden="true"
+        data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-body p-0">
+                <div class="bg-white p-2 m-auto border-2 w-100 d-flex flex-column">
+                    <label class="text-secondary">
+                        <i class="fa fa-map-marker-alt fa-lg mr-2"></i><span class="text-success"><strong>Current
+                                location or add a
+                                city</strong></span>
+                    </label>
+                    <form class="d-flex flex-column">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Address">
+                        </div>
+                        <div class="form-group d-flex">
+                            <div class="col p-0 pr-1">
+                                <input type="text" class="form-control" placeholder="City">
+                            </div>
+                        </div>
+                        <div id="map"></div>
+                    </form>
+                    <div class="d-flex justify-content-end mt-4">
+                        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- add an api key to the link -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="intlTelInput//js/intlTelInput.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(document).on("change", ".gfield_select", function () {
+                $(".select-search-btn").addClass('btn-success').removeClass('btn-secondary')
+            });
+        });
+    </script>
+
+    <script>
+        $('#side-menu').click(function () {
+            $('.overlay').toggleClass('hidden');
+        });
+
+        $('#follow-ok').click(function () {
+            $('#follow1').toggleClass('d-none');
+            $("#follow-1").addClass('d-block').removeClass('d-none');
+        });
+
+        $('#follow-ok-2').click(function () {
+            $('#fmodal').toggleClass('d-none');
+            $("#follow-2").addClass('d-block').removeClass('d-none');
+        });
+    </script>
+</body>
+
+</html>

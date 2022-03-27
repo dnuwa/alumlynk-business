@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="intelTelInput/js/intlTelInput.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="./css/page-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+
+    <title>Alumlynk</title>
+    <style type="text/css">
+        .profileImgBgSmall {
+            background-image: url("./images/img04.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 78px;
+            display: flex;
+            position: relative;
+        }
+
+        .profileImgBgSmall>div {
+            position: absolute;
+            top: 8px;
+            display: flex;
+        }
+
+        .profileImgBgSmall div img {
+            border: 2px solid #fff;
+        }
+
+        .rounded-custom {
+            border-radius: 10px;
+        }
+    </style>
+
+    <script>// Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: -25.344, lng: 131.036 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="fixed bg-white mb-5 bottom-shadow">
+        <div class="d-flex bg-white px-2 py-18 w-100">
+            <div class="d-flex">
+                <a href="#" class="text-success w-50 mr-2">
+                    <img src="./images/preview-school-logo-free-vector-design.jpg" class="w-100" />
+                </a>
+                <a href="search-page.html">
+                    <i class="fa fa-search fa-lg text-center text-dark my-auto"></i>
+                </a>
+            </div>
+            <div class="w-50 d-flex justify-content-between">
+                <a href="calendar.html" class="d-flex">
+                    <i class="fa fa-calendar fa-lg text-center text-dark my-auto"></i>
+                </a>
+                <div class="col-sm text-center d-flex">
+                    <a href="chat-list-recent.html" class="d-flex">
+                        <i class="fa fa-bell fa-lg text-center text-dark my-auto"></i>
+
+                    </a>
+                    <div class="icon-value"><small><strong>0</strong></small></div>
+                </div>
+                <div>
+                    <span class="text-center">
+                        <div id="side-menu">
+                            <i class="fa fa-bars fa-lg text-center text-dark"></i>
+                        </div>
+                    </span>
+                    <div id="overlay" class="overlay hidden" role="navigation">
+                        <div class="mobileNav">
+                            <!--.mobile-menu-->
+                            <div class="d-flex flex-column">
+                                <h5 class="p-3 mb-0">Navigation</h5>
+                                <ul class="list-unstyled px-3 gn-menu">
+                                    <li> <a href="./friends-page.html"><small>Alumni Directory</small></a></li>
+                                    <li> <a href="./alumni-connection-requests.html"><small> Alumni Connection Requests
+                                                (xxx)</small></a></li>
+                                    <li> <a href="./index.html"><small>Alumni Network</small></a></li>
+                                    <li> <a href="#"><small>Alum Mentoring</small></a></li>
+                                    <li> <a href="./chat-list-recent.html"><small>Messages</small></a></li>
+                                    <li> <a href="#"><small>Notices(xxx)</small></a></li>
+                                    <li> <a href="#"><small>Profile Page</small></a></li>
+                                    <li> <a href="./alumni-events.html"><small>Alumni Events</small></a></li>
+                                    <li> <a href="./class-notes.html"><small>Class Notes</small></a></li>
+                                    <li> <a href="#"><small>Reunion Information</small></a></li>
+                                    <li> <a href="#"><small>Shop Online</small></a></li>
+                                    <li> <a href="./support.html"><small>Support (School Name)</small></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex bg-dark text-white justify-content-between pl-2">
+            <div class="w-75 my-auto"><strong>(School Name) Alumni Mentors</strong></div>
+            <div class="w-25 d-flex justify-content-between">
+                <i class="fa fa-map-marker-alt fa-lg text-center text-white my-auto" data-toggle="modal"
+                    data-target="#location"></i>
+                <a class="btn btn-secondary search-btn" href="/search-page.html"><i
+                        class="fa fa-search fa-lg text-center text-white my-auto"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex mt-145 border-bottom pb-3 mx-2">
+        <div class="col-4">
+            <div class="h-100 d-flex flex-column dark-green-bg">
+                <p class="mb-0 xm-font py-2 text-white text-center"><strong>Alumni Mentoring</strong></p>
+                <img src="./images/trainer.png" alt="" width="92" class="">
+
+            </div>
+        </div>
+        <div class="col-8 pl-0">
+            <p class="px-2 line-height-16 my-auto py-3">
+                <small><strong>Please indicate below how often you would like to mentor and what is the best time and
+                        when you can start </strong></small>
+            </p>
+        </div>
+    </div>
+
+    <div class="p-4 mb-4">
+        <div class="mb-3">
+            <p class="mb-0"><strong>#1) How many (school name) students or recent graduates would you be avilable to mentor a
+                    year? </strong></p>
+            <select name="" id="" class="w-100">
+                <option value="">Select One</option>
+                <option value="">Select two</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <p class="mb-0"><strong>#2) What Months of the year are the best for you to mentor?</strong></p>
+            <select name="" id="" class="w-100">
+                <option value="">Select One</option>
+                <option value="">Select two</option>
+            </select>
+        </div>
+        <div>
+            <p class="mb-0"><strong>#3) when do you want to get started?</strong></p>
+            <select name="" id="" class="w-100">
+                <option value="">Select One</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div class="fixed-bottom border-top">
+        <div class="d-flex bg-white tinypb-1">
+            <div class="col-sm p-1 tiny-m">
+                <a href="posts-page.html" class="text-dark font-weight-bold text-center">
+                    <div class="text-center">
+                        <img src="./images/svg000-home.svg" width="30" class="my-auto" />
+                    </div>
+                    <p class="xm-font text-center mb-0">Posts</p>
+                </a>
+            </div>
+            <div class="col-sm p-1 tiny-m border">
+                <a href="index.html" class="text-dark font-weight-bold text-success">
+                    <div class="text-center">
+                        <img src="./images/svg000-friends.svg" width="30" class="my-auto" />
+                    </div>
+                    <p class="xm-font text-center mb-0">Network</p>
+                </a>
+            </div>
+            <div class="col-sm p-1 tiny-m border">
+                <a href="friends-page.html" class="text-dark font-weight-bold">
+                    <div class="text-center">
+                        <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
+                    </div>
+                    <p class="xm-font text-center mb-0">Alumni</p>
+                </a>
+            </div>
+            <div class="col-sm p-1 tiny-m border active-tab">
+                <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
+                    <div class="text-center">
+                        <img src="./images/svg000-sport-coach-white.svg" width="30" class="my-auto" />
+                    </div>
+                    <p class="xm-font text-center mb-0 text-white">Members</p>
+                </a>
+            </div>
+            <div class="col-sm p-1 tiny-m border">
+                <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
+                    <div class="text-center">
+                        <img src="./images/svg000-message.svg" width="30" class="my-auto" />
+                        <div class="icon-value-footer"><small><strong>0</strong></small></div>
+                    </div>
+                    <p class="xm-font text-center mb-0">Messages</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="location" tabindex="-1" role="dialog" aria-labelledby="location" aria-hidden="true"
+        data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-body p-0">
+                <div class="bg-white p-2 m-auto border-2 w-100">
+                    <label class="text-secondary">
+                        <i class="fa fa-map-marker-alt fa-lg mr-2"></i><span class="text-success"><strong>Current
+                                location or add a
+                                city</strong></span>
+                    </label>
+                    <form class="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Address">
+                        </div>
+                        <div class="form-group d-flex">
+                            <div class="col p-0 pr-1">
+                                <input type="text" class="form-control" placeholder="City">
+                            </div>
+                        </div>
+                        <div id="map"></div>
+                    </form>
+                    <div class="d-flex justify-content-end mt-4">
+                        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- add an api key to the link -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(document).on("change", ".gfield_select", function () {
+                $(".select-search-btn").addClass('btn-success').removeClass('btn-secondary')
+            });
+        });
+    </script>
+
+    <script>
+        $('#side-menu').click(function () {
+            $('.overlay').toggleClass('hidden');
+        });
+    </script>
+</body>
+
+</html>

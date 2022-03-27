@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sport Social App </title>
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <!--   CSS  -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="flags/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="flags/build/css/demo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/g/jquery.owlcarousel@1.31(owl.carousel.css+owl.theme.css)">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+
+    <!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--	<link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" type="text/css" href="css/calendar1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.css">
+
+    <!--   JS   -->
+    <script src="./jquery/3.5.1/jquery.min.js"></script>
+    <script src="./popper/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/page-styles.css">
+
+    <script src="js/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="css/alertify.min.css" />
+    <script src="js/alertify.min.js"></script>
+</head>
+
+<body>
+
+    <div class="fixed bg-white mb-5 bottom-shadow">
+        <div class="d-flex bg-white px-2 py-18 w-100">
+            <div class="d-flex">
+                <a href="#" class="text-success w-50 mr-2">
+                    <img src="./images/preview-school-logo-free-vector-design.jpg" class="w-100" />
+                </a>
+                <a href="search-page.html">
+                    <i class="fa fa-search fa-lg text-center text-dark my-auto"></i>
+                </a>
+            </div>
+            <div class="w-50 d-flex justify-content-between">
+                <a href="calendar.html" class="d-flex">
+                    <i class="fa fa-calendar fa-lg text-center text-dark my-auto"></i>
+                </a>
+                <div class="col-sm text-center d-flex">
+                    <a href="chat-list-recent.html" class="d-flex">
+                        <i class="fa fa-bell fa-lg text-center text-dark my-auto"></i>
+
+                    </a>
+                    <div class="icon-value"><small><strong>0</strong></small></div>
+                </div>
+                <div>
+                    <span class="text-center">
+                        <div id="side-menu">
+                            <i class="fa fa-bars fa-lg text-center text-dark"></i>
+                        </div>
+                    </span>
+                    <div id="overlay" class="overlay hidden" role="navigation">
+                        <div class="mobileNav">
+                            <!--.mobile-menu-->
+                            <div class="d-flex flex-column">
+                                <h5 class="p-3 mb-0">Navigation</h5>
+                                <ul class="list-unstyled px-3 gn-menu">
+                                    <li> <a href="./friends-page.html"><small>Alumni Directory</small></a></li>
+                                    <li> <a href="./alumni-connection-requests.html"><small> Alumni Connection Requests
+                                                (xxx)</small></a></li>
+                                    <li> <a href="./index.html"><small>Alumni Network</small></a></li>
+                                    <li> <a href="#"><small>Alum Mentoring</small></a></li>
+                                    <li> <a href="./chat-list-recent.html"><small>Messages</small></a></li>
+                                    <li> <a href="#"><small>Notices(xxx)</small></a></li>
+                                    <li> <a href="#"><small>Profile Page</small></a></li>
+                                    <li> <a href="./alumni-events.html"><small>Alumni Events</small></a></li>
+                                    <li> <a href="./class-notes.html"><small>Class Notes</small></a></li>
+                                    <li> <a href="#"><small>Reunion Information</small></a></li>
+                                    <li> <a href="#"><small>Shop Online</small></a></li>
+                                    <li> <a href="./support.html"><small>Support (School Name)</small></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex bg-dark text-white justify-content-between pl-2">
+            <div class="w-75 my-auto"><strong>(School Name) Alumni Network</strong></div>
+            <div class="w-25 d-flex justify-content-between">
+                <button class="btn btn-sm btn-light m-1" data-toggle="modal" data-target="#location">
+                    <i class="fa fa-map-marker fa-lg text-center"></i>
+                </button>
+                <a class="btn btn-secondary search-btn" href="/search-page.html"><i
+                        class="fa fa-search fa-lg text-center text-white my-auto"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-145">
+
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 npad">
+
+
+            <a class="bg-white d-flex px-5 text-secondary" href="#">
+                <div class="text-left mr-5"><i class="fa fa-chevron-left"></i></div>
+
+                <h5>My (School Name) Events</h5>
+
+            </a>
+
+            <div class="bg-white rounded block-area mb-60">
+
+                <div class="icalendar">
+                    <div class="icalendar__month">
+                        <div class="icalendar__prev" onclick="moveDate('prev')">
+                            <span>&#10094</span>
+                        </div>
+                        <div class="icalendar__current-date">
+                            <h2 id="icalendarMonth"></h2>
+                            <div>
+                                <div id="icalendarDateStr"></div>
+                            </div>
+
+                        </div>
+                        <div class="icalendar__next" onclick="moveDate('next')">
+                            <span>&#10095</span>
+                        </div>
+                    </div>
+                    <div class="icalendar__week-days">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="icalendar__days"></div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- </div> -->
+
+    <div class="fixed-bottom border-top">
+        <div class="d-flex bg-white tinypb-1">
+            <div class="col-sm p-1 tiny-m">
+                <a href="posts-page.html" class="text-dark font-weight-bold text-center">
+                    <div class="text-center">
+                        <img src="./images/svg000-home.svg" width="30" class="my-auto" />
+                    </div>
+                    <p class="xm-font text-center mb-0">Posts</p>
+                </a>
+            </div>
+            <div class="col-sm p-1 tiny-m border">
+                <a href="index.html" class="text-dark font-weight-bold text-success">
+                    <div class="text-center">
+                        <img src="./images/svg000-friends.svg" width="30" class="my-auto" />
+                    </div>
+                    <p class="xm-font text-center mb-0">Network</p>
+                </a>
+            </div>
+            <div class="col-sm p-1 tiny-m border">
+                <a href="friends-page.html" class="text-dark font-weight-bold">
+                    <div class="text-center">
+                        <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
+                    </div>
+                    <p class="xm-font text-center mb-0">Alumni</p>
+                </a>
+            </div>
+            <div class="col-sm p-1 tiny-m border">
+                <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
+                    <div class="text-center">
+                        <img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
+                    </div>
+                    <p class="xm-font text-center mb-0">Mentors</p>
+                </a>
+            </div>
+            <div class="col-sm p-1 tiny-m border">
+                <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
+                    <div class="text-center">
+                        <img src="./images/svg000-message.svg" width="30" class="my-auto" />
+                        <div class="icon-value-footer"><small><strong>0</strong></small></div>
+                    </div>
+                    <p class="xm-font text-center mb-0">Messages</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/classie.js"></script>
+    <script src="js/gnmenu.js"></script>
+    <script src="js/general-friend-request.js"></script>
+    <script src="js/general-friend-request.js"></script>
+    <script src="js/sports-social/statistics.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/js-calendar.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        })
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+    <script>
+        try {
+            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+                return true;
+            }).catch(function (e) {
+                var carbonScript = document.createElement("script");
+                carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                carbonScript.id = "_carbonads_js";
+                document.getElementById("carbon-block").appendChild(carbonScript);
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    </script>
+    <!-- <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        // js for secondary navigation
+        $("[data-toggle='toggle']").click(function () {
+            var selector = $(this).data("target");
+            $(selector).toggleClass('in');
+        });
+        function showSearchField() {
+            $(".ss-profile-name").fadeOut(0);
+            setTimeout($(".ss-search-input input").fadeIn(1000), 1000)
+        }
+
+        new gnMenu(document.getElementById('gn-menu'));
+    </script> -->
+
+    <script>
+        $(document).ready(function () {
+            $(document).on("change", ".gfield_select", function () {
+                $(".select-search-btn").addClass('btn-success').removeClass('btn-secondary')
+            });
+        });
+    </script>
+
+    <script>
+        $('#side-menu').click(function () {
+            $('.overlay').toggleClass('hidden');
+        });
+    </script>
+</body>
+
+</html>
