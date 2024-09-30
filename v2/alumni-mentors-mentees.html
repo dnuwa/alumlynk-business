@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
+
+  <title>Alumlynk business</title>
+</head>
+
+<body>
+
+  <!-- NavBar END -->
+  <!-- Bootstrap row -->
+  <div class="row" id="body-row">
+    <!-- Sidebar -->
+    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+      <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+      <!-- Bootstrap List Group -->
+      <ul class="list-group">
+        <button class="btn btn-sm btn-light mx-1 my-2">
+          <strong>School Name</strong>
+        </button>
+        <a href="index.html" class="bg-dark list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-dashboard fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Dashboard</small></span>
+          </div>
+        </a>
+        <!-- Menu with submenu -->
+        <a href="#submenu1" data-toggle="collapse" aria-expanded="false"
+          class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-cogs fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Business information</small></span>
+            <span class="submenu-icon ml-auto"></span>
+          </div>
+        </a>
+        <!-- Submenu content -->
+        <div id='submenu1' class="collapse sidebar-submenu">
+          <a href="business-information.html" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Business information</small></span>
+          </a>
+          <a href="school-information.html" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> School information</small></span>
+          </a>
+          <a href="account-information-2.html" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Account information</small></span>
+          </a>
+          <a href="galary.html" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Gallary</small></span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Video</small></span>
+          </a>
+          <a href="alyumlynl-business-info.html" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Profile page</small></span>
+          </a>
+        </div>
+        <a href="lunch-alumn-directory.html"
+          class="bg-white list-group-item list-group-item-action text-dark flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="mx-auto"><small><strong>Page Customization</strong></small></span>
+          </div>
+        </a>
+        <a href="lunch-alumn-directory.html"
+          class="bg-white list-group-item list-group-item-action text-dark flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <button class="btn btn-sm px-3 btn-success mx-auto"><small><strong>Launch Alum Directory</strong></small></button>
+          </div>
+        </a>
+        <a href="#submenu2" data-toggle="collapse" aria-expanded="false"
+          class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-cogs fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Alumni</small></span>
+            <span class="submenu-icon ml-auto"></span>
+          </div>
+        </a>
+        <!-- Submenu content -->
+        <div id='submenu2' class="collapse sidebar-submenu">
+          <a href="alumni-reviews.html" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Alumni Reviews</small></span>
+            <span class="text-warning"><small>xx</small></span>
+          </a>>
+          <a href="./alumni-feedback.html" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Alumni Feedback</small></span>
+            <span class="text-warning"><small>xx</small></span>
+          </a>
+          <a href="alumni-messages.html" class="list-group-item list-group-item-action bg-dark text-white">
+            <!-- <span class="fa fa-chevron-right fa-fw mr-1"></span> -->
+            <span class="menu-collapsed"><small>> Alumni Messages </small></span>
+            <span class="text-warning"><small>xx</small></span>
+          </a>
+        </div>
+
+        <a href="#submenu3" data-toggle="collapse" aria-expanded="false"
+          class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-cogs fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Features</small></span>
+            <span class="submenu-icon ml-auto"></span>
+          </div>
+        </a>
+        <!-- Submenu content -->
+        <div id='submenu3' class="collapse sidebar-submenu">
+          <a href="account-features.html" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Account Directory</small></span>
+          </a>
+          <a href="cutomize-features.html" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Customize Features</small></span>
+          </a>
+          <a href="lunch-alumn-directory.html" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Alumni Directory</small></span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Alumni Network</small></span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> School news posts </small></span>
+          </a>
+          <a href="./class-notes.html" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Class Notes </small></span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Alumni Events </small></span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Reunion Information </small></span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> ShopOnline </small></span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Support School </small></span>
+          </a>
+        </div>
+
+        <a href="#submenu4" data-toggle="collapse" aria-expanded="false"
+          class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-certificate fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Marketing</small></span>
+            <span class="submenu-icon ml-auto"></span>
+          </div>
+        </a>
+        <!-- Submenu content -->
+        <div id='submenu4' class="collapse sidebar-submenu">
+          <a href="alumni-posts.html" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Posts</small></span>
+          </a>
+          <a href="push-notification.html" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Push Notifications</small></span>
+          </a>
+        </div>
+        <a href="#submenu5" data-toggle="collapse" aria-expanded="false"
+          class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-clipboard fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Reporting</small></span>
+            <span class="submenu-icon ml-auto"></span>
+          </div>
+        </a>
+        <!-- Submenu content -->
+        <div id='submenu5' class="collapse sidebar-submenu">
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Alumni Activity</small></span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Push Notifications report</small></span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Events report</small></span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            <span class="menu-collapsed"><small>> Fundraising report</small></span>
+          </a>
+        </div>
+
+        <!-- <li class="list-group-item sidebar-separator menu-collapsed"></li> -->
+
+        <!-- /END Separator -->
+        <a href="#" class="bg-dark list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-user-plus fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Subscription</small></span>
+          </div>
+        </a>
+        <a href="./change-passowrd.html" class="bg-dark list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-key fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Change Password</small>
+              <!-- <span class="badge badge-pill badge-primary ml-2">5</span></span> -->
+          </div>
+        </a>
+
+        <a href="#" class="bg-dark list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-envelope-o fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Contact Us</small></span>
+          </div>
+        </a>
+
+        <!-- /END Separator -->
+        <a href="#" class="bg-dark list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-question-circle fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Support</small></span>
+          </div>
+        </a>
+        <!-- <a href="#top" data-toggle="sidebar-colapse"
+                    class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                        <span id="collapse-text" class="menu-collapsed"><small>Collapse</small></span>
+                    </div>
+                </a> -->
+      </ul><!-- List Group END-->
+    </div><!-- sidebar-container END -->
+    <!-- MAIN -->
+    <div class="col p-4">
+      <div class="card mb-4">
+        <div class="card-header d-flex justify-content-between">
+          <h5 class="font-weight-light sec-title">(School Name) Alumni Dashboard</h5>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap mb-3">
+        <div class="col-sm-4 mb-4">
+          <div class="d-flex flex-column col-sm text-center bg-light p-0">
+            <div class="d-flex active-tab">
+              <div class="col-sm py-2"><strong>Alumni Derectory</strong></div>
+            </div>
+            <div class="bg-white mx-2 mb-2">
+              <div class="d-flex py-3">
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong># of Alum</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong>Invited to</strong></p>
+                  <p class="mb-0"><strong>AlumLynk</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong>Registered on</strong></p>
+                  <p class="mb-0"><strong>AlumLynk</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+              </div>
+              <div class="d-flex text-center bg-light-grey">
+                <a class="mb-0 mx-auto py-2 text-dark" href="alumni-directory.html"><small>More Info</small></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-4">
+          <div class="d-flex flex-column col-sm text-center bg-light p-0">
+            <div class="d-flex active-tab">
+              <div class="col-sm py-2"><strong>Alumni Active</strong></div>
+            </div>
+            <div class="bg-white mx-2 mb-2">
+              <div class="d-flex py-3">
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong>Alum Active</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong>Connection</strong></p>
+                  <p class="mb-0"><strong>Request</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong>Connections</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+              </div>
+              <div class="d-flex text-center bg-light-grey">
+                <a class="mb-0 mx-auto py-2 text-dark" href="alumni-active.html"><small>More Info</small></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-4">
+          <div class="d-flex flex-column text-center bg-light p-0">
+            <div class="d-flex active-tab">
+              <div class="col-sm py-2"><strong>Alumni engagement</strong></div>
+            </div>
+            <div class="bg-white mx-2 mb-2">
+              <div class="d-flex py-3">
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong>Alumni</strong></p>
+                  <p class="mb-0"><strong>Following</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong>Meeting</strong></p>
+                  <p class="mb-0"><strong>Requests</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong>Meetings</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+              </div>
+              <div class="d-flex text-center bg-light-grey">
+                <a class="mb-0 mx-auto py-2 text-dark" href="alumni-engagement.html"><small>More Info</small></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-4">
+          <div class="d-flex flex-column text-center bg-light p-0">
+            <div class="d-flex active-tab">
+              <div class="col-sm py-2"><strong>Alumni Demographics</strong></div>
+            </div>
+            <div class="bg-white mx-2 mb-2">
+              <div class="d-flex py-3">
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong>Male</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong>Female</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+              </div>
+              <div class="d-flex text-center bg-light-grey">
+                <a class="mb-0 mx-auto py-2 text-dark" href="alumni-demographics.html"><small>More Info</small></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-4">
+          <div class="d-flex flex-column text-center bg-light p-0">
+            <div class="d-flex active-tab">
+              <div class="col-sm py-2"><strong>Alumni Mentors & Mentees</strong></div>
+            </div>
+            <div class="bg-white mx-2 mb-2">
+              <div class="d-flex py-3">
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong>Active</strong></p>
+                  <p class="mb-0"><strong>Mentors</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong>Active</strong></p>
+                  <p class="mb-0"><strong>Mentees</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong>Connections</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+              </div>
+              <div class="d-flex text-center bg-light-grey">
+                <a class="mb-0 mx-auto py-2 text-dark" href="alumni-mentors-mentees.html"><small>More Info</small></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-4">
+          <div class="d-flex flex-column text-center bg-light p-0">
+            <div class="d-flex active-tab">
+              <div class="col-sm py-2"><strong>Mentor Engagement</strong></div>
+            </div>
+            <div class="bg-white mx-2 mb-2">
+              <div class="d-flex py-3">
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong>Mentor</strong></p>
+                  <p class="mb-0"><strong>Following</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong>Meeting</strong></p>
+                  <p class="mb-0"><strong>Requests</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+                <div class="col-sm text-center">
+                  <p class="mb-0"><strong>Meetings</strong></p>
+                  <p class="mb-0"><strong>(xx)</strong></p>
+                </div>
+              </div>
+              <div class="d-flex text-center bg-light-grey">
+                <a class="mb-0 mx-auto py-2 text-dark" href="mentor-engagement.html"><small>More Info</small></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+      <!-- uncomment -->
+      <div class="card mb-2">
+        <div class="active-tab d-flex">
+          <h5 class="font-weight-light sec-title mx-auto py-2">Alum Mentors and Mentees</h5>
+        </div>
+        <div class="content c-home biz-page-content contact-us-page">
+          <div class="p-content">
+            <div class="p-content-element dashboard-top-table-stat">
+              <div class="d-flex flex-wrap pt-3">
+                <div class="col-sm">
+                  <div class="input-group input-group-sm mr-2">
+                    <select name="" class="form-control my-1">
+                      <option value="">Country</option>
+                      <option value="">Lorem</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="input-group input-group-sm mr-2">
+                    <select name="" class="form-control my-1">
+                      <option value="">State</option>
+                      <option value="">Lorem</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="input-group input-group-sm mr-2">
+                    <select name="" class="form-control my-1">
+                      <option value="">City</option>
+                      <option value="">Lorem</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="input-group input-group-sm mr-2">
+                    <select name="" class="form-control my-1">
+                      <option value="">Class Year</option>
+                      <option value="">2000</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-wrap">
+                <div class="col-sm">
+                  <div class="input-group input-group-sm mr-2">
+                    <select name="" class="form-control my-1">
+                      <option value="">Degree</option>
+                      <option value="">Lorem</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="input-group input-group-sm mr-2">
+                    <select name="" class="form-control my-1">
+                      <option value="">Industry</option>
+                      <option value="">Lorem</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="input-group input-group-sm mr-2">
+                    <select name="" class="form-control my-1">
+                      <option value="">Job Title</option>
+                      <option value="">Lorem</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="input-group input-group-sm mr-2">
+                    <select name="" class="form-control my-1">
+                      <option value="">Mentor</option>
+                      <option value="">Lorem</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="p-3 mt-4">
+              <div class="d-flex justify-content-between mb-3">
+                <label for="" class="mb-0 my-auto">Alumni (xxx)</label>
+                <input class="form-control form-control-sm w-50" type="text" placeholder="Search" id="searchAlumni">
+              </div>
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Class Year</th>
+                      <th>Years Attended</th>
+                      <th>Degree Level</th>
+                      <th>Name</th>
+                      <th>Country</th>
+                      <th>City</th>
+                      <th>Date Joined</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="alumniTableBody">
+                    <!-- Table rows will be dynamically added here -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- Main Col END -->
+    </div>
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"></script>
+
+    <script src="./js/main-scripts.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#sidebarToggle").click(function (e) {
+          e.preventDefault();
+          $("#sidebar").toggleClass("active");
+        });
+  
+        $(window).resize(function () {
+          if ($(window).width() >= 768) {
+            $("#sidebar").removeClass("active");
+          }
+        });
+  
+        // Sample alumni data
+        const alumniData = [
+          { id: 1, classYear: 'xxxx', yearsAttended: 'xxxx', degreeLevel: 'Bachelor', name: 'John Doe', country: 'USA', city: 'New York', dateJoined: '2023-01-15' },
+          { id: 2, classYear: 'xxxx', yearsAttended: 'xxxx', degreeLevel: 'Master', name: 'Jane Smith', country: 'Canada', city: 'Toronto', dateJoined: '2023-02-20' },
+          { id: 3, classYear: 'xxxx', yearsAttended: 'xxxx', degreeLevel: 'PhD', name: 'Bob Johnson', country: 'UK', city: 'London', dateJoined: '2023-03-10' },
+        ];
+  
+        // Function to populate the alumni table
+        function populateAlumniTable(data) {
+          const tableBody = $('#alumniTableBody');
+          tableBody.empty();
+  
+          data.forEach(alum => {
+            const row = `
+              <tr>
+                <td>${alum.id}</td>
+                <td>${alum.classYear}</td>
+                <td>${alum.yearsAttended}</td>
+                <td>${alum.degreeLevel}</td>
+                <td>${alum.name}<br><small>(First Name)</small><br><small>(Last Name)</small></td>
+                <td>${alum.country}</td>
+                <td>${alum.city}</td>
+                <td>${alum.dateJoined}</td>
+                <td>
+                  <button class="btn text-white btn-sm mb-1" style="background:#3D85C6;">Deactivate</button>
+                  <button class="btn text-white btn-sm mb-1" style="background:#4D1130;">Suspend</button>
+                </td>
+              </tr>
+            `;
+            tableBody.append(row);
+          });
+        }
+  
+        // Initial population of the table
+        populateAlumniTable(alumniData);
+  
+        // Search functionality
+        $('#searchAlumni').on('input', function () {
+          const searchTerm = $(this).val().toLowerCase();
+          const filteredData = alumniData.filter(alum =>
+            Object.values(alum).some(value =>
+              value.toString().toLowerCase().includes(searchTerm)
+            )
+          );
+          populateAlumniTable(filteredData);
+        });
+  
+        // Dropdown change events (for demonstration, not filtering actual data)
+        $('#country1, #state1, #country2, #state2').change(function () {
+          console.log('Filter changed:', $(this).attr('id'), $(this).val());
+          // In a real application, you would filter the data based on the selected values
+        });
+      });
+    </script>
+</body>
+
+</html>
