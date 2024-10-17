@@ -23,23 +23,23 @@
 
   <!-- NavBar END -->
   <!-- Bootstrap row -->
-  <div class="row" id="body-row">
+  <div class="d-flex" id="body-row">
     <!-- Sidebar -->
-    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+    <div id="sidebar-container" class="sidebar-expanded">
       <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
       <!-- Bootstrap List Group -->
       <ul class="list-group">
         <button class="btn btn-sm btn-light mx-1 my-2">
           <strong>School Name</strong>
         </button>
-        <a href="index.html" class="bg-dark list-group-item list-group-item-action">
+        <a href="launch-alumn-directory.html" class="bg-dark list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-dashboard fa-fw mr-3"></span>
             <span class="menu-collapsed"><small>Dashboard</small></span>
           </div>
         </a>
         <!-- Menu with submenu -->
-        <a href="#submenu1" data-toggle="collapse" aria-expanded="false"
+        <a href="business-information.html"
           class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-cogs fa-fw mr-3"></span>
@@ -47,6 +47,14 @@
             <span class="submenu-icon ml-auto"></span>
           </div>
         </a>
+        <!-- <a href="#submenu1" data-toggle="collapse" aria-expanded="false"
+          class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-cogs fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Business information</small></span>
+            <span class="submenu-icon ml-auto"></span>
+          </div>
+        </a> -->
         <!-- Submenu content -->
         <div id='submenu1' class="collapse sidebar-submenu">
           <a href="business-information.html" class="list-group-item list-group-item-action bg-dark text-white">
@@ -68,20 +76,20 @@
             <span class="menu-collapsed"><small>> Profile page</small></span>
           </a>
         </div>
-        <a href="lunch-alumn-directory.html"
+        <a href="business-information.html"
           class="bg-white list-group-item list-group-item-action text-dark flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="mx-auto"><small><strong>Page Customization</strong></small></span>
           </div>
         </a>
-        <a href="lunch-alumn-directory.html"
+        <a href="launch-alumn-directory.html"
           class="bg-white list-group-item list-group-item-action text-dark flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <button class="btn btn-sm px-3 btn-success mx-auto"><small><strong>Launch Alum
                   Directory</strong></small></button>
           </div>
         </a>
-        <a href="#submenu2" data-toggle="collapse" aria-expanded="false"
+        <a href="business-alumni.html"
           class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-cogs fa-fw mr-3"></span>
@@ -89,12 +97,20 @@
             <span class="submenu-icon ml-auto"></span>
           </div>
         </a>
+        <!-- <a href="#submenu2" data-toggle="collapse" aria-expanded="false"
+          class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-cogs fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Alumni</small></span>
+            <span class="submenu-icon ml-auto"></span>
+          </div>
+        </a> -->
         <!-- Submenu content -->
         <div id='submenu2' class="collapse sidebar-submenu">
           <a href="alumni-reviews.html" class="list-group-item list-group-item-action bg-dark text-white">
             <span class="menu-collapsed"><small>> Alumni Reviews</small></span>
             <span class="text-warning"><small>xx</small></span>
-          </a>>
+          </a>
           <a href="./alumni-feedback.html" class="list-group-item list-group-item-action bg-dark text-white">
             <span class="menu-collapsed"><small>> Alumni Feedback</small></span>
             <span class="text-warning"><small>xx</small></span>
@@ -106,14 +122,21 @@
           </a>
         </div>
 
-        <a href="#submenu3" data-toggle="collapse" aria-expanded="false"
+        <a href="account-features.html"
+          class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-cogs fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Features</small></span>
+          </div>
+        </a>
+        <!-- <a href="#submenu3" data-toggle="collapse" aria-expanded="false"
           class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-cogs fa-fw mr-3"></span>
             <span class="menu-collapsed"><small>Features</small></span>
             <span class="submenu-icon ml-auto"></span>
           </div>
-        </a>
+        </a> -->
         <!-- Submenu content -->
         <div id='submenu3' class="collapse sidebar-submenu">
           <a href="account-features.html" class="list-group-item list-group-item-action bg-dark text-white">
@@ -122,7 +145,7 @@
           <a href="cutomize-features.html" class="list-group-item list-group-item-action bg-dark text-white">
             <span class="menu-collapsed"><small>> Customize Features</small></span>
           </a>
-          <a href="lunch-alumn-directory.html" class="list-group-item list-group-item-action bg-dark text-white">
+          <a href="launch-alumn-directory.html" class="list-group-item list-group-item-action bg-dark text-white">
             <span class="menu-collapsed"><small>> Alumni Directory</small></span>
           </a>
           <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
@@ -165,46 +188,30 @@
             <span class="menu-collapsed"><small>> Push Notifications</small></span>
           </a>
         </div>
-        <a href="#submenu5" data-toggle="collapse" aria-expanded="false"
+        <a href="index.html"
           class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-clipboard fa-fw mr-3"></span>
             <span class="menu-collapsed"><small>Reporting</small></span>
-            <span class="submenu-icon ml-auto"></span>
           </div>
         </a>
-        <!-- Submenu content -->
-        <div id='submenu5' class="collapse sidebar-submenu">
-          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed"><small>> Alumni Activity</small></span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed"><small>> Push Notifications report</small></span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed"><small>> Events report</small></span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed"><small>> Fundraising report</small></span>
-          </a>
-        </div>
 
         <!-- <li class="list-group-item sidebar-separator menu-collapsed"></li> -->
 
         <!-- /END Separator -->
-        <a href="#" class="bg-dark list-group-item list-group-item-action">
+        <!-- <a href="#" class="bg-dark list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-user-plus fa-fw mr-3"></span>
             <span class="menu-collapsed"><small>Subscription</small></span>
           </div>
-        </a>
-        <a href="./change-passowrd.html" class="bg-dark list-group-item list-group-item-action">
+        </a> -->
+        <!-- <a href="./change-passowrd.html" class="bg-dark list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-key fa-fw mr-3"></span>
             <span class="menu-collapsed"><small>Change Password</small>
-              <!-- <span class="badge badge-pill badge-primary ml-2">5</span></span> -->
+              <span class="badge badge-pill badge-primary ml-2">5</span></span>
           </div>
-        </a>
+        </a> -->
 
         <a href="#" class="bg-dark list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-start align-items-center">
@@ -230,33 +237,43 @@
       </ul><!-- List Group END-->
     </div><!-- sidebar-container END -->
     <!-- MAIN -->
-    <div class="col p-4">
+    <div class="mobi">
+      <div class="d-flex justify-content-between px-2 bg-dark position-fixed z-10 w-100 top-0">
+        <button class="btn btn-sm btn-light mx-1 my-2 w-50 school-name-toggle">
+          <strong>School Name</strong>
+        </button>
+        <button class="border-0 bg-transparent school-name-toggle">
+          <i class="fa fa-bars fa-2x text-white"></i>
+        </button>
+      </div>
+    </div>
+    <div class="d-flex flex-column right-container">
       <div class="card mb-4">
         <div class="card-header d-flex justify-content-between">
           <h5 class="font-weight-light sec-title">(School Name) Alumni Dashboard</h5>
         </div>
       </div>
       <div class="d-flex flex-wrap mb-3">
-        <div class="col-sm-4 mb-4">
+        <div class="col-sm-6 col-lg-4 mb-4">
           <div class="d-flex flex-column col-sm text-center bg-light p-0">
             <div class="d-flex active-tab">
-              <div class="col-sm py-2"><strong>Alumni Derectory</strong></div>
+              <div class="col-sm py-2 font-xs"><strong>Alumni Derectory</strong></div>
             </div>
             <div class="bg-white mx-2 mb-2">
               <div class="d-flex py-3">
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong># of Alum</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong># of Alum</strong></p>
+                  <p class="mb-0 font-xs"><strong>(xx)</strong></p>
                 </div>
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong>Invited to</strong></p>
-                  <p class="mb-0"><strong>AlumLynk</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong>Invited to</strong></p>
+                  <p class="mb-0 font-xs"><strong>AlumLynk</strong></p>
+                  <p class="mb-0 font-xs"><strong>(xx)</strong></p>
                 </div>
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong>Registered on</strong></p>
-                  <p class="mb-0"><strong>AlumLynk</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong>Registered on</strong></p>
+                  <p class="mb-0 font-xs"><strong>AlumLynk</strong></p>
+                  <p class="mb-0 font-xs"><strong>(xx)</strong></p>
                 </div>
               </div>
               <div class="d-flex text-center bg-light-grey">
@@ -265,103 +282,103 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4 mb-4">
-          <div class="d-flex flex-column col-sm text-center bg-light p-0">
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="d-flex flex-column col-sm text-center bg-light p-0 h-100">
             <div class="d-flex active-tab">
-              <div class="col-sm py-2"><strong>Alumni Active</strong></div>
+              <div class="col-sm py-2 font-xs"><strong>Alumni Active</strong></div>
             </div>
-            <div class="bg-white mx-2 mb-2">
+            <div class="d-flex flex-column bg-white mx-2 mb-2 h-100">
               <div class="d-flex py-3">
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong>Alum Active</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong>Alum Active</strong></p>
+                  <p class="mb-0 font-xs"><strong>(xx)</strong></p>
                 </div>
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong>Connection</strong></p>
-                  <p class="mb-0"><strong>Request</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong>Connection</strong></p>
+                  <p class="mb-0 font-xs"><strong>Request</strong></p>
+                  <p class="mb-0 font-xs"><strong>(xx)</strong></p>
                 </div>
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong>Connections</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong>Connections</strong></p>
+                  <p class="mb-0 font-xs"><strong>(xx)</strong></p>
                 </div>
               </div>
-              <div class="d-flex text-center bg-light-grey">
+              <div class="d-flex text-center mt-auto bg-light-grey">
                 <a class="mb-0 mx-auto py-2 text-dark" href="alumni-active.html"><small>More Info</small></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 mb-4">
-          <div class="d-flex flex-column text-center bg-light p-0">
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="d-flex flex-column text-center bg-light p-0 h-100">
             <div class="d-flex active-tab">
-              <div class="col-sm py-2"><strong>Alumni engagement</strong></div>
+              <div class="col-sm py-2 font-xs"><strong>Alumni engagement</strong></div>
             </div>
-            <div class="bg-white mx-2 mb-2">
+            <div class="bg-white mx-2 mb-2 d-flex flex-column h-100">
               <div class="d-flex py-3">
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong>Alumni</strong></p>
-                  <p class="mb-0"><strong>Following</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong>Alumni</strong></p>
+                  <p class="mb-0 font-xs"><strong>Following</strong></p>
+                  <p class="mb-0 font-xs"><strong>(xx)</strong></p>
                 </div>
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong>Meeting</strong></p>
-                  <p class="mb-0"><strong>Requests</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong>Meeting</strong></p>
+                  <p class="mb-0 font-xs"><strong>Requests</strong></p>
+                  <p class="mb-0 font-xs"><strong>(xx)</strong></p>
                 </div>
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong>Meetings</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong>Meetings</strong></p>
+                  <p class="mb-0 font-xs"><strong>(xx)</strong></p>
                 </div>
               </div>
-              <div class="d-flex text-center bg-light-grey">
+              <div class="d-flex text-center mt-auto bg-light-grey">
                 <a class="mb-0 mx-auto py-2 text-dark" href="alumni-engagement.html"><small>More Info</small></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 mb-4">
-          <div class="d-flex flex-column text-center bg-light p-0">
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="d-flex flex-column text-center bg-light p-0 h-100">
             <div class="d-flex active-tab">
-              <div class="col-sm py-2"><strong>Alumni Demographics</strong></div>
+              <div class="col-sm py-2 font-xs"><strong>Alumni Demographics</strong></div>
             </div>
-            <div class="bg-white mx-2 mb-2">
+            <div class="d-flex flex-column bg-white mx-2 mb-2 h-100">
               <div class="d-flex py-3">
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong>Male</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong>Male</strong></p>
+                  <p class="mb-0 font-xs"><strong>0</strong></p>
                 </div>
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong>Female</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong>Female</strong></p>
+                  <p class="mb-0 font-xs"><strong>0</strong></p>
                 </div>
               </div>
-              <div class="d-flex text-center bg-light-grey">
-                <a class="mb-0 mx-auto py-2 text-dark" href="alumni-demographics.html"><small>More Info</small></a>
+              <div class="d-flex text-center bg-light-grey mt-auto">
+                <a class="mb-0 mx-auto py-2 text-dark" href="alumni-engagement.html"><small>More Info</small></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 mb-4">
+        <div class="col-sm-6 col-lg-4 mb-4">
           <div class="d-flex flex-column text-center bg-light p-0">
             <div class="d-flex active-tab">
-              <div class="col-sm py-2"><strong>Alumni Mentors & Mentees</strong></div>
+              <div class="col-sm py-2 font-xs"><strong>Alumni Mentors & Mentees</strong></div>
             </div>
             <div class="bg-white mx-2 mb-2">
               <div class="d-flex py-3">
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong>Active</strong></p>
-                  <p class="mb-0"><strong>Mentors</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong>Active</strong></p>
+                  <p class="mb-0 font-xs"><strong>Mentors</strong></p>
+                  <p class="mb-0 font-xs"><strong>(xx)</strong></p>
                 </div>
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong>Active</strong></p>
-                  <p class="mb-0"><strong>Mentees</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong>Active</strong></p>
+                  <p class="mb-0 font-xs"><strong>Mentees</strong></p>
+                  <p class="mb-0 font-xs"><strong>(xx)</strong></p>
                 </div>
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong>Connections</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong>Connections</strong></p>
+                  <p class="mb-0 font-xs"><strong>(xx)</strong></p>
                 </div>
               </div>
               <div class="d-flex text-center bg-light-grey">
@@ -370,26 +387,26 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4 mb-4">
+        <div class="col-sm-6 col-lg-4 mb-4">
           <div class="d-flex flex-column text-center bg-light p-0">
             <div class="d-flex active-tab">
-              <div class="col-sm py-2"><strong>Mentor Engagement</strong></div>
+              <div class="col-sm py-2 font-xs"><strong>Mentor Engagement</strong></div>
             </div>
             <div class="bg-white mx-2 mb-2">
               <div class="d-flex py-3">
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong>Mentor</strong></p>
-                  <p class="mb-0"><strong>Following</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong>Mentor</strong></p>
+                  <p class="mb-0 font-xs"><strong>Following</strong></p>
+                  <p class="mb-0 font-xs"><strong>(xx)</strong></p>
                 </div>
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong>Meeting</strong></p>
-                  <p class="mb-0"><strong>Requests</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong>Meeting</strong></p>
+                  <p class="mb-0 font-xs"><strong>Requests</strong></p>
+                  <p class="mb-0 font-xs"><strong>(xx)</strong></p>
                 </div>
                 <div class="col-sm text-center">
-                  <p class="mb-0"><strong>Meetings</strong></p>
-                  <p class="mb-0"><strong>(xx)</strong></p>
+                  <p class="mb-0 font-xs"><strong>Meetings</strong></p>
+                  <p class="mb-0 font-xs"><strong>(xx)</strong></p>
                 </div>
               </div>
               <div class="d-flex text-center bg-light-grey">
@@ -402,15 +419,15 @@
 
       </div>
       <!-- uncomment -->
-      <div class="card mb-2">
+      <div class="">
         <div class="active-tab d-flex">
           <h5 class="font-weight-light sec-title mx-auto py-2">Alum Active</h5>
         </div>
         <div class="content c-home biz-page-content contact-us-page">
           <div class="p-content">
             <div class="p-content-element dashboard-top-table-stat bg-light my-2 py-3">
-              <div class="d-flex flex-wrap bg-white mx-3 pt-2">
-                <div class="col-sm">
+              <div class="d-flex flex-wrap bg-white px-2 pt-2">
+                <div class="col-sm-4">
                   <div class="form-control p-0 mb-3">
                     <div class="drop">
                       <button type="button"
@@ -419,7 +436,7 @@
                         <span class="mr-1" id="list-by">Country</span>
                         <strong><i class="fa fa-angle-down my-auto"></i></strong>
                       </button>
-                      <div class="dropdown-menu p-0 right w-100">
+                      <div class="dropdown-menu p-0 right">
                         <ul class="px-0 mb-0">
                           <li class="dropdown-item px-2 flex flex-column">
                             <p class="mb-0 text-primary"><small>Country</small></p>
@@ -449,7 +466,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm-4">
                   <div class="form-control p-0 mb-3">
                     <div class="drop">
                       <button type="button"
@@ -458,7 +475,7 @@
                         <span class="mr-1" id="list-by">State</span>
                         <strong><i class="fa fa-angle-down my-auto"></i></strong>
                       </button>
-                      <div class="dropdown-menu p-0 right w-100">
+                      <div class="dropdown-menu p-0 right">
                         <ul class="px-0 mb-0">
                           <li class="dropdown-item px-2 flex flex-column">
                             <p class="mb-0 text-primary"><small>State</small></p>
@@ -488,7 +505,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm-4">
                   <div class="form-control p-0 mb-3">
                     <div class="drop">
                       <button type="button"
@@ -497,7 +514,7 @@
                         <span class="mr-1" id="list-by">City</span>
                         <strong><i class="fa fa-angle-down my-auto"></i></strong>
                       </button>
-                      <div class="dropdown-menu p-0 right w-100">
+                      <div class="dropdown-menu p-0 right">
                         <ul class="px-0 mb-0">
                           <li class="dropdown-item px-2 flex flex-column">
                             <p class="mb-0 text-primary"><small>City</small></p>
@@ -527,7 +544,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm-4">
                   <div class="form-control p-0 mb-3">
                     <div class="drop">
                       <button type="button"
@@ -536,7 +553,7 @@
                         <span class="mr-1" id="list-by">Class Year</span>
                         <strong><i class="fa fa-angle-down my-auto"></i></strong>
                       </button>
-                      <div class="dropdown-menu p-0 right w-100">
+                      <div class="dropdown-menu p-0 right">
                         <ul class="px-0 mb-0">
                           <li class="dropdown-item px-2 flex flex-column">
                             <p class="mb-0 text-primary"><small>Class Year</small></p>
@@ -565,11 +582,8 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              <div class="d-flex flex-wrap bg-white mx-3 pb-2">
-                <div class="col-sm">
+                </div>              
+                <div class="col-sm-4">
                   <div class="form-control p-0 mb-3">
                     <div class="drop">
                       <button type="button"
@@ -578,7 +592,7 @@
                         <span class="mr-1" id="list-by">Degree</span>
                         <strong><i class="fa fa-angle-down my-auto"></i></strong>
                       </button>
-                      <div class="dropdown-menu p-0 right w-100">
+                      <div class="dropdown-menu p-0 right">
                         <ul class="px-0 mb-0">
                           <li class="dropdown-item px-2 flex flex-column">
                             <p class="mb-0 text-primary"><small>Degree</small></p>
@@ -608,7 +622,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm-4">
                   <div class="form-control p-0 mb-3">
                     <div class="drop">
                       <button type="button"
@@ -617,7 +631,7 @@
                         <span class="mr-1" id="list-by">Industry</span>
                         <strong><i class="fa fa-angle-down my-auto"></i></strong>
                       </button>
-                      <div class="dropdown-menu p-0 right w-100">
+                      <div class="dropdown-menu p-0 right">
                         <ul class="px-0 mb-0">
                           <li class="dropdown-item px-2 flex flex-column">
                             <p class="mb-0 text-primary"><small>Industry</small></p>
@@ -647,7 +661,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm-4">
                   <div class="form-control p-0 mb-3">
                     <div class="drop">
                       <button type="button"
@@ -656,7 +670,7 @@
                         <span class="mr-1" id="list-by">Job Title</span>
                         <strong><i class="fa fa-angle-down my-auto"></i></strong>
                       </button>
-                      <div class="dropdown-menu p-0 right w-100">
+                      <div class="dropdown-menu p-0 right">
                         <ul class="px-0 mb-0">
                           <li class="dropdown-item px-2 flex flex-column">
                             <p class="mb-0 text-primary"><small>Job Title</small></p>
@@ -686,41 +700,40 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm-4">
                   <div class="input-group input-group-sm mr-2">
-                    <select name="" class="form-control my-1">
+                    <select name="" class="form-control" style="height: 38px;">
                       <option value="">Select Interest</option>
                       <option value="">Lorem</option>
                     </select>
                   </div>
                 </div>
-
               </div>
             </div>
             <div class="d-flex col-sm-8 text-center">
-              <div class="col-sm">
+              <div class="col-sm font-xs">
                 <p class="mb-0"><b>Connections <br> (xxxx)</b></p>
               </div>
-              <div class="col-sm">
+              <div class="col-sm font-xs">
                 <p class="mb-0"><b>Connections <br> Requests <br> (xxxx)</b></p>
               </div>
-              <div class="col-sm">
+              <div class="col-sm font-xs">
                 <p class="mb-0"><b>Meetings <br> (xxxx)</b></p>
               </div>
-              <div class="col-sm">
+              <div class="col-sm font-xs">
                 <p class="mb-0"><b>Meeting <br> Requests <br> (xxxx)</b></p>
               </div>
-              <div class="col-sm">
+              <div class="col-sm font-xs">
                 <p class="mb-0"><b>Following <br> (xxxx)</b></p>
               </div>
             </div>
 
-            <div class="p-3 mt-2">
+            <div class="mt-2">
               <!-- <div class="d-flex justify-content-between mb-3">
                 <label for="" class="mb-0 my-auto">Alumni (xxx)</label>
                 <input class="form-control form-control-sm w-50" type="text" placeholder="Search" id="searchAlumni">
               </div> -->
-              <div class="table-responsive">
+              <div class="table-responsive px-3 desk">
                 <table class="table table-striped">
                   <thead>
                     <tr>
@@ -739,6 +752,153 @@
                     <!-- Table rows will be dynamically added here -->
                   </tbody>
                 </table>
+              </div>
+              <div class="p-1 mobi">
+                <div class="d-flex justify-content-between mb-3">
+                  <label for="" class="mb-0 my-auto">Alumni (xxx)</label>
+                  <input class="form-control form-control-sm w-50" type="text" placeholder="Search" id="searchAlumni">
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr class="text-center font-sm">
+                        <th>ID</th>
+                        <th>Class Year</th>
+                        <th>Years Attended</th>
+                        <th>Degree Level</th>
+                        <th>Name</th>
+                      </tr>
+                    </thead>
+                    <tbody id="alumniTableBody-">
+                      <tr class="font-sm text-center">
+                        <td>1</td>
+                        <td>
+                          <p class="">
+                            xxx
+                          </p>
+                          <p class="mb-4">
+                            Country
+                          </p>
+                          <p class="mb-0">
+                            {Country}
+                          </p>
+                        </td>
+                        <td>
+                          <p class="">
+                            xxx
+                          </p>
+                          <p class="mb-4">
+                            Country
+                          </p>
+                          <p class="mb-0">
+                            {Country}
+                          </p>
+                        </td>
+                        <td>
+                          <p class="">
+                            Name
+                          </p>
+                          <p class="mb-2">
+                            Date Joined
+                          </p>
+                          <p class="">
+                            (xx/xx/xx)
+                          </p>
+                        </td>
+                        <td class="px-0">
+                          {First Name}<br>
+                          {Last Name}
+                          <button class="btn text-white btn-sm my-1 w-75 font-sm" style="background:#3D85C6;">Deactivate</button>
+                          <button class="btn text-white btn-sm mb-1 w-75 font-sm" style="background:#4D1130;">Suspend</button>
+                        </td>
+                      </tr>
+                      <tr class="font-sm text-center">
+                        <td>2</td>
+                        <td>
+                          <p class="">
+                            xxx
+                          </p>
+                          <p class="mb-4">
+                            Country
+                          </p>
+                          <p class="mb-0">
+                            {Country}
+                          </p>
+                        </td>
+                        <td>
+                          <p class="">
+                            xxx
+                          </p>
+                          <p class="mb-4">
+                            Country
+                          </p>
+                          <p class="mb-0">
+                            {Country}
+                          </p>
+                        </td>
+                        <td>
+                          <p class="">
+                            Name
+                          </p>
+                          <p class="mb-2">
+                            Date Joined
+                          </p>
+                          <p class="">
+                            (xx/xx/xx)
+                          </p>
+                        </td>
+                        <td class="px-0">
+                          {First Name}<br>
+                          {Last Name}
+                          <button class="btn text-white btn-sm my-1 w-75 font-sm" style="background:#3D85C6;">Deactivate</button>
+                          <button class="btn text-white btn-sm mb-1 w-75 font-sm" style="background:#4D1130;">Suspend</button>
+                        </td>
+                      </tr>
+                      <tr class="font-sm text-center">
+                        <td>3</td>
+                        <td>
+                          <p class="">
+                            xxx
+                          </p>
+                          <p class="mb-4">
+                            Country
+                          </p>
+                          <p class="mb-0">
+                            {Country}
+                          </p>
+                        </td>
+                        <td>
+                          <p class="">
+                            xxx
+                          </p>
+                          <p class="mb-4">
+                            Country
+                          </p>
+                          <p class="mb-0">
+                            {Country}
+                          </p>
+                        </td>
+                        <td>
+                          <p class="">
+                            Name
+                          </p>
+                          <p class="mb-2">
+                            Date Joined
+                          </p>
+                          <p class="">
+                            (xx/xx/xx)
+                          </p>
+                        </td>
+                        <td class="px-0">
+                          {First Name}<br>
+                          {Last Name}
+                          <button class="btn text-white btn-sm my-1 w-75 font-sm" style="background:#3D85C6;">Deactivate</button>
+                          <button class="btn text-white btn-sm mb-1 w-75 font-sm" style="background:#4D1130;">Suspend</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>

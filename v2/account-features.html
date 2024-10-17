@@ -23,24 +23,24 @@
 
   <!-- NavBar END -->
   <!-- Bootstrap row -->
-  <div class="row" id="body-row">
+  <div class="d-flex" id="body-row">
     <!-- Sidebar -->
-    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+    <div id="sidebar-container" class="sidebar-expanded">
       <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
       <!-- Bootstrap List Group -->
       <ul class="list-group">
-        
+
         <button class="btn btn-sm btn-light mx-1 my-2">
           <strong>School Name</strong>
         </button>
-        <a href="index.html" class="bg-dark list-group-item list-group-item-action">
+        <a href="launch-alumn-directory.html" class="bg-dark list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-dashboard fa-fw mr-3"></span>
             <span class="menu-collapsed"><small>Dashboard</small></span>
           </div>
         </a>
         <!-- Menu with submenu -->
-        <a href="#submenu1" data-toggle="collapse" aria-expanded="false"
+        <a href="business-information.html"
           class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-cogs fa-fw mr-3"></span>
@@ -48,6 +48,14 @@
             <span class="submenu-icon ml-auto"></span>
           </div>
         </a>
+        <!-- <a href="#submenu1" data-toggle="collapse" aria-expanded="false"
+          class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-cogs fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Business information</small></span>
+            <span class="submenu-icon ml-auto"></span>
+          </div>
+        </a> -->
         <!-- Submenu content -->
         <div id='submenu1' class="collapse sidebar-submenu">
           <a href="business-information.html" class="list-group-item list-group-item-action bg-dark text-white">
@@ -69,19 +77,20 @@
             <span class="menu-collapsed"><small>> Profile page</small></span>
           </a>
         </div>
-        <a href="lunch-alumn-directory.html"
+        <a href="business-information.html"
           class="bg-white list-group-item list-group-item-action text-dark flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="mx-auto"><small><strong>Page Customization</strong></small></span>
           </div>
         </a>
-        <a href="lunch-alumn-directory.html"
+        <a href="launch-alumn-directory.html"
           class="bg-white list-group-item list-group-item-action text-dark flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
-            <button class="btn btn-sm px-3 btn-success mx-auto"><small><strong>Launch Alum Directory</strong></small></button>
+            <button class="btn btn-sm px-3 btn-success mx-auto"><small><strong>Launch Alum
+                  Directory</strong></small></button>
           </div>
         </a>
-        <a href="#submenu2" data-toggle="collapse" aria-expanded="false"
+        <a href="business-alumni.html"
           class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-cogs fa-fw mr-3"></span>
@@ -89,12 +98,20 @@
             <span class="submenu-icon ml-auto"></span>
           </div>
         </a>
+        <!-- <a href="#submenu2" data-toggle="collapse" aria-expanded="false"
+          class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-cogs fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Alumni</small></span>
+            <span class="submenu-icon ml-auto"></span>
+          </div>
+        </a> -->
         <!-- Submenu content -->
         <div id='submenu2' class="collapse sidebar-submenu">
           <a href="alumni-reviews.html" class="list-group-item list-group-item-action bg-dark text-white">
             <span class="menu-collapsed"><small>> Alumni Reviews</small></span>
             <span class="text-warning"><small>xx</small></span>
-          </a>>
+          </a>
           <a href="./alumni-feedback.html" class="list-group-item list-group-item-action bg-dark text-white">
             <span class="menu-collapsed"><small>> Alumni Feedback</small></span>
             <span class="text-warning"><small>xx</small></span>
@@ -106,14 +123,21 @@
           </a>
         </div>
 
-        <a href="#submenu3" data-toggle="collapse" aria-expanded="false"
+        <a href="account-features.html"
+          class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-cogs fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Features</small></span>
+          </div>
+        </a>
+        <!-- <a href="#submenu3" data-toggle="collapse" aria-expanded="false"
           class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-cogs fa-fw mr-3"></span>
             <span class="menu-collapsed"><small>Features</small></span>
             <span class="submenu-icon ml-auto"></span>
           </div>
-        </a>
+        </a> -->
         <!-- Submenu content -->
         <div id='submenu3' class="collapse sidebar-submenu">
           <a href="account-features.html" class="list-group-item list-group-item-action bg-dark text-white">
@@ -122,7 +146,7 @@
           <a href="cutomize-features.html" class="list-group-item list-group-item-action bg-dark text-white">
             <span class="menu-collapsed"><small>> Customize Features</small></span>
           </a>
-          <a href="lunch-alumn-directory.html" class="list-group-item list-group-item-action bg-dark text-white">
+          <a href="launch-alumn-directory.html" class="list-group-item list-group-item-action bg-dark text-white">
             <span class="menu-collapsed"><small>> Alumni Directory</small></span>
           </a>
           <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
@@ -165,46 +189,30 @@
             <span class="menu-collapsed"><small>> Push Notifications</small></span>
           </a>
         </div>
-        <a href="#submenu5" data-toggle="collapse" aria-expanded="false"
+        <a href="index.html"
           class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-clipboard fa-fw mr-3"></span>
             <span class="menu-collapsed"><small>Reporting</small></span>
-            <span class="submenu-icon ml-auto"></span>
           </div>
         </a>
-        <!-- Submenu content -->
-        <div id='submenu5' class="collapse sidebar-submenu">
-          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed"><small>> Alumni Activity</small></span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed"><small>> Push Notifications report</small></span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed"><small>> Events report</small></span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed"><small>> Fundraising report</small></span>
-          </a>
-        </div>
 
         <!-- <li class="list-group-item sidebar-separator menu-collapsed"></li> -->
 
         <!-- /END Separator -->
-        <a href="#" class="bg-dark list-group-item list-group-item-action">
+        <!-- <a href="#" class="bg-dark list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-user-plus fa-fw mr-3"></span>
             <span class="menu-collapsed"><small>Subscription</small></span>
           </div>
-        </a>
-        <a href="./change-passowrd.html" class="bg-dark list-group-item list-group-item-action">
+        </a> -->
+        <!-- <a href="./change-passowrd.html" class="bg-dark list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-key fa-fw mr-3"></span>
             <span class="menu-collapsed"><small>Change Password</small>
-              <!-- <span class="badge badge-pill badge-primary ml-2">5</span></span> -->
+              <span class="badge badge-pill badge-primary ml-2">5</span></span>
           </div>
-        </a>
+        </a> -->
 
         <a href="#" class="bg-dark list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-start align-items-center">
@@ -230,25 +238,35 @@
       </ul><!-- List Group END-->
     </div><!-- sidebar-container END -->
     <!-- MAIN -->
-    <div class="col p-4">
-      <div class=""> 
-        <h5 class="card-header font-weight-light mb-3"><strong>Alum Directory Features</strong></h5> 
-        <div class="d-flex">
+    <div class="mobi">
+      <div class="d-flex justify-content-between px-2 bg-dark position-fixed z-10 w-100">
+        <button class="btn btn-sm btn-light mx-1 my-2 w-50 school-name-toggle">
+          <strong>School Name</strong>
+        </button>
+        <button class="border-0 bg-transparent school-name-toggle">
+          <i class="fa fa-bars fa-2x text-white"></i>
+        </button>
+      </div>
+    </div>
+    <div class="d-flex flex-column right-container">
+      <div class="">
+        <h5 class="card-header font-weight-light mb-3"><strong>Alum Directory Features</strong></h5>
+        <div class="d-flex flex-wrap">
           <form class="col-sm">
-            <div class="d-flex flex-wrap mb-3">
-              <div class="col-sm text-primary"><strong>Features</strong></div>
-              <div class="col-sm text-primary"><strong>View Feature</strong></div>
-              <div class="col-sm text-primary"><strong>Select Feature</strong></div>
+            <div class="d-flex mb-3">
+              <div class="col-sm text-primary font-sm"><strong>Features</strong></div>
+              <div class="col-sm text-primary font-sm"><strong>View Feature</strong></div>
+              <div class="col-sm text-primary font-sm"><strong>Select Feature</strong></div>
             </div>
-            <div class="d-flex flex-wrap">
-              <div class="col-sm d-flex flex-column"><strong>Alumni Directory</strong>
+            <div class="d-flex">
+              <div class="col-sm d-flex flex-column font-sm"><strong>Alumni Directory</strong>
                 <p class="text-primary">Blah blah blah blah</p>
               </div>
               <div class="col-sm"><button class="btn btn-sm btn-primary">View</button></div>
               <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
             </div>
-            <div class="d-flex flex-wrap">
-              <div class="col-sm d-flex flex-column"><strong>Alumni Network</strong>
+            <div class="d-flex ">
+              <div class="col-sm d-flex flex-column font-sm"><strong>Alumni Network</strong>
                 <p class="text-primary">Blah blah blah blah</p>
               </div>
               <div class="col-sm"><button class="btn btn-sm btn-primary">View</button></div>
@@ -256,20 +274,20 @@
             </div>
           </form>
           <form class="col-sm">
-            <div class="d-flex flex-wrap mb-3">
-              <div class="col-sm text-primary"><strong>Features</strong></div>
-              <div class="col-sm text-primary"><strong>View Feature</strong></div>
-              <div class="col-sm text-primary"><strong>Select Feature</strong></div>
+            <div class="d-flex mb-3">
+              <div class="col-sm text-primary font-sm"><strong>Features</strong></div>
+              <div class="col-sm text-primary font-sm"><strong>View Feature</strong></div>
+              <div class="col-sm text-primary font-sm"><strong>Select Feature</strong></div>
             </div>
-            <div class="d-flex flex-wrap">
-              <div class="col-sm d-flex flex-column"><strong>School News Posts</strong>
+            <div class="d-flex">
+              <div class="col-sm d-flex flex-column font-sm"><strong>School News Posts</strong>
                 <p class="text-primary">Blah blah blah blah</p>
               </div>
               <div class="col-sm"><button class="btn btn-sm btn-primary">View</button></div>
               <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
             </div>
-            <div class="d-flex flex-wrap">
-              <div class="col-sm d-flex flex-column"><strong>Mentor Program</strong>
+            <div class="d-flex">
+              <div class="col-sm d-flex flex-column font-sm"><strong>Mentor Program</strong>
                 <p class="text-primary">Blah blah blah blah</p>
               </div>
               <div class="col-sm"><button class="btn btn-sm btn-primary">View</button></div>
@@ -278,30 +296,31 @@
           </form>
         </div>
         <hr>
-        <h5 class="card-header font-weight-light mb-3"><strong>Additional  Alum Directory Features Available</strong></h5>
-        <div class="d-flex">
+        <h5 class="card-header font-weight-light mb-3"><strong class="d-flex">Additional Alum Directory Features <span
+              class="desk">Available</span></strong></h5>
+        <div class="d-flex flex-wrap">
           <form class="col-sm">
-            <div class="d-flex flex-wrap mb-3">
-              <div class="col-sm text-primary"><strong>Features</strong></div>
-              <div class="col-sm text-primary"><strong>View Feature</strong></div>
-              <div class="col-sm text-primary"><strong>Select Feature</strong></div>
+            <div class="d-flex mb-3">
+              <div class="col-sm text-primary font-sm"><strong>Features</strong></div>
+              <div class="col-sm text-primary font-sm"><strong>View Feature</strong></div>
+              <div class="col-sm text-primary font-sm"><strong>Select Feature</strong></div>
             </div>
-            <div class="d-flex flex-wrap">
-              <div class="col-sm d-flex flex-column"><strong>Class Notes</strong>
+            <div class="d-flex">
+              <div class="col-sm d-flex flex-column font-sm"><strong>Class Notes</strong>
                 <p class="text-primary">Blah blah blah blah</p>
               </div>
               <div class="col-sm"><button class="btn btn-sm btn-primary">View</button></div>
               <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
             </div>
-            <div class="d-flex flex-wrap">
-              <div class="col-sm d-flex flex-column"><strong>Alumni Events</strong>
+            <div class="d-flex">
+              <div class="col-sm d-flex flex-column font-sm"><strong>Alumni Events</strong>
                 <p class="text-primary">Blah blah blah blah</p>
               </div>
               <div class="col-sm"><button class="btn btn-sm btn-primary">View</button></div>
               <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
             </div>
-            <div class="d-flex flex-wrap">
-              <div class="col-sm d-flex flex-column"><strong>Re union info Page</strong>
+            <div class="d-flex">
+              <div class="col-sm d-flex flex-column font-sm"><strong>Re union info Page</strong>
                 <p class="text-primary">Blah blah blah blah</p>
               </div>
               <div class="col-sm"><button class="btn btn-sm btn-primary">View</button></div>
@@ -309,20 +328,20 @@
             </div>
           </form>
           <form class="col-sm">
-            <div class="d-flex flex-wrap mb-3">
-              <div class="col-sm text-primary"><strong>Features</strong></div>
-              <div class="col-sm text-primary"><strong>View Feature</strong></div>
-              <div class="col-sm text-primary"><strong>Select Feature</strong></div>
+            <div class="d-flex mb-3">
+              <div class="col-sm text-primary font-sm"><strong>Features</strong></div>
+              <div class="col-sm text-primary font-sm"><strong>View Feature</strong></div>
+              <div class="col-sm text-primary font-sm"><strong>Select Feature</strong></div>
             </div>
-            <div class="d-flex flex-wrap">
-              <div class="col-sm d-flex flex-column"><strong>Shop Online</strong>
+            <div class="d-flex">
+              <div class="col-sm d-flex flex-column font-sm"><strong>Shop Online</strong>
                 <p class="text-primary">Blah blah blah blah</p>
               </div>
               <div class="col-sm"><button class="btn btn-sm btn-primary">View</button></div>
               <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
             </div>
-            <div class="d-flex flex-wrap">
-              <div class="col-sm d-flex flex-column"><strong>Support School</strong>
+            <div class="d-flex">
+              <div class="col-sm d-flex flex-column font-sm"><strong>Support School</strong>
                 <p class="text-primary">Blah blah blah blah</p>
               </div>
               <div class="col-sm"><button class="btn btn-sm btn-primary">View</button></div>
@@ -330,7 +349,7 @@
             </div>
           </form>
         </div>
-        <div class="d-flex w-75 justify-content-center mt-5">
+        <div class="d-flex col-lg-8 col-sm-12 justify-content-center mt-2 mb-5">
           <button class="btn btn-dark mr-5 px-4 r-20"><i class="fa fa-chevron-left"></i> Back</button>
           <button class="btn btn-secondary mr-5 px-4 r-20">Edit</button>
           <button class="btn btn-success px-4 r-20">Save</button>

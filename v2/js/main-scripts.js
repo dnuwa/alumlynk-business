@@ -1,6 +1,10 @@
 // Hide submenus
 // $("#body-row .collapse").collapse("hide");
 
+$(".school-name-toggle").click(function () {
+  $(".sidebar-expanded").toggle();
+});
+
 // Collapse/Expand icon
 $("#collapse-icon").addClass("fa-angle-double-left");
 
