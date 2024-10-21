@@ -13,27 +13,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
   <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="build/css/intlTelInput.css">
 
   <title>Alumlynk business</title>
-  <style>
-    @media only screen and (max-width: 767px) {
-
-      .w-75 {
-        width: 100% !important;
-      }
-
-      .p-5 {
-        padding: 0.5rem !important;
-      }
-
-      .m-3 {
-        margin: 0 !important;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -272,125 +255,113 @@
       </div>
     </div>
     <div class="d-flex flex-column right-container">
-      <!-- uncomment -->
-      <div class="mb-2">
-        <div class="card-header d-flex">
-          <a class="btn btn-sm btn-secondary mr-2 font-xs" href="school-information.html">School Info</a>
-          <a class="btn btn-sm btn-secondary mr-2 font-xs" href="school-info-description.html">Description</a>
-          <a class="btn btn-sm btn-secondary mr-2 font-xs" href="business-info-logo.html">Logo & Photos</a>
-          <a class="btn btn-sm active-tab text-white mr-2 font-xs" href="business-info-admin-management.html">Admin Management</a>
-          <a class="btn btn-sm btn-secondary mr-2 font-xs" href="business-account-contact.html">Account Contact</a>
-        </div>
-        <div class="card p-3 m-3 col-lg-8 col-sm-12">
-          <div class="d-flex p-4">
-            <p class="mb-0"><b>Master Admin School Contact</b></p>
-          </div>
-          <div class="p-4">
-            <div class="d-flex flex-wrap">
-              <div class="form-group col-lg-6 col-sm-12 p-0">
-                <label for="inputEmail3" class="col-form-label"><strong>Full Name</strong></label>
-                <div class="d-flex">
-                  <div class="col-sm-6 pl-0">
-                    <input type="text" name="" placeholder="1st Name" class="form-control form-control-sm col-sm-12">
-                  </div>
-                  <div class="col-sm-6">
-                    <input type="text" name="" placeholder="2nd Name" class="form-control form-control-sm col-sm-12">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group col-lg-6 col-sm-12 p-0">
-                <div class="d-flex">
-                  <div class="col-sm-6 pl-0">
-                    <label for="inputEmail3" class="col-form-label"><strong>Your School Email</strong></label>
-                    <input type="text" name="" placeholder="" class="form-control form-control-sm col-sm-12">
-                  </div>
-                  <div class="col-sm-6">
-                    <label for="inputEmail3" class="col-form-label"><strong>Cellphone</strong></label>
-                    <input id="phone" name="phone" type="tel" placeholder=""
-                      class="form-control form-control-sm col-sm-12">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="d-flex">
-              <div class="form-group col-sm-6 pl-0">
-                <label for="inputEmail3" class="col-form-label"><strong>Position at school</strong></label>
-                <div class="pl-0">
-                  <select class="form-control form-control-sm" id="exampleSelect">
-                    <option><small>Select</small></option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-group col-sm-6 p-0">
-                <label for="inputPassword3" class="col-form-label">
-                  <strong>Work Phone #</strong>
-                </label>
-                <input type="text" class="form-control form-control-sm" id="inputPassword3" placeholder="">
-              </div>
-            </div>
-
-
-            <div class="d-flex justify-content-end">
-              <a class="btn btn-dark text-decoration-none mr-5 px-4 r-20" href="business-information.html"><i
-                  class="fa fa-angle-left fa-xs"></i> Back</a>
-              <button class="btn btn-secondary px-4 r-20 mr-4">Edit</button>
-              <a class="btn btn-success px-4 r-20" href="./account-information.html">Save</a>
-            </div>
-
-            <hr class="border">
-            <div class="d-flex mb-4">
-              <p class="my-auto mr-5">Add Admin Managers</p>
-              <button class="btn btn-sm active-tab px-4">+</button>
+      <div class="d-flex flex-column">
+        <h5 class="card-header font-weight-light mb-3"><strong>Alum Directory Features</strong></h5>
+        <div class="d-flex flex-wrap">
+          <form class="col-sm">
+            <div class="d-flex mb-3">
+              <div class="col-sm active-text font-sm"><strong>Features</strong></div>
+              <div class="col-sm active-text font-sm"><strong>View Feature</strong></div>
+              <div class="col-sm active-text font-sm"><strong>Select Feature</strong></div>
             </div>
             <div class="d-flex">
-              <p class="my-auto mr-4">View All Admin Managers</p>
-              <button class="btn btn-sm active-tab px-3">View</button>
+              <div class="col-sm d-flex flex-column font-sm"><strong>Alumni Directory</strong>
+                <p class="active-text">Blah blah blah blah</p>
+              </div>
+              <div class="col-sm"><button class="btn btn-sm active-tab px-4">View</button></div>
+              <div class="col-sm">Included</div>
             </div>
-          </div>
+            <div class="d-flex">
+              <div class="col-sm d-flex flex-column font-sm"><strong>Alumni Network</strong>
+                <p class="active-text">Blah blah blah blah</p>
+              </div>
+              <div class="col-sm"><button class="btn btn-sm active-tab px-4">View</button></div>
+              <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
+            </div>
+            <div class="d-flex">
+              <div class="col-sm d-flex flex-column font-sm"><strong>School News Posts</strong>
+                <p class="active-text">Blah blah blah blah</p>
+              </div>
+              <div class="col-sm"><button class="btn btn-sm active-tab px-4">View</button></div>
+              <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
+            </div>
+            <div class="d-flex">
+              <div class="col-sm d-flex flex-column font-sm"><strong>Mentor Program</strong>
+                <p class="active-text">Blah blah blah blah</p>
+              </div>
+              <div class="col-sm"><button class="btn btn-sm active-tab px-4">View</button></div>
+              <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
+            </div>
+          </form>
         </div>
-      </div><!-- Main Col END -->
-    </div>
-    <!-- Optional JavaScript; choose one of the two! -->
+        <p class="mx-auto w-50 text-right mb-0"><strong>(xxx) Features Selected</strong></p>
+        <hr>
+        <h5 class="card-header font-weight-light mb-3"><strong class="d-flex">Future Features</strong></h5>
+        <div class="d-flex flex-wrap">
+          <form class="col-sm">
+            <div class="d-flex mb-3">
+              <div class="col-sm active-text font-sm"><strong>Features</strong></div>
+              <div class="col-sm active-text font-sm"><strong>View Feature</strong></div>
+              <div class="col-sm active-text font-sm"><strong>Interested</strong></div>
+            </div>
+            <div class="d-flex">
+              <div class="col-sm d-flex flex-column font-sm"><strong>Class Notes</strong>
+                <p class="active-text">Blah blah blah blah</p>
+              </div>
+              <div class="col-sm"><button class="btn btn-sm active-tab text-white px-4">View</button></div>
+              <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
+            </div>
+            <div class="d-flex">
+              <div class="col-sm d-flex flex-column font-sm"><strong>Alumni Events</strong>
+                <p class="active-text">Blah blah blah blah</p>
+              </div>
+              <div class="col-sm"><button class="btn btn-sm active-tab text-white px-4">View</button></div>
+              <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
+            </div>
+            <div class="d-flex">
+              <div class="col-sm d-flex flex-column font-sm"><strong>Re union info Page</strong>
+                <p class="active-text">Blah blah blah blah</p>
+              </div>
+              <div class="col-sm"><button class="btn btn-sm active-tab text-white px-4">View</button></div>
+              <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
+            </div>
+            <div class="d-flex">
+              <div class="col-sm d-flex flex-column font-sm"><strong>Shop Online</strong>
+                <p class="active-text">Blah blah blah blah</p>
+              </div>
+              <div class="col-sm"><button class="btn btn-sm active-tab text-white px-4">View</button></div>
+              <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
+            </div>
+            <div class="d-flex">
+              <div class="col-sm d-flex flex-column font-sm"><strong>Support School</strong>
+                <p class="active-text">Blah blah blah blah</p>
+              </div>
+              <div class="col-sm"><button class="btn btn-sm active-tab text-white px-4">View</button></div>
+              <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
+            </div>
+          </form>
+        </div>
+        <!-- <div class="d-flex col-lg-8 col-sm-12 justify-content-center mt-2 mb-5">
+          <button class="btn btn-dark mr-5 px-4 r-20"><i class="fa fa-chevron-left"></i> Back</button>
+          <button class="btn btn-secondary mr-5 px-4 r-20">Edit</button>
+          <button class="btn btn-success px-4 r-20">Save</button>
+        </div> -->
+      </div>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-      crossorigin="anonymous"></script>
+    </div><!-- Main Col END -->
+  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <script src="./js/main-scripts.js"></script>
-    <script src="build/js/intlTelInput.js"></script>
-    <script>
-      var input = document.querySelector("#phone");
-      window.intlTelInput(input, {
-        // allowDropdown: false,
-        // autoHideDialCode: false,
-        // autoPlaceholder: "off",
-        // dropdownContainer: document.body,
-        // excludeCountries: ["us"],
-        // formatOnDisplay: false,
-        // geoIpLookup: function(callback) {
-        //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-        //     var countryCode = (resp && resp.country) ? resp.country : "";
-        //     callback(countryCode);
-        //   });
-        // },
-        // hiddenInput: "full_number",
-        // initialCountry: "auto",
-        // localizedCountries: { 'de': 'Deutschland' },
-        // nationalMode: false,
-        // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
-        // placeholderNumberType: "MOBILE",
-        // preferredCountries: ['cn', 'jp'],
-        // separateDialCode: true,
-        utilsScript: "build/js/utils.js",
-      });
-    </script>
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+  <script src="./js/main-scripts.js"></script>
+
 </body>
 
 </html>

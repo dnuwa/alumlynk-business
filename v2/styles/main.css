@@ -167,6 +167,10 @@
   color: white;
 }
 
+.active-text{
+  color: #014d7f;
+}
+
 .br-10 {
   border-radius: 10px;
 }

@@ -76,13 +76,13 @@
             <span class="menu-collapsed"><small>> Profile page</small></span>
           </a>
         </div>
-        <a href="business-information.html"
+        <a href="customize-directory.html"
           class="bg-white list-group-item list-group-item-action text-dark flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
-            <span class="mx-auto"><small><strong>Page Customization</strong></small></span>
+            <button class="btn btn-sm px-4 active-tab text-white m-auto"><small><strong>Customize Directory</strong></small></button>
           </div>
         </a>
-        <a href="launch-alumn-directory.html"
+        <a href="business-information.html"
           class="bg-white list-group-item list-group-item-action text-dark flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <button class="btn btn-sm px-3 btn-success mx-auto"><small><strong>Launch Alum
@@ -127,6 +127,13 @@
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-cogs fa-fw mr-3"></span>
             <span class="menu-collapsed"><small>Features</small></span>
+          </div>
+        </a>
+        <a href="alumni-messages.html"
+          class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-comment fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Communication</small></span>
           </div>
         </a>
         <!-- <a href="#submenu3" data-toggle="collapse" aria-expanded="false"
@@ -236,142 +243,159 @@
       </ul><!-- List Group END-->
     </div><!-- sidebar-container END -->
     <!-- MAIN -->
+    <div class="mobi">
+      <div class="d-flex justify-content-between px-2 bg-dark position-fixed z-10 w-100">
+        <button class="btn btn-sm btn-light mx-1 my-2 w-50 school-name-toggle">
+          <strong>School Name</strong>
+        </button>
+        <button class="border-0 bg-transparent school-name-toggle">
+          <i class="fa fa-bars fa-2x text-white"></i>
+        </button>
+      </div>
+    </div>
     <div class="d-flex flex-column right-container">
       <!-- uncomment -->
       <div class="card mb-2">
         <div class="card-header d-flex justify-content-between">
-          <h5 class="font-weight-light sec-title">Alumni Reviews</h5>
+          <h5 class="font-weight-light sec-title">Alumni Commuication and Feedback</h5>
         </div>
-        <div class="p-2">
-
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">TOTAL REVIEWS</th>
-                <th scope="col">READ</th>
-                <th scope="col">UNREAD</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><small>2234</small></td>
-                <td><small>10</small></td>
-                <td><small>345</small></td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Sr</th>
-                <th scope="col">Sender User</th>
-                <th scope="col">Read/Unread</th>
-                <th scope="col">Rating</th>
-                <th scope="col">Message</th>
-                <th scope="col">Data</th>
-                <th scope="col">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><small>1</small></td>
-                <td><small>...</small></td>
-                <td><small>Unread</small></td>
-                <td><small><i class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
-                      class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
-                      class="fa fa-star text-warning mr-1"></i></small></td>
-                <td><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo ipsam sunt
-                    ducimus amet mollitia omnis totam officiis eveniet distinctio beatae minima facilis aspernatur fuga,
-                    quas veritatis? Nisi, ad amet!</small>
-                </td>
-                <td><small>1 week ago</small></td>
-                <td class="d-flex"> <button class="btn btn-sm btn-info mr-1">READ</button>
-                  <button class="btn btn-sm btn-danger">REMOVE</button>
-                </td>
-              </tr>
-              <tr>
-                <td><small>2</small></td>
-                <td><small>...</small></td>
-                <td><small>Unread</small></td>
-                <td><small><i class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
-                      class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
-                      class="fa fa-star text-warning mr-1"></i></small></td>
-                <td><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo ipsam sunt
-                    ducimus amet mollitia omnis totam officiis eveniet distinctio beatae minima facilis aspernatur fuga,
-                    quas veritatis? Nisi, ad amet!</small>
-                </td>
-                <td><small>1 week ago</small></td>
-                <td class="d-flex"> <button class="btn btn-sm btn-info mr-1">READ</button>
-                  <button class="btn btn-sm btn-danger">REMOVE</button>
-                </td>
-              </tr>
-              <tr>
-                <td><small>3</small></td>
-                <td><small>...</small></td>
-                <td><small>Unread</small></td>
-                <td><small><i class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
-                      class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
-                      class="fa fa-star text-warning mr-1"></i></small></td>
-                <td><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo ipsam sunt
-                    ducimus amet mollitia omnis totam officiis eveniet distinctio beatae minima facilis aspernatur fuga,
-                    quas veritatis? Nisi, ad amet!</small>
-                </td>
-                <td><small>1 week ago</small></td>
-                <td class="d-flex"> <button class="btn btn-sm btn-info mr-1">READ</button>
-                  <button class="btn btn-sm btn-danger">REMOVE</button>
-                </td>
-              </tr>
-              <tr>
-                <td><small>4</small></td>
-                <td><small>...</small></td>
-                <td><small>Unread</small></td>
-                <td><small><i class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
-                      class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
-                      class="fa fa-star text-warning mr-1"></i></small></td>
-                <td><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo ipsam sunt
-                    ducimus amet mollitia omnis totam officiis eveniet distinctio beatae minima facilis aspernatur fuga,
-                    quas veritatis? Nisi, ad amet!</small>
-                </td>
-                <td><small>1 week ago</small></td>
-                <td class="d-flex"> <button class="btn btn-sm btn-info mr-1">READ</button>
-                  <button class="btn btn-sm btn-danger">REMOVE</button>
-                </td>
-              </tr>
-              <tr>
-                <td><small>5</small></td>
-                <td><small>...</small></td>
-                <td><small>Unread</small></td>
-                <td><small><i class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
-                      class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
-                      class="fa fa-star text-warning mr-1"></i></small></td>
-                <td><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo ipsam sunt
-                    ducimus amet mollitia omnis totam officiis eveniet distinctio beatae minima facilis aspernatur fuga,
-                    quas veritatis? Nisi, ad amet!</small>
-                </td>
-                <td><small>1 week ago</small></td>
-                <td class="d-flex"> <button class="btn btn-sm btn-info mr-1">READ</button>
-                  <button class="btn btn-sm btn-danger">REMOVE</button>
-                </td>
-              </tr>
-              <tr>
-                <td><small>6</small></td>
-                <td><small>...</small></td>
-                <td><small>Unread</small></td>
-                <td><small><i class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
-                      class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
-                      class="fa fa-star text-warning mr-1"></i></small></td>
-                <td><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo ipsam sunt
-                    ducimus amet mollitia omnis totam officiis eveniet distinctio beatae minima facilis aspernatur fuga,
-                    quas veritatis? Nisi, ad amet!</small>
-                </td>
-                <td><small>1 week ago</small></td>
-                <td class="d-flex"> <button class="btn btn-sm btn-info mr-1">READ</button>
-                  <button class="btn btn-sm btn-danger">REMOVE</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="card-body">
+          <div class="d-flex flex-wrap mb-3">
+            <a class="btn btn-sm  btn-secondary mr-2 font-xs px-3" href="alumni-messages.html">Alumni Messages (XXX)</a>
+            <a class="btn btn-sm active-tab text-white mr-2 font-xs px-3" href="alumni-reviews.html">Alumni Reviews (XXX)</a>
+            <a class="btn btn-sm btn-secondary mr-2 font-xs px-3" href="alumni-feedback.html">Alumni Feedback (XXX)</a>
+          </div>
+          <div class="p-2 card" style="overflow: auto;">
+            <h5 class="card-header active-text mb-2"><strong>Alumni Reviews</strong></h5>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">TOTAL REVIEWS</th>
+                  <th scope="col">READ</th>
+                  <th scope="col">UNREAD</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><small>2234</small></td>
+                  <td><small>10</small></td>
+                  <td><small>345</small></td>
+                </tr>
+              </tbody>
+            </table>
+          
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Sr</th>
+                  <th scope="col">Sender User</th>
+                  <th scope="col">Read/Unread</th>
+                  <th scope="col">Rating</th>
+                  <th scope="col">Message</th>
+                  <th scope="col">Data</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><small>1</small></td>
+                  <td><small>...</small></td>
+                  <td><small>Unread</small></td>
+                  <td><small><i class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
+                        class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
+                        class="fa fa-star text-warning mr-1"></i></small></td>
+                  <td class="col-sm-4"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo ipsam sunt
+                      ducimus amet mollitia omnis totam officiis eveniet distinctio beatae minima facilis aspernatur fuga,
+                      quas veritatis? Nisi, ad amet!</small>
+                  </td>
+                  <td><small>1 week ago</small></td>
+                  <td class="d-flex"> <button class="btn btn-sm btn-info mr-1">READ</button>
+                    <button class="btn btn-sm btn-danger">REMOVE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><small>2</small></td>
+                  <td><small>...</small></td>
+                  <td><small>Unread</small></td>
+                  <td><small><i class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
+                        class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
+                        class="fa fa-star text-warning mr-1"></i></small></td>
+                  <td class="col-sm-4"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo ipsam sunt
+                      ducimus amet mollitia omnis totam officiis eveniet distinctio beatae minima facilis aspernatur fuga,
+                      quas veritatis? Nisi, ad amet!</small>
+                  </td>
+                  <td><small>1 week ago</small></td>
+                  <td class="d-flex"> <button class="btn btn-sm btn-info mr-1">READ</button>
+                    <button class="btn btn-sm btn-danger">REMOVE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><small>3</small></td>
+                  <td><small>...</small></td>
+                  <td><small>Unread</small></td>
+                  <td><small><i class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
+                        class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
+                        class="fa fa-star text-warning mr-1"></i></small></td>
+                  <td class="col-sm-4"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo ipsam sunt
+                      ducimus amet mollitia omnis totam officiis eveniet distinctio beatae minima facilis aspernatur fuga,
+                      quas veritatis? Nisi, ad amet!</small>
+                  </td>
+                  <td><small>1 week ago</small></td>
+                  <td class="d-flex"> <button class="btn btn-sm btn-info mr-1">READ</button>
+                    <button class="btn btn-sm btn-danger">REMOVE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><small>4</small></td>
+                  <td><small>...</small></td>
+                  <td><small>Unread</small></td>
+                  <td><small><i class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
+                        class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
+                        class="fa fa-star text-warning mr-1"></i></small></td>
+                  <td class="col-sm-4"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo ipsam sunt
+                      ducimus amet mollitia omnis totam officiis eveniet distinctio beatae minima facilis aspernatur fuga,
+                      quas veritatis? Nisi, ad amet!</small>
+                  </td>
+                  <td><small>1 week ago</small></td>
+                  <td class="d-flex"> <button class="btn btn-sm btn-info mr-1">READ</button>
+                    <button class="btn btn-sm btn-danger">REMOVE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><small>5</small></td>
+                  <td><small>...</small></td>
+                  <td><small>Unread</small></td>
+                  <td><small><i class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
+                        class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
+                        class="fa fa-star text-warning mr-1"></i></small></td>
+                  <td class="col-sm-4"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo ipsam sunt
+                      ducimus amet mollitia omnis totam officiis eveniet distinctio beatae minima facilis aspernatur fuga,
+                      quas veritatis? Nisi, ad amet!</small>
+                  </td>
+                  <td><small>1 week ago</small></td>
+                  <td class="d-flex"> <button class="btn btn-sm btn-info mr-1">READ</button>
+                    <button class="btn btn-sm btn-danger">REMOVE</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><small>6</small></td>
+                  <td><small>...</small></td>
+                  <td><small>Unread</small></td>
+                  <td><small><i class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
+                        class="fa fa-star text-warning mr-1"></i><i class="fa fa-star text-warning mr-1"></i><i
+                        class="fa fa-star text-warning mr-1"></i></small></td>
+                  <td class="col-sm-4"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo ipsam sunt
+                      ducimus amet mollitia omnis totam officiis eveniet distinctio beatae minima facilis aspernatur fuga,
+                      quas veritatis? Nisi, ad amet!</small>
+                  </td>
+                  <td><small>1 week ago</small></td>
+                  <td class="d-flex"> <button class="btn btn-sm btn-info mr-1">READ</button>
+                    <button class="btn btn-sm btn-danger">REMOVE</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div><!-- Main Col END -->
     </div>

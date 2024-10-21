@@ -76,13 +76,13 @@
             <span class="menu-collapsed"><small>> Profile page</small></span>
           </a>
         </div>
-        <a href="business-information.html"
+        <a href="customize-directory.html"
           class="bg-white list-group-item list-group-item-action text-dark flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
-            <span class="mx-auto"><small><strong>Page Customization</strong></small></span>
+            <button class="btn btn-sm px-4 active-tab text-white m-auto"><small><strong>Customize Directory</strong></small></button>
           </div>
         </a>
-        <a href="launch-alumn-directory.html"
+        <a href="business-information.html"
           class="bg-white list-group-item list-group-item-action text-dark flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <button class="btn btn-sm px-3 btn-success mx-auto"><small><strong>Launch Alum
@@ -127,6 +127,13 @@
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-cogs fa-fw mr-3"></span>
             <span class="menu-collapsed"><small>Features</small></span>
+          </div>
+        </a>
+        <a href="alumni-messages.html"
+          class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-comment fa-fw mr-3"></span>
+            <span class="menu-collapsed"><small>Communication</small></span>
           </div>
         </a>
         <!-- <a href="#submenu3" data-toggle="collapse" aria-expanded="false"
@@ -236,162 +243,128 @@
       </ul><!-- List Group END-->
     </div><!-- sidebar-container END -->
     <!-- MAIN -->
+    <div class="mobi">
+      <div class="d-flex justify-content-between px-2 bg-dark position-fixed z-10 w-100">
+        <button class="btn btn-sm btn-light mx-1 my-2 w-50 school-name-toggle">
+          <strong>School Name</strong>
+        </button>
+        <button class="border-0 bg-transparent school-name-toggle">
+          <i class="fa fa-bars fa-2x text-white"></i>
+        </button>
+      </div>
+    </div>
     <div class="d-flex flex-column right-container">
       <!-- uncomment -->
       <div class="card mb-2">
         <div class="card-header d-flex justify-content-between">
-          <h5 class="font-weight-light sec-title">Alumni User Feedback</h5>
+          <h5 class="font-weight-light sec-title">Alumni Commuication and Feedback</h5>
         </div>
-        <div class="p-2">
-          <div class="d-flex mb-3">
-            <div class="col-sm border-right">
-              <form>
-                <div class="input-group">
-                  <input type="radio" aria-label="Radio button for following text input" class="my-auto mr-2">
-                  <label for="" class="my-auto">pop up at the end of 1st session</label>
-                </div>
-                <div class="d-flex">
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea1" class="mb-0">Customize Question</label>
-                    <textarea class="w-100" id="exampleFormControlTextarea1" rows="4"></textarea>
-                    <small>Maxmum characters 30</small>
-                  </div>
-                  <div class="d-flex flex-column my-auto ml-2">
-                    <button class="btn btn-sm btn-success mb-2">View</button>
-                    <button class="btn btn-sm btn-danger">Save</button>
-                  </div>
-                </div>
-              </form>
+        <div class="card-body">
+          <div class="">
+            <div class="d-flex flex-wrap mb-3">
+              <a class="btn btn-sm  btn-secondary mr-2 font-xs px-3" href="alumni-messages.html">Alumni Messages
+                (XXX)</a>
+              <a class="btn btn-sm  btn-secondary mr-2 font-xs px-3" href="alumni-reviews.html">Alumni Reviews
+                (XXX)</a>
+              <a class="btn btn-sm active-tab text-white mr-2 font-xs px-3" href="alumni-feedback.html">Alumni Feedback
+                (XXX)</a>
             </div>
-            <div class="col-sm border-right">
-              <form>
-                <div class="input-group">
-                  <input type="radio" aria-label="Radio button for following text input" class="my-auto mr-2">
-                  <label for="" class="my-auto">pop up every 6 months</label>
+            <div class="card p-2" style="overflow: auto;">
+              <h5 class="card-header active-text mb-2"><strong>Alumni Feedback</strong></h5>
+              <div class="d-flex flex-wrap mb-3">
+                <a class="btn btn-sm  active-tab text-white mr-2 font-xs px-3" href="alumni-feedback.html">How's Your
+                  Experience (XX)</a>
+                <a class="btn btn-sm  btn-secondary mr-2 font-xs px-3" href="create-question.html">Create new feedback
+                  question</a>
+              </div>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Total</th>
+                    <th scope="col">Messages</th>
+                    <th scope="col"><span>&#128522;</span><span>&#128542;</span></th>
+                    <th scope="col">Total # of Messages XX</th>
+                    <th scope="col">Total Messages</th>
+                  </tr>
+                </thead>
+              </table>
+              <table class="table table-striped">
+                <tbody>
+                  <tr class="">
+                    <td class="text-center"><small>Lorem ipsum dolor</small></td>
+                    <td class="text-center"><small>Lorem ipsum dolor</small></td>
+
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-striped">
+                <tbody>
+                  <tr class="">
+                    <td class="text-center"><small>Total</small></td>
+                    <td class="text-center"><small>0</small></td>
+                    <td class="text-center"><small>0</small></td>
+                    <td class="text-center"><small>0</small></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="d-flex py-3 border-bottom mb-1">
+                <div class="col-sm"><small><strong>Date</strong></small></div>
+                <div class="col-sm"><small><strong>Alumni</strong></small></div>
+                <div class="col-sm"><small><strong>Read/Unread</strong></small></div>
+                <div class="col-sm"><small><strong>Feedback <span>&#128522;</span><span>&#128542;</span>
+                    </strong></small>
                 </div>
-                <div class="d-flex">
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea1" class="mb-0">Customize Question</label>
-                    <textarea class="w-100" id="exampleFormControlTextarea1" rows="4"></textarea>
-                    <small>Maxmum characters 30</small>
-                  </div>
-                  <div class="d-flex flex-column my-auto ml-2">
-                    <button class="btn btn-sm btn-success mb-2">View</button>
-                    <button class="btn btn-sm btn-danger">Save</button>
-                  </div>
+                <div class="col-sm"><small><strong>Class Year</strong></small></div>
+                <div class="col-sm"></div>
+              </div>
+
+              <div class="d-flex bg-light-orange py-3">
+                <div class="col-sm"><small>xx/xx/xxx</small></div>
+                <div class="col-sm"><small>!st Name Last Name</small></div>
+                <div class="col-sm"><small>Unread</small></div>
+                <div class="col-sm"><small><span>&#128542;</span></small></div>
+                <div class="col-sm"><small><strong>User</strong></small></div>
+                <div class="col-sm"> <button class="btn btn-sm btn-info">Mark Read</button>
+                  <button class="btn btn-sm btn-danger">Remove</button>
                 </div>
-              </form>
-            </div>
-            <div class="col-sm border-right">
-              <form>
-                <div class="input-group">
-                  <input type="radio" aria-label="Radio button for following text input" class="my-auto mr-2">
-                  <label for="" class="my-auto">pop up at the end of the every 12 months</label>
+              </div>
+
+              <label><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo laudantium
+                  obcaecati voluptatem, veniam tenetur amet non. Ea illum fugit quis</small></label>
+
+              <div class="d-flex bg-light-orange py-3">
+                <div class="col-sm"><small>xx/xx/xxx</small></div>
+                <div class="col-sm"><small>!st Name Last Name</small></div>
+                <div class="col-sm"><small>Unread</small></div>
+                <div class="col-sm"><small><span>&#128542;</span></small></div>
+                <div class="col-sm"><small><strong>Business Account</strong></small></div>
+                <div class="col-sm"> <button class="btn btn-sm btn-info">Mark Read</button>
+                  <button class="btn btn-sm btn-danger">Remove</button>
                 </div>
-                <div class="d-flex">
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea1" class="mb-0">Customize Question</label>
-                    <textarea class="w-100" id="exampleFormControlTextarea1" rows="4"></textarea>
-                    <small>Maxmum characters 30</small>
-                  </div>
-                  <div class="d-flex flex-column my-auto ml-2">
-                    <button class="btn btn-sm btn-success mb-2">View</button>
-                    <button class="btn btn-sm btn-danger">Save</button>
-                  </div>
+              </div>
+
+              <label><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo laudantium
+                  obcaecati voluptatem, veniam tenetur amet non. Ea illum fugit quis</small></label>
+
+
+              <div class="d-flex bg-light-orange py-3">
+                <div class="col-sm"><small>xx/xx/xxx</small></div>
+                <div class="col-sm"><small>!st Name Last Name</small></div>
+                <div class="col-sm"><small>Unread</small></div>
+                <div class="col-sm"><small><span>&#128542;</span></small></div>
+                <div class="col-sm"><small><strong>Trainer</strong></small></div>
+                <div class="col-sm"> <button class="btn btn-sm btn-info">Mark Read</button>
+                  <button class="btn btn-sm btn-danger">Remove</button>
                 </div>
-              </form>
+              </div>
+
+
+              <label><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo laudantium
+                  obcaecati voluptatem, veniam tenetur amet non. Ea illum fugit quis</small></label>
+
             </div>
           </div>
-
-          <div class="d-flex justify-content-center">
-            <label for="" class="bg-light px-5 py-2">Feedback summery</label>
-          </div>
-
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Total</th>
-                <th scope="col">Messages</th>
-                <th scope="col"><span>&#128522;</span><span>&#128542;</span></th>
-                <th scope="col">Total # of Messages XX</th>
-                <th scope="col">Total Messages</th>
-              </tr>
-            </thead>
-          </table>
-          <table class="table table-striped">
-            <tbody>
-              <tr class="">
-                <td class="text-center"><small>Lorem ipsum dolor</small></td>
-                <td class="text-center"><small>Lorem ipsum dolor</small></td>
-
-              </tr>
-            </tbody>
-          </table>
-          <table class="table table-striped">
-            <tbody>
-              <tr class="">
-                <td class="text-center"><small>Total</small></td>
-                <td class="text-center"><small>0</small></td>
-                <td class="text-center"><small>0</small></td>
-                <td class="text-center"><small>0</small></td>
-              </tr>
-            </tbody>
-          </table>
-
-          <div class="d-flex py-3 border-bottom mb-1">
-            <div class="col-sm"><small><strong>Date</strong></small></div>
-            <div class="col-sm"><small><strong>Alumni</strong></small></div>
-            <div class="col-sm"><small><strong>Read/Unread</strong></small></div>
-            <div class="col-sm"><small><strong>Feedback <span>&#128522;</span><span>&#128542;</span> </strong></small>
-            </div>
-            <div class="col-sm"><small><strong>Class Year</strong></small></div>
-            <div class="col-sm"></div>
-          </div>
-
-          <div class="d-flex bg-light-orange py-3">
-            <div class="col-sm"><small>xx/xx/xxx</small></div>
-            <div class="col-sm"><small>!st Name Last Name</small></div>
-            <div class="col-sm"><small>Unread</small></div>
-            <div class="col-sm"><small><span>&#128542;</span></small></div>
-            <div class="col-sm"><small><strong>User</strong></small></div>
-            <div class="col-sm"> <button class="btn btn-sm btn-info">Mark Read</button>
-              <button class="btn btn-sm btn-danger">Remove</button>
-            </div>
-          </div>
-
-          <label><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo laudantium
-              obcaecati voluptatem, veniam tenetur amet non. Ea illum fugit quis</small></label>
-
-          <div class="d-flex bg-light-orange py-3">
-            <div class="col-sm"><small>xx/xx/xxx</small></div>
-            <div class="col-sm"><small>!st Name Last Name</small></div>
-            <div class="col-sm"><small>Unread</small></div>
-            <div class="col-sm"><small><span>&#128542;</span></small></div>
-            <div class="col-sm"><small><strong>Business Account</strong></small></div>
-            <div class="col-sm"> <button class="btn btn-sm btn-info">Mark Read</button>
-              <button class="btn btn-sm btn-danger">Remove</button>
-            </div>
-          </div>
-
-          <label><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo laudantium
-              obcaecati voluptatem, veniam tenetur amet non. Ea illum fugit quis</small></label>
-
-
-          <div class="d-flex bg-light-orange py-3">
-            <div class="col-sm"><small>xx/xx/xxx</small></div>
-            <div class="col-sm"><small>!st Name Last Name</small></div>
-            <div class="col-sm"><small>Unread</small></div>
-            <div class="col-sm"><small><span>&#128542;</span></small></div>
-            <div class="col-sm"><small><strong>Trainer</strong></small></div>
-            <div class="col-sm"> <button class="btn btn-sm btn-info">Mark Read</button>
-              <button class="btn btn-sm btn-danger">Remove</button>
-            </div>
-          </div>
-
-
-          <label><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo laudantium
-              obcaecati voluptatem, veniam tenetur amet non. Ea illum fugit quis</small></label>
-
         </div>
       </div><!-- Main Col END -->
     </div>
