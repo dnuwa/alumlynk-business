@@ -80,7 +80,8 @@
         <a href="customize-directory.html"
           class="bg-white list-group-item list-group-item-action text-dark flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
-            <button class="btn btn-sm px-4 active-tab text-white m-auto"><small><strong>Customize Directory</strong></small></button>
+            <button class="btn btn-sm px-4 active-tab text-white m-auto"><small><strong>Customize
+                  Directory</strong></small></button>
           </div>
         </a>
         <a href="business-information.html"
@@ -179,23 +180,14 @@
           </a>
         </div>
 
-        <a href="#submenu4" data-toggle="collapse" aria-expanded="false"
+        <a href="alumni-posts.html"
           class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-certificate fa-fw mr-3"></span>
-            <span class="menu-collapsed"><small>Marketing</small></span>
+            <span class="menu-collapsed"><small>Create a post</small></span>
             <span class="submenu-icon ml-auto"></span>
           </div>
         </a>
-        <!-- Submenu content -->
-        <div id='submenu4' class="collapse sidebar-submenu">
-          <a href="alumni-posts.html" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed"><small>> Posts</small></span>
-          </a>
-          <a href="push-notification.html" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed"><small>> Push Notifications</small></span>
-          </a>
-        </div>
         <a href="index.html" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-clipboard fa-fw mr-3"></span>
@@ -254,90 +246,99 @@
         </button>
       </div>
     </div>
-    <div class="d-flex flex-column right-container">
-      <div class="d-flex flex-column">
+    <div class="d-flex flex-wrap right-container">
+      <div class="d-flex flex-column col-lg-6 col-sm-12 p-0">
         <h5 class="card-header font-weight-light mb-3"><strong>Alum Directory Features</strong></h5>
         <div class="d-flex flex-wrap">
           <form class="col-sm">
             <div class="d-flex mb-3">
-              <div class="col-sm active-text font-sm"><strong>Features</strong></div>
-              <div class="col-sm active-text font-sm"><strong>View Feature</strong></div>
-              <div class="col-sm active-text font-sm"><strong>Select Feature</strong></div>
+              <h5 class="col-sm active-text font-sm"><strong>Features</strong></h5>
+              <h5 class="col-sm active-text font-sm"><strong>View Feature</strong></h5>
+              <h5 class="col-sm active-text font-sm"><strong>Select Feature</strong></h5>
             </div>
             <div class="d-flex">
               <div class="col-sm d-flex flex-column font-sm"><strong>Alumni Directory</strong>
                 <p class="active-text">Blah blah blah blah</p>
               </div>
-              <div class="col-sm"><button class="btn btn-sm active-tab px-4">View</button></div>
+              <div class="col-sm"><button class="btn btn-sm active-tab text-white px-4" onclick="showPreview(event)">View</button>
+              </div>
               <div class="col-sm">Included</div>
             </div>
             <div class="d-flex">
               <div class="col-sm d-flex flex-column font-sm"><strong>Alumni Network</strong>
                 <p class="active-text">Blah blah blah blah</p>
               </div>
-              <div class="col-sm"><button class="btn btn-sm active-tab px-4">View</button></div>
-              <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
+              <div class="col-sm"><button class="btn btn-sm active-tab text-white px-4" onclick="showPreview2(event)">View</button>
+              </div>
+              <div class="col-sm p-0"><input type="checkbox" name="" id="" style="zoom:2.0;" /></div>
             </div>
             <div class="d-flex">
               <div class="col-sm d-flex flex-column font-sm"><strong>School News Posts</strong>
                 <p class="active-text">Blah blah blah blah</p>
               </div>
-              <div class="col-sm"><button class="btn btn-sm active-tab px-4">View</button></div>
-              <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
+              <div class="col-sm"><button class="btn btn-sm active-tab text-white px-4" onclick="showPreview3(event)">View</button>
+              </div>
+              <div class="col-sm p-0"><input type="checkbox" name="" id="" style="zoom:2.0;" /></div>
             </div>
             <div class="d-flex">
               <div class="col-sm d-flex flex-column font-sm"><strong>Mentor Program</strong>
                 <p class="active-text">Blah blah blah blah</p>
               </div>
-              <div class="col-sm"><button class="btn btn-sm active-tab px-4">View</button></div>
-              <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
+              <div class="col-sm"><button class="btn btn-sm active-tab text-white px-4" onclick="showPreview4(event)">View</button>
+              </div>
+              <div class="col-sm p-0"><input type="checkbox" name="" id="" style="zoom:2.0;" /></div>
             </div>
           </form>
         </div>
-        <p class="mx-auto w-50 text-right mb-0"><strong>(xxx) Features Selected</strong></p>
+        <h5 class="ml-auto text-right mb-0 pr-4"><strong>(xxx) Features Selected</strong></h5>
         <hr>
-        <h5 class="card-header font-weight-light mb-3"><strong class="d-flex">Future Features</strong></h5>
+        <div class="card-header d-flex justify-content-between mb-3">
+          <h5 class="font-weight-light"><strong class="d-flex">Future Features</strong></h5>
+          <div>
+            <button class="btn btn-sm btn-danger px-4">Save</button>
+          </div>
+        </div>
         <div class="d-flex flex-wrap">
           <form class="col-sm">
             <div class="d-flex mb-3">
-              <div class="col-sm active-text font-sm"><strong>Features</strong></div>
-              <div class="col-sm active-text font-sm"><strong>View Feature</strong></div>
-              <div class="col-sm active-text font-sm"><strong>Interested</strong></div>
+              <h5 class="col-sm active-text font-sm"><strong>Features</strong></h5>
+              <h5 class="col-sm active-text font-sm"><strong>View Feature</strong></h5>
+              <h5 class="col-sm active-text font-sm"><strong>Interested</strong></h5>
             </div>
             <div class="d-flex">
               <div class="col-sm d-flex flex-column font-sm"><strong>Class Notes</strong>
                 <p class="active-text">Blah blah blah blah</p>
               </div>
               <div class="col-sm"><button class="btn btn-sm active-tab text-white px-4">View</button></div>
-              <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
+              <div class="col-sm p-0"><input type="checkbox" name="" id="" style="zoom:2.0;" /></div>
             </div>
             <div class="d-flex">
               <div class="col-sm d-flex flex-column font-sm"><strong>Alumni Events</strong>
                 <p class="active-text">Blah blah blah blah</p>
               </div>
               <div class="col-sm"><button class="btn btn-sm active-tab text-white px-4">View</button></div>
-              <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
+              <div class="col-sm p-0"><input type="checkbox" name="" id="" style="zoom:2.0;" /></div>
             </div>
             <div class="d-flex">
               <div class="col-sm d-flex flex-column font-sm"><strong>Re union info Page</strong>
                 <p class="active-text">Blah blah blah blah</p>
               </div>
               <div class="col-sm"><button class="btn btn-sm active-tab text-white px-4">View</button></div>
-              <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
+              <div class="col-sm p-0"><input type="checkbox" name="" id="" style="zoom:2.0;" /></div>
             </div>
             <div class="d-flex">
               <div class="col-sm d-flex flex-column font-sm"><strong>Shop Online</strong>
                 <p class="active-text">Blah blah blah blah</p>
               </div>
               <div class="col-sm"><button class="btn btn-sm active-tab text-white px-4">View</button></div>
-              <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
+              <div class="col-sm p-0"><input type="checkbox" name="" id="" style="zoom:2.0;" /></div>
             </div>
             <div class="d-flex">
               <div class="col-sm d-flex flex-column font-sm"><strong>Support School</strong>
                 <p class="active-text">Blah blah blah blah</p>
               </div>
               <div class="col-sm"><button class="btn btn-sm active-tab text-white px-4">View</button></div>
-              <div class="col-sm"><input type="checkbox" name="" id="" class="ml-5" /></div>
+              <div class="col-sm p-0"><input type="checkbox" name="" id="" style="zoom:2.0;" /></div>
             </div>
           </form>
         </div>
@@ -347,7 +348,47 @@
           <button class="btn btn-success px-4 r-20">Save</button>
         </div> -->
       </div>
-
+      <div class="col-lg-6 col-sm-12 position-relative preview d-none">
+        <div class="position-absolute p-2 text-center" onclick="closeElement()" id="close" style="width: 94%;">
+          <i class="fa fa-close position-absolute border rounded-circle p-1" style="right: 12px; top: 12px;"></i>
+          <p class="mb-0 bg-white border rounded p-4">With the alumn directory alumn can now easily find fellow alumni
+            to chat meet with. if you
+            also selected the alumni network page then the user tileswill show a connect button on the bottom. Onlywhen
+            the alumni accepts the connection request can the alum message or send a meeting request.</p>
+        </div>
+        <iframe src="https://distracted-shaw-d4a781.netlify.app/desktop/friends-page" height="100%" width="100%"
+          class="mx-auto border-0"></iframe>
+      </div>
+      <div class="col-lg-6 col-sm-12 position-relative preview-network d-none">
+        <div class="position-absolute p-2 text-center" onclick="closeElement()" id="close" style="width: 94%;">
+          <i class="fa fa-close position-absolute border rounded-circle p-1" style="right: 12px; top: 12px;"></i>
+          <p class="mb-0 bg-white border rounded p-4">With the alumni network page it only shows those alumni that have
+            accepted their or your connection requests. The alumn tiles will only show a message and meeting request
+            button on the bottom of each tile.</p>
+        </div>
+        <iframe src="https://distracted-shaw-d4a781.netlify.app/desktop/index" height="100%" width="100%"
+          class="mx-auto border-0"></iframe>
+      </div>
+      <div class="col-lg-6 col-sm-12 position-relative preview-posts d-none">
+        <div class="position-absolute p-2 text-center" onclick="closeElement()" id="close" style="width: 94%;">
+          <i class="fa fa-close position-absolute border rounded-circle p-1" style="right: 12px; top: 12px;"></i>
+          <p class="mb-0 bg-white border rounded p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Laudantium, quae quos ullam alias dolorem totam atque fuga reprehenderit tempora rerum exercitationem
+            delectus nisi facere quam soluta consectetur voluptates consequuntur tempore?</p>
+        </div>
+        <iframe src="https://distracted-shaw-d4a781.netlify.app/desktop/posts-page" height="100%" width="100%"
+          class="mx-auto border-0"></iframe>
+      </div>
+      <div class="col-lg-6 col-sm-12 position-relative preview-mentors d-none">
+        <div class="position-absolute p-2 text-center" onclick="closeElement()" id="close" style="width: 94%;">
+          <i class="fa fa-close position-absolute border rounded-circle p-1" style="right: 12px; top: 12px;"></i>
+          <p class="mb-0 bg-white border rounded p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            iusto illo maxime officia consectetur adipisci tenetur reprehenderit unde beatae itaque, veniam debitis
+            aspernatur? Doloremque ex ut assumenda nesciunt aliquid fugiat?</p>
+        </div>
+        <iframe src="https://distracted-shaw-d4a781.netlify.app/desktop/alumni-mentoring" height="100%" width="100%"
+          class="mx-auto border-0"></iframe>
+      </div>
     </div><!-- Main Col END -->
   </div>
   <!-- Optional JavaScript; choose one of the two! -->
@@ -359,8 +400,91 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./js/main-scripts.js"></script>
+  <script>
+    function showPreview(event) {
+      // Prevent the default action of the button
+      event.preventDefault();
+      const previewDiv = document.querySelector('.preview');
+
+      if (previewDiv) {
+        if (previewDiv.classList.contains('d-none')) {
+          previewDiv.classList.remove('d-none');
+        } else {
+          previewDiv.classList.add('d-none');
+        }
+      }
+    }
+
+    function showPreview2(event) {
+      // Prevent the default action of the button
+      event.preventDefault();
+      const previewDiv = document.querySelector('.preview-network');
+
+      if (previewDiv) {
+        if (previewDiv.classList.contains('d-none')) {
+          previewDiv.classList.remove('d-none');
+        } else {
+          previewDiv.classList.add('d-none');
+        }
+      }
+    }
+
+    function showPreview3(event) {
+      // Prevent the default action of the button
+      event.preventDefault();
+      const previewDiv = document.querySelector('.preview-posts');
+
+      if (previewDiv) {
+        if (previewDiv.classList.contains('d-none')) {
+          previewDiv.classList.remove('d-none');
+        } else {
+          previewDiv.classList.add('d-none');
+        }
+      }
+    }
+
+    function showPreview4(event) {
+      // Prevent the default action of the button
+      event.preventDefault();
+      const previewDiv = document.querySelector('.preview-mentors');
+
+      if (previewDiv) {
+        if (previewDiv.classList.contains('d-none')) {
+          previewDiv.classList.remove('d-none');
+        } else {
+          previewDiv.classList.add('d-none');
+        }
+      }
+    }
+  </script>
+
+  <script>
+    // Rename the function to avoid conflicts with window.close()
+    function closeElement() {
+      try {
+        // Use a more specific selector, assuming 'close' is an ID
+        var $closeElement = $('#close');
+
+        if ($closeElement.length) {
+          $closeElement.addClass('d-none');
+          console.log('Element hidden successfully');
+        } else {
+          console.warn('No element found with ID "close"');
+        }
+      } catch (error) {
+        console.error('An error occurred:', error);
+      }
+    }
+
+    // Example of how to call the function when a button is clicked
+    $(document).ready(function () {
+      $('#closeButton').on('click', function () {
+        closeElement();
+      });
+    });
+  </script>
 
 </body>
 
