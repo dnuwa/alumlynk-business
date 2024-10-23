@@ -128,7 +128,7 @@
           class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-cogs fa-fw mr-3"></span>
-            <span class="menu-collapsed"><small>Features</small></span>
+            <span class="menu-collapsed"><small>Alumni Website</small></span>
           </div>
         </a>
         <a href="alumni-messages.html"
@@ -212,7 +212,7 @@
           </div>
         </a> -->
 
-        <a href="#" class="bg-dark list-group-item list-group-item-action">
+        <a href="contact-us.html" class="bg-dark list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-envelope-o fa-fw mr-3"></span>
             <span class="menu-collapsed"><small>Contact Us</small></span>
@@ -220,7 +220,7 @@
         </a>
 
         <!-- /END Separator -->
-        <a href="#" class="bg-dark list-group-item list-group-item-action">
+        <a href="support.html" class="bg-dark list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-start align-items-center">
             <span class="fa fa-question-circle fa-fw mr-3"></span>
             <span class="menu-collapsed"><small>Support</small></span>
@@ -360,7 +360,7 @@
           class="mx-auto border-0"></iframe>
       </div>
       <div class="col-lg-6 col-sm-12 position-relative preview-network d-none">
-        <div class="position-absolute p-2 text-center" onclick="closeElement()" id="close" style="width: 94%;">
+        <div class="position-absolute p-2 text-center" onclick="closeElement1()" id="close1" style="width: 94%;">
           <i class="fa fa-close position-absolute border rounded-circle p-1" style="right: 12px; top: 12px;"></i>
           <p class="mb-0 bg-white border rounded p-4">With the alumni network page it only shows those alumni that have
             accepted their or your connection requests. The alumn tiles will only show a message and meeting request
@@ -370,7 +370,7 @@
           class="mx-auto border-0"></iframe>
       </div>
       <div class="col-lg-6 col-sm-12 position-relative preview-posts d-none">
-        <div class="position-absolute p-2 text-center" onclick="closeElement()" id="close" style="width: 94%;">
+        <div class="position-absolute p-2 text-center" onclick="closeElement2()" id="close2" style="width: 94%;">
           <i class="fa fa-close position-absolute border rounded-circle p-1" style="right: 12px; top: 12px;"></i>
           <p class="mb-0 bg-white border rounded p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Laudantium, quae quos ullam alias dolorem totam atque fuga reprehenderit tempora rerum exercitationem
@@ -380,7 +380,7 @@
           class="mx-auto border-0"></iframe>
       </div>
       <div class="col-lg-6 col-sm-12 position-relative preview-mentors d-none">
-        <div class="position-absolute p-2 text-center" onclick="closeElement()" id="close" style="width: 94%;">
+        <div class="position-absolute p-2 text-center" onclick="closeElement3()" id="close3" style="width: 94%;">
           <i class="fa fa-close position-absolute border rounded-circle p-1" style="right: 12px; top: 12px;"></i>
           <p class="mb-0 bg-white border rounded p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
             iusto illo maxime officia consectetur adipisci tenetur reprehenderit unde beatae itaque, veniam debitis
@@ -411,6 +411,9 @@
       if (previewDiv) {
         if (previewDiv.classList.contains('d-none')) {
           previewDiv.classList.remove('d-none');
+          $('.preview-network').addClass('d-none')
+          $('.preview-posts').addClass('d-none')
+          $('.preview-mentors').addClass('d-none')
         } else {
           previewDiv.classList.add('d-none');
         }
@@ -425,6 +428,9 @@
       if (previewDiv) {
         if (previewDiv.classList.contains('d-none')) {
           previewDiv.classList.remove('d-none');
+          $('.preview').addClass('d-none')
+          $('.preview-posts').addClass('d-none')
+          $('.preview-mentors').addClass('d-none')
         } else {
           previewDiv.classList.add('d-none');
         }
@@ -439,6 +445,9 @@
       if (previewDiv) {
         if (previewDiv.classList.contains('d-none')) {
           previewDiv.classList.remove('d-none');
+          $('.preview-network').addClass('d-none')
+          $('.preview').addClass('d-none')
+          $('.preview-mentors').addClass('d-none')
         } else {
           previewDiv.classList.add('d-none');
         }
@@ -453,6 +462,9 @@
       if (previewDiv) {
         if (previewDiv.classList.contains('d-none')) {
           previewDiv.classList.remove('d-none');
+          $('.preview-network').addClass('d-none')
+          $('.preview-posts').addClass('d-none')
+          $('.preview').addClass('d-none')
         } else {
           previewDiv.classList.add('d-none');
         }
@@ -461,29 +473,53 @@
   </script>
 
   <script>
-    // Rename the function to avoid conflicts with window.close()
     function closeElement() {
       try {
-        // Use a more specific selector, assuming 'close' is an ID
         var $closeElement = $('#close');
 
         if ($closeElement.length) {
           $closeElement.addClass('d-none');
-          console.log('Element hidden successfully');
-        } else {
-          console.warn('No element found with ID "close"');
         }
       } catch (error) {
         console.error('An error occurred:', error);
       }
     }
 
-    // Example of how to call the function when a button is clicked
-    $(document).ready(function () {
-      $('#closeButton').on('click', function () {
-        closeElement();
-      });
-    });
+    function closeElement1() {
+      try {
+        var $closeElement = $('#close1');
+
+        if ($closeElement.length) {
+          $closeElement.addClass('d-none');
+        }
+      } catch (error) {
+        console.error('An error occurred:', error);
+      }
+    }
+
+    function closeElement2() {
+      try {
+        var $closeElement = $('#close2');
+
+        if ($closeElement.length) {
+          $closeElement.addClass('d-none');
+        }
+      } catch (error) {
+        console.error('An error occurred:', error);
+      }
+    }
+
+    function closeElement3() {
+      try {
+        var $closeElement = $('#close3');
+
+        if ($closeElement.length) {
+          $closeElement.addClass('d-none');
+        }
+      } catch (error) {
+        console.error('An error occurred:', error);
+      }
+    }
   </script>
 
 </body>
