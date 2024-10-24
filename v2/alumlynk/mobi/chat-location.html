@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sport Social App</title>
+		<link rel="shortcut icon" href="../favicon.ico" />
+
+		<!--   CSS  -->
+		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="./font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+
+		<link rel="stylesheet" href="flags/build/css/intlTelInput.css" />
+		<link rel="stylesheet" href="flags/build/css/demo.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/g/jquery.owlcarousel@1.31(owl.carousel.css+owl.theme.css)"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+
+		<!--   JS   -->
+		<script src="./jquery/3.5.1/jquery.min.js"></script>
+		<script src="./popper/popper.min.js"></script>
+		<script src="./bootstrap/js/bootstrap.min.js"></script>
+
+		<script src="./js/modernizr.custom.js"></script>
+		<script src="./js/jquery.owlcarousel.js"></script>
+		<script src="data.js"></script>
+	</head>
+
+	<body>
+		<div class="wrapper gray-wrapper">
+			<div class="container full-container">
+				<div class="header">
+					<div id="gn-menu" class="gn-menu-main">
+						<div class="row ss-nav pad-0 mx-0">
+						  <!-- <div class="">
+											<li class="com-name login-logo"><span class="com-l com-l-index"><img src="images/logo.png" class="com-logo"></span></li>
+										</div> -->
+							<a href="my-posts.html">
+								<div class="nav-logo text-success">                
+									<img src="./images/ss-square-logo.jpg" />				
+								  </div>
+							</a>             
+						  
+						  <span class="top-nav-icon">
+							<a href="friends-search.html">
+							  <img
+								src="./images/svg000-search.svg"
+								height="25"
+								width="25"
+							  />
+							</a>
+						  </span>
+						  <span class="top-nav-icon">
+							<a href="calendar.html">
+							  <img
+								src="./images/svg000-calendar.svg"
+								height="25"
+								width="25"
+							  />
+							  <span class="counter-top-nav">0</span>
+							</a>
+						  </span>
+						  <span class="top-nav-icon">
+							<a href="chat-list-recent.html">
+							  <img
+								src="./images/svg000-message.svg"
+								height="25"
+								width="25"
+							  />
+							  <span class="counter-top-nav">0</span>
+							</a>
+						  </span>
+						  <span class="py-1 profile-dropdown" id="top-profile-drop">
+							<div id="secondarySideNav"></div>
+						  </span>
+						  <div class="nav-toggler">
+							<span
+							  data-toggle="toggle"
+							  data-target="#demo"
+							  class="gn-trigger sub-header-icon text-center"
+							  ><a href="javascript:void(0)" class="gn-burger"
+								><i class="fa fa-bars fs-30 text-center"></i></a
+							></span>
+							<div id="side-nav"></div>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="content c-home top-60">
+					<div class="intro">
+						<div class="row nmarg">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 npad">
+								<div class="toned-grey-bg px-3 py-1 d-flex">
+									<span
+										class="bg-light rounded-circle px-3 py-2"
+										onclick="window.history.go(-1); return false;"
+									>
+										<i class="fa fa-chevron-left"></i>
+									</span>
+									<span class="w-100 text-center">
+										<h2 class="my-0">Send Location</h2>
+									</span>
+								</div>
+
+								<div class="p-1">
+									<div class="mb-5">
+										<div class="my-3">
+											<input
+												type="text"
+												class="form-control"
+												placeholder="Search or enter an address"
+											/>
+										</div>
+										<div class="map-wrap">
+											<iframe
+												src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63836.10068192936!2d32.5992448!3d0.31948799999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sug!4v1555331880132!5m2!1sen!2sug"
+												frameborder="0"
+												style="border: 0"
+												allowfullscreen=""
+											></iframe>
+										</div>
+										<div class="m-2">
+											<div class="form-check w-100 d-flex">
+												<input
+													class="form-check-input"
+													type="radio"
+													name="flexRadioDefault"
+                                                    style="width: 20px;"
+												/>
+												<label class="form-check-label" for="flexRadioDefault1">
+													Share Live Location
+												</label>
+											</div>
+                                            <div class="m-2 ">
+                                                Nearby Places
+                                            </div>
+											<div class="form-check w-100">
+												<input
+													class="form-check-input"
+													type="radio"
+													name="flexRadioDefault"
+                                                    style="width: 20px;"
+													checked
+												/>
+												<label class="form-check-label" for="flexRadioDefault2">
+													Send your current location
+												</label>
+											</div>
+                                            <div class="form-check w-100">
+												<input
+													class="form-check-input"
+													type="radio"
+													name="flexRadioDefault"
+                                                    style="width: 20px;"
+												/>
+												<label class="form-check-label" for="flexRadioDefault2">
+													Location 1
+												</label>
+											</div>
+                                            <div class="form-check w-100">
+												<input
+													class="form-check-input"
+													type="radio"
+													name="flexRadioDefault"
+                                                    style="width: 20px;"
+												/>
+												<label class="form-check-label" for="flexRadioDefault2">
+													Location 2
+												</label>
+											</div>
+                                            <div class="form-check w-100">
+												<input
+													class="form-check-input"
+													type="radio"
+													name="flexRadioDefault"
+                                                    style="width: 20px;"
+												/>
+												<label class="form-check-label" for="flexRadioDefault2">
+													Location 3
+												</label>
+											</div>
+                                            <button class="btn btn-success w-100 my-1">SEND</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
+						</div>
+					</div>
+					<!-- /intro -->
+				</div>
+				<!-- /content -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /wrapper -->
+
+		<div>
+			<div class="sub-header bottom-0">
+				<div class="row nmarg ss-bottom-nav d-flex">
+					<div class="d-flex npad text-center">
+						<span class="sub-header-icon w-100">
+							<a href="contact-list-all.html">
+								<img src="./images/000-contact.svg" />
+							</a>
+						</span>
+					</div>
+					<div class="d-flex npad text-center">
+						<span class="sub-header-icon w-100">
+							<a href="chat-list-recent.html">
+								<img src="./images/000-chat.svg" />
+							</a>
+							<span class="counter">0</span>
+						</span>
+					</div>
+					<div class="d-flex npad text-center">
+						<span class="sub-header-icon w-100">
+							<a href="chat-group-list-all.html">
+								<img src="./images/000-group.svg" />
+							</a>
+							<span class="counter">0</span>
+						</span>
+					</div>
+					<div class="d-flex npad text-center">
+						<span class="sub-header-icon w-100">
+							<a href="chat-camera.html">
+								<img src="./images/000-camera.svg" />
+							</a>
+						</span>
+					</div>
+					<div class="d-flex npad text-center">
+						<span class="sub-header-icon w-100">
+							<a href="chat-location.html">
+								<img src="./images/000-location.svg" />
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/classie.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script src="js/general-friend-request.js"></script>
+		<script src="js/sports-social/statistics.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			$(".popover-dismiss").popover({
+				trigger: "focus",
+			});
+			$(function () {
+				$('[data-toggle="popover"]').popover();
+			});
+		</script>
+		<script>
+			// js for secondary navigation
+			$("[data-toggle='toggle']").click(function () {
+				var selector = $(this).data("target");
+				$(selector).toggleClass("in");
+			});
+
+			new gnMenu(document.getElementById("gn-menu"));
+		</script>
+	</body>
+</html>

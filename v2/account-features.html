@@ -353,7 +353,10 @@
           <button class="btn btn-success px-4 r-20">Save</button>
         </div>
       </div> -->
-
+      <div class="position-absolute p-1 text-center w-50 mt-5" onclick="closeElement()" id="close">
+        <i class="fa fa-close border-2 position-absolute rounded-circle p-1 bg-white" style="right: -2px; top: -4px;"></i>
+        <p class="mb-0 bg-white rounded p-1 border-2"><strong>All features added can be viewed here.</strong></p>
+      </div>
       <iframe src="https://distracted-shaw-d4a781.netlify.app/desktop/friends-page" height="100%" width="100%"
           class="mx-auto border-0"></iframe>
     </div><!-- Main Col END -->
@@ -369,6 +372,19 @@
     crossorigin="anonymous"></script>
 
   <script src="./js/main-scripts.js"></script>
+  <script>
+    function closeElement() {
+      try {
+        var $closeElement = $('#close');
+
+        if ($closeElement.length) {
+          $closeElement.addClass('d-none');
+        }
+      } catch (error) {
+        console.error('An error occurred:', error);
+      }
+    }
+  </script>
 
 </body>
 

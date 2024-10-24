@@ -1,0 +1,187 @@
+// asides
+
+
+
+/* sidebar styles */
+.sidebar{
+  width: 100%;
+
+  @include media-breakpoint-up(sm){
+    width: 50%;
+  }
+  @include media-breakpoint-up(lg){
+    width: 21.1%;
+  }
+
+  .twoColumns &{
+
+    @include media-breakpoint-up(sm){
+      width: 100%;
+    }
+    @include media-breakpoint-up(md){
+      width: 30%;
+    }
+    @include media-breakpoint-up(lg){
+      width: 21.1%;
+    }
+  }
+}
+
+/* asidebarAside styles */
+.asidebarAside{
+
+  @include media-breakpoint-up(sm){
+    width: 50%;
+  }
+  @include media-breakpoint-up(lg){
+    width: 15.5%;
+  }
+}
+
+/* joinAside styles */
+.joinAside{
+  padding-top: 0;
+  padding-bottom: 47px;
+  font-size: 20px;
+  line-height: 1.5;
+
+  @include media-breakpoint-up(lg){
+    padding-bottom: 82px;
+  }
+  @include media-breakpoint-up(xl){
+    padding-bottom: 132px;
+  }
+
+  h2, .h2{
+    color: $green;
+    margin: 0 0 5px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: (29/24);
+
+    @include media-breakpoint-up(md){
+      color: $black;
+      font-size: 30px;
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+    @include media-breakpoint-up(xl){
+      font-size: 36px;
+    }
+  }
+
+  .btnLarge{
+    font-size: 15px;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    min-width: 175px;
+  }
+
+  .btnMore{
+    max-width: 117px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(md){
+      max-width: none;
+      width: auto;
+      margin: 0;
+    }
+  }
+
+  p{
+    margin: 0 0 12px;
+  }
+}
+
+/* featuredIconsList styles */
+.featuredIconsList{
+  margin-bottom: 0;
+  display: flex;
+  flex-flow: row wrap;
+
+  > li{
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 33.333%;
+
+    @include media-breakpoint-up(xl){
+      min-width: 20%;
+    }
+
+    &.active{
+
+      > a{
+        color: $gray-700;
+      }
+
+      img{
+        opacity: 1;
+      }
+    }
+
+    > a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 125px;
+      color: rgba($gray-700, 0.5);
+      font-size: 14px;
+      line-height: (18/14);
+
+      @include media-breakpoint-up(md){
+        height: 160px;
+        font-size: 19px;
+        line-height: (21/19);
+      }
+      @include media-breakpoint-up(lg){
+        font-size: 24px;
+        line-height: (26/24);
+      }
+      @include media-breakpoint-up(xl){
+        height: 220px;
+      }
+
+      &:hover{
+        color: $gray-700;
+
+        img{
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .icnWrap{
+    margin-bottom: 16px;
+    height: 40px;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+  }
+}
+
+/* signupAside styles */
+.signupAside{
+  padding-top: 64px;
+  padding-bottom: 64px;
+  color: $gray-600;
+  font-size: 20px;
+  line-height: 1.5;
+
+  .btn{
+    min-width: 175px;
+    font-size: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  p{
+    margin: 0 0 24px;
+  }
+}

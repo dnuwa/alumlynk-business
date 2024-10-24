@@ -1,0 +1,131 @@
+// font icons
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('../fonts/icomoon.ttf?617l90') format('truetype'),
+    url('../fonts/icomoon.woff?617l90') format('woff'),
+    url('../fonts/icomoon.svg?617l90#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ico-"], [class*=" ico-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-mail2:before {
+  content: "\e91b";
+}
+.ico-warning:before {
+  content: "\e916";
+}
+.ico-calendar:before {
+  content: "\e90b";
+}
+.fa fa-bars:before {
+  content: "\e900";
+}
+.ico-dots-three-horizontal:before {
+  content: "\e901";
+}
+.ico-stop:before {
+  content: "\e920";
+}
+.ico-pause:before {
+  content: "\e921";
+}
+.ico-phone:before {
+  content: "\e91c";
+}
+.ico-clock:before {
+  content: "\e91d";
+}
+.ico-wifi:before {
+  content: "\e91e";
+}
+.ico-film-play:before {
+  content: "\e91a";
+}
+.ico-c-edit:before {
+  content: "\e918";
+}
+.ico-camera:before {
+  content: "\e917";
+}
+.ico-send:before {
+  content: "\e913";
+}
+.ico-share:before {
+  content: "\e910";
+}
+.ico-insert-comment:before {
+  content: "\e911";
+}
+.ico-like:before {
+  content: "\e912";
+}
+.ico-edit:before {
+  content: "\e90e";
+}
+.ico-up:before {
+  content: "\e903";
+}
+.ico-right:before {
+  content: "\e904";
+}
+.ico-left:before {
+  content: "\e905";
+}
+.ico-down:before {
+  content: "\e906";
+}
+.ico-user:before {
+  content: "\e907";
+}
+.ico-chat:before {
+  content: "\e908";
+}
+.ico-notifications:before {
+  content: "\e909";
+}
+.ico-plus:before {
+  content: "\e90f";
+}
+.ico-cross:before {
+  content: "\e90d";
+}
+.ico-tick:before {
+  content: "\e90c";
+}
+.ico-user-plus:before {
+  content: "\e90a";
+}
+.ico-search:before {
+  content: "\e902";
+}
+.ico-star:before {
+  content: "\e91f";
+}
+.ico-map-pin:before {
+  content: "\e919";
+}
+.ico-play:before {
+  content: "\ea1c";
+}
+.ico-facebook:before {
+  content: "\ea90";
+}
+.ico-lock:before {
+  content: "\e914";
+}
+.ico-mail:before {
+  content: "\e915";
+}

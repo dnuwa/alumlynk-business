@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Alumlynk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--   CSS  -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css2.css" />
+
+    <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="intelTelInput/js/intlTelInput.min.js"></script>
+
+    <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
+
+    <!--   JS   -->
+</head>
+
+<body>
+    <div class="navbar-inverse d-flex py-3 px-1">
+        <div class="d-flex school-name-wrapper">School name</div>
+        <div class="d-flex">
+            <a href="#" class="btn btn-default btn-arrow-right active">
+                Profile
+            </a>
+            <a href="#" class="btn btn-default btn-arrow-right text-secondary">
+                Profession
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="d-flex">
+        <div class="p-5">
+            <p class="text-center">
+                <strong> Confirm Your Current Contact Information </strong>
+            </p>
+            <div class="form-group py-3">
+                <label for=""><strong>Your Cell Number</strong></label>
+                <input class="form-control" type="tel" id="phone" placeholder="Cell number">
+            </div>
+
+            <div class="d-flex">
+                <a href="./signup-step-1.html" class="btn btn-sm btn-secondary w-100">Back</a>
+                <button class="btn btn-sm btn-info w-100" data-toggle="modal"
+                    data-target="#exampleModalCenter">Continue</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-radius-0">
+                <div class="modal-body p-3">
+                    <p class="text-center mb-0"><strong>Secure Your Account</strong></p>
+                    <p class="text-center"><strong>Phone Verification</strong></p>
+                    <p class="text-center line-height-16"><small>Averification code has been sent to further secure your
+                            account.
+                            Please copy it to the input box below</small></p>
+                    <input class="form-control p-2 mb-3" placeholder="Add your verifiction here">
+                    <p class="text-center line-height-16"><small>Your phone number will not be started with others.
+                            Message and data rates may apply.</small></p>
+                    <div class="d-flex mb-3 text-center justify-content-center"><button
+                            class="btn btn-sm btn-primary mr-1"><small>Verify
+                                Code</small></button><button class="btn btn-sm btn-danger mr-1"><small>Send New
+                                Code</small></button></div>
+                    <a class="btn btn-sm btn-success w-100 border-radius-0" href="./signup-step-3.html">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="intlTelInput//js/intlTelInput.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            // any initialisation options go here
+        });
+    </script>
+</body>
+
+</html>

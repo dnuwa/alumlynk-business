@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="intelTelInput/js/intlTelInput.min.js"></script>
+  <link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/page-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/css.css" />
+
+
+  <title>Alumlynk</title>
+  <style type="text/css">
+    .profileImgBgSmall {
+      background-image: url("./images/img04.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 78px;
+      display: flex;
+      position: relative;
+    }
+
+    .profileImgBgSmall>div {
+      position: absolute;
+      top: 8px;
+      display: flex;
+    }
+
+    .profileImgBgSmall div img {
+      border: 2px solid #fff;
+    }
+
+    .rounded-custom {
+      border-radius: 10px;
+    }
+
+    @media only screen and (max-width: 767px) {
+
+      .w-25 {
+        width: 33% !important;
+      }
+    }
+  </style>
+
+  <script>// Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      const uluru = { lat: -25.344, lng: 131.036 };
+      // The map, centered at Uluru
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4,
+        center: uluru,
+      });
+      // The marker, positioned at Uluru
+      const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <div class="fixed bg-white mb-5 bottom-shadow">
+    <div class="d-flex p-2 w-100 mb-2 justify-content-between">
+      <div class="d-flex">
+        <div class="p-1 tiny-m">
+          <div class="text-center logo-toggle">
+            <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+          </div>
+        </div>
+
+        <a href="#" class="text-success my-auto">
+          <img src="./images/preview-school-logo-free-vector-design.jpg" width="150" />
+        </a>
+      </div>
+      <div class="d-flex">
+        <div href="search-page.html" class="my-auto mr-2">
+          <i class="fa fa-search fa-sm text-center text-dark my-auto  bg-gray-light p-2 rounded-circle"  data-toggle="dropdown"></i>
+          <div class="dropdown-menu search-view-section px-2">
+            <input class="nosubmit" type="search" placeholder="Search...">
+            <div class="bg-light">
+              <a href="homeSportMyProfile-connected.html" class="text-dark text-decoration-none">
+                <div class="d-flex justify-content-between m-1 py-1">
+                  <div class="d-flex">
+                    <i class="fa fa-search mx-2"></i>
+                    <div class="">
+                      <p class="mb-0"><small>Mark <strong>Cuban</strong> .(City), (State)</small></p>
+                      <small>Connected</small>
+                    </div>
+                  </div>
+                  <img src="images/ss2.PNG" alt="" width="25" height="25" class="rounded-circle m-1">
+                </div>
+              </a>
+              <a href="homeSportMyProfile-notconnected.html" class="text-dark text-decoration-none">
+                <div class="d-flex justify-content-between m-1 py-1">
+                  <div class="d-flex">
+                    <i class="fa fa-search mx-2"></i>
+                    <div class="">
+                      <p class="mb-0"><small>Mark<strong>holley</strong> .(Business Name) (Title) (City),
+                          (State)</small></p>
+                      <small>Not Connected</small>
+                    </div>
+                  </div>
+                  <img src="images/ss6.PNG" alt="" width="25" height="25" class="rounded-circle m-1">
+                </div>
+              </a>
+              <a href="homeSportMyProfile-notconnected.html" class="text-dark text-decoration-none">
+                <div class="d-flex m-1 py-1">
+                  <i class="fa fa-search mx-2"></i>
+                  <div class="">
+                    <p class="mb-0"><small>Mark<strong>eting director</strong></small></p>
+                    <small>Not Connected</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="calendar.html" class="my-auto mr-2">
+          <i class="fa fa-calendar fa-sm text-center text-dark bg-gray-light p-2 rounded-circle"></i>
+        </a>
+        <div class="text-center my-auto position-relative bg-gray-light p-2 rounded-circle mr-2">
+          <a href="chat-list-recent.html" class="d-flex">
+            <i class="fa fa-bell fa-sm text-center text-dark my-auto"></i>
+          </a>
+          <span class="mb-0 icon-value position-absolute" style="left: 20px; top: -2px; font-size: 10px;">0</span>
+        </div>
+
+        <span class="text-center my-auto">
+          <div id="side-menu">
+            <i class="fa fa-gear fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+          </div>
+        </span>
+        <div id="overlay" class="overlay hidden" role="navigation">
+          <ul class="list-unstyled mb-0">
+        <li class="px-3 py-2 border-bottom fs-12 fw-500 mt-3">
+          <a href="my-profile.html" class="text-dark text-decoration-none">My Profile</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="invites-recieved.html" class="text-dark text-decoration-none">Meeting Invites Received (xx)</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="invites-sent.html" class="text-dark text-decoration-none">Meeting Invites Sent (xx)</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="chat-list-recent.html" class="text-dark text-decoration-none">New Messages (xx)</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="alumni-connection-requests.html" class="text-dark text-decoration-none">My Alumni Connections
+            (xx)</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="connection-requests-recieved.html" class="text-dark text-decoration-none">Connection Requests
+            Received (xx)</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="connection-requests-sent.html" class="text-dark text-decoration-none">Connection Requests Sent
+            (xx)</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="following.html" class="text-dark text-decoration-none">Following (xx)</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="followers.html" class="text-dark text-decoration-none">Followers (xx)</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <div class="d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion"
+            href="#ssboutusdesk">
+            <span class="my-auto">About Alumlynk</span>
+            <i class="fa fa-angle-down my-auto"></i>
+          </div>
+          <div id="ssboutusdesk" class="panel-collapse collapse mt-2">
+            <div class="px-2 py-0 ourmissiondesk"><a href="#" class="text-secondary">Our Mission</a></div>
+            <div class="px-2 py-0 communitydesk"><a href="#" class="text-secondary">Our Community</a></div>
+            <div class="px-2 py-0 codeofconductdesk"><a href="#" class="text-secondary">Code Of Conduct</a></div>
+            <div class="px-2 py-0 ourteamdesk"><a href="#" class="text-secondary">Our Team</a></div>
+            <div class="px-2 py-0 verifiedusers"><a href="#" class="text-secondary">Verified User</a></div>
+          </div>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <div class="d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion"
+            href="#accountsettingsdesk">
+            <span class="my-auto">Account Settings</span>
+            <i class="fa fa-angle-down my-auto"></i>
+          </div>
+          <div id="accountsettingsdesk" class="panel-collapse collapse mt-2">
+            <div class="px-2 py-0 deskaccountaccess"><a href="#" class="text-secondary">Edit Profile</a></div>
+            <div class="px-2 py-0 deskaccountpass"><a href="#" class="text-secondary">Account Access</a></div>
+            <div class="px-2 py-0 notificationsdesk"><a href="#" class="text-secondary">Notification</a></div>
+            <div class="px-2 py-0 languagedesk"><a href="#" class="text-secondary">Language and Format</a></div>
+            <div class="px-2 py-0 locationdesk"><a href="#" class="text-secondary">Location</a></div>
+            <div class="px-2 py-0 dsktermsandconditions"><a href="#" class="text-secondary">User Terms and Conditions</a></div>
+            <div class="px-2 py-0 privacypolicy"><a href="#" class="text-secondary">Privacy Policy</a></div>
+          </div>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <div class="d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion"
+            href="#contactusdeskcollapse">
+            <span class="my-auto">Contact Us</span>
+            <i class="fa fa-angle-down my-auto"></i>
+          </div>
+          <div id="contactusdeskcollapse" class="panel-collapse collapse mt-2">
+            <div class="px-2 py-0 feedbackdesk"><a href="#" class="text-secondary">Give Us Your Feedback</a></div>
+            <div class="px-2 py-0 reportproblemdesk"><a href="#" class="text-secondary">Report a Feature Problem</a></div>
+            <div class="px-2 py-0 reportspamdesk"><a href="#" class="text-secondary">Report Spam & Abuse</a></div>
+            <div class="px-2 py-0 businesspartnershipsdesk"><a href="#" class="text-secondary">Business Partnerships</a></div>
+            <div class="px-2 py-0 emailusdesk"><a href="#" class="text-secondary">Email Us</a></div>
+            <div class="px-2 py-0 careeropportunitydesk"><a href="#" class="text-secondary">Career Oppotunities</a></div>
+          </div>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">Sign Out</li>
+      </ul>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex bg-blue text-white justify-content-between pl-2 mx-1" style="border-radius: 8px 8px 0 0;">
+      <div class="w-75 my-auto"><strong>(School Name) Alumni Mentors</strong></div>
+      <div class="d-flex">
+        <button class="btn btn-sm btn-light border-0 m-1" data-toggle="modal" data-target="#location">
+          <i class="fa fa-map-marker fa-2x text-center text-blue"></i>
+        </button>
+        <a class="btn m-1 border-0" style="background-color: #6C757D4A;" href="search-page.html">
+          <i class="fa fa-search fa-lg text-center text-white my-auto"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sibar-left">
+      <div class="d-flex flex-column px-2">
+        <ul class="list-unstyled px-2 w-100 br-5 mb-1">
+          <li class="lg-font">
+            <a href="friends-page.html" class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+              <span>Alumni Directory</span> <span class="ml-auto">(xxx)</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+            <span class="text-blue">My Alumni Network</span><span class="ml-auto">(xxx)</span>
+          </li>
+          <li class="fs-14">
+            <a href="connection-requests-recieved.html" class="text-decoration-none d-flex text-dark">
+              <span>Connection Requests</span><span class="ml-auto">(xxx)</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+            <span class=" text-blue">Meetings</span><span>(xxx)</span>
+          </li>
+          <li class="fs-14"><a href="meetings.html" class="text-decoration-none text-dark d-flex"><span>Meeting
+                Invites</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="meeting-requests.html"
+              class="text-decoration-none text-dark d-flex"><span>Meeting Requests</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+            <span class="text-blue">Alumni Mentors</span><span>(xxx)</span>
+          </li>
+          <li class="fs-14"><a href="meeting-requests.html"
+              class="text-decoration-none text-dark d-flex"><span>Meeting Requests</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+            Alum Center
+          </li>
+          <li class="fs-14"><a href="alumni-events.html" class="text-decoration-none text-dark d-flex"><span>Alumni
+                Events</span> <span class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="class-notes.html" class="text-decoration-none text-dark d-flex"><span>Class
+                Notes</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14">
+            Reunion Information
+          </li>
+          <li class="fs-14"><a href="shop-swag.html" class="text-decoration-none text-dark">Shop for Swag</a></li>
+          <li class="fs-14"><a href="support.html" class="text-decoration-none text-dark">Support (School Name)</a>
+          </li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+            View
+          </li>
+          <li class="fs-14"><a href="my-profile.html" class="text-decoration-none text-dark">My Profile</a></li>
+          <li class="fs-14"><a href="chat-list-recent.html"
+              class="text-decoration-none text-dark d-flex"><span>Alum Messages</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="posts-page.html" class="text-decoration-none text-dark d-flex"><span>My
+                Posts</span> <span class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="bookmarks.html" class="text-decoration-none text-dark d-flex"><span>My
+                Bookmarks</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+  <div class="text-center mx-1" style="padding-top: 120px;">
+    <p class="mb-0">
+      <strong>
+        Recent Alumni & (School Name)
+      </strong>
+    </p>
+    <p class="mb-0">
+      <strong>
+        Students Get Free, Experienced Advice
+      </strong>
+    </p>
+    <p class="">
+      <strong>
+        From Alumni in Your Field of Interest
+      </strong>
+    </p>
+
+    <div class="bg-gray-light mobi">
+      <h5 class="bg-black text-white py-3">
+        <strong>
+          Select your interests
+        </strong>
+      </h5>
+      <div class="">
+        <div class="mb-3 py-2 px-4 by-light">
+          <div class="d-flex p-0 mb-2">
+            <div class="bg-white br-5 mr-2 w-25 py-2">
+              <img src="images/grad-cap.svg" alt="">
+            </div>
+            <div class="w-75 my-auto">
+              <button class="btn text-white bg-dark w-100 py-2 acc-btn"><strong>Academic
+                  Pursuits</strong></button>
+            </div>
+          </div>
+          <div class="d-flex p-0 mb-2">
+            <div class="bg-white br-5 mr-2 w-25 py-2">
+              <img src="images/walk.svg" alt="">
+            </div>
+            <div class="w-75 my-auto">
+              <button class="btn text-white bg-dark w-100 py-2 car-btn"><strong>Career
+                  Pursuits</strong></button>
+            </div>
+          </div>
+          <div class="d-flex p-0 mb-2">
+            <div class="bg-white br-5 mr-2 w-25 py-2">
+              <img src="images/rocket.svg" alt="">
+            </div>
+            <div class="w-75 my-auto">
+              <button class="btn text-white bg-dark w-100 py-2 strtup-btn"><strong>Start Up
+                  Pursuits</strong></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-filters-acc-btn py-2 my-2 d-none" style="background-color: #F8F9FA;">
+          <!-- <p class="mx-auto my-2" style="font-size: 26px;">
+            <strong>Select Your Specific Interests </strong>
+          </p> -->
+          <div class="d-flex flex-wrap pt-2 bg-white">
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Academic area</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Academic area</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Academic area">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Academic area</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Academic area 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Academic area 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Academic area 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Academic area 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Degree Level</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Degree Level</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Degree Level">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Degree Level</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Level 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Level 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Level 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Level 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Degree Date</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Degree Date</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Degree Date">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Degree Date</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Date 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Date 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Date 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Date 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Institution</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Institution</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Institution">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Institution</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Institution 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Institution 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Institution 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Institution 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Department</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Department</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Department">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Department</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Department 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Department 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Department 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Department 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Job Title</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Job Title</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Job Title">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Job Title</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Job Title 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Job Title 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Job Title 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Job Title 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Country</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Country</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Country">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Country</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Country 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Country 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Country 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Country 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">State</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>State</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter State">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select State</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>State 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>State 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>State 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>State 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">City</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>City</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter City">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select City</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>City 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>City 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>City 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>City 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Business Sector</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Business Sector</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Business Sector">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Business Sector</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Sector 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Sector 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Sector 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Sector 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Industry</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Industry</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Industry">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Industry</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Industry 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Industry 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Industry 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Industry 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Class Year</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Class Year</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Class Year">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Class Year</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Class Year 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Class Year 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Class Year 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Class Year 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Degree Match</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Degree Match</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Degree Match">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Degree Match</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Match 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Match 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Match 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Match 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-2 mb-5">
+            <button class="btn active-tab w-100 mx-auto my-2 search-btn" style="border-radius: 5px;">Search</button>
+          </div>
+        </div>
+
+        <div class="search-filters-car-btn py-2 my-2 d-none" style="background-color: #F8F9FA;">
+          <!-- <p class="mx-auto my-2" style="font-size: 26px;">
+            <strong>Select Your Specific Interests </strong>
+          </p> -->
+          <div class="d-flex flex-wrap pt-2 bg-white">
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Business Type</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Business Type</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Business Type">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Business Type</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>None Profit</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>For Profit</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Government</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Business Sector</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Business Sector</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Business Sector">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Business Sector</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Sector 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Sector 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Sector 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Sector 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Industry</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Industry</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Industry">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Industry</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Industry 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Industry 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Industry 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Industry 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Country</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Country</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Country">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Country</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Country 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Country 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Country 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Country 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">State</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>State</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter State">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select State</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>State 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>State 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>State 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>State 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">City</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>City</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter City">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select City</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>City 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>City 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>City 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>City 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Business Name</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Business Name</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Business Name">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Business Name</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Name 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Name 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Name 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Name 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Department</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Department</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Department">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Department</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Department 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Department 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Department 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Department 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Job Title</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Job Title</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Job Title">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Job Title</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Job Title 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Job Title 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Job Title 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Job Title 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Degree Type</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Degree Type</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Degree Type">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Degree Type</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Type 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Type 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Type 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Type 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Degree Level</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Degree Level</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Degree Level">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Degree Level</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Level 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Level 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Level 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Level 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Class Year</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Class Year</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Class Year">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Class Year</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Class Year 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Class Year 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Class Year 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Class Year 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-2 mb-5">
+            <button class="btn active-tab w-100 mx-auto my-2 search-btn" style="border-radius: 5px;">Search</button>
+          </div>
+        </div>
+
+        <div class="search-filters-strtup-btn py-2 my-2 d-none" style="background-color: #F8F9FA;">
+          <!-- <p class="mx-auto my-2" style="font-size: 26px;">
+            <strong>Select Your Specific Interests </strong>
+          </p> -->
+          <div class="d-flex flex-wrap pt-2 bg-white">
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Business Type</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Business Type</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Business Type">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Business Type</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>None Profit</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>For Profit</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Government</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Business Sector</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Business Sector</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Business Sector">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Business Sector</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Sector 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Sector 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Sector 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Sector 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Class Year</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Class Year</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Class Year">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Class Year</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Class Year 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Class Year 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Class Year 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Class Year 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Job Title</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Job Title</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Job Title">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Job Title</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Job Title 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Job Title 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Job Title 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Job Title 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Department</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Department</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Department">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Department</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Department 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Department 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Department 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Department 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Business Type</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Business Type</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Business Type">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Business Type</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Type 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Type 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Type 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Type 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Funding Type</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Funding Type</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Funding Type">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Funding Type</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Funding Type 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Funding Type 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Funding Type 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Funding Type 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Startup Year</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Startup Year</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Startup Year">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Startup Year</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Startup Year 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Startup Year 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Startup Year 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Startup Year 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Degree Match</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Degree Match</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Degree Match">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Degree Match</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Match 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Match 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Match 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Degree Match 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Class Year</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Class Year</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Class Year">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Class Year</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Class Year 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Class Year 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Class Year 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Class Year 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 w-25">
+              <div class="form-control p-0">
+                <div class="drop">
+                  <button type="button"
+                    class="btn bg-white text-secondary w-100 text-left d-flex justify-content-between"
+                    style="font-size: 13px;" data-toggle="dropdown">
+                    <span class="mr-1" id="list-by">Business Loc..</span>
+                    <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                  </button>
+                  <div class="dropdown-menu p-0 right">
+                    <ul class="px-0 inviteTypeOptions mb-0">
+                      <li class="dropdown-item px-2 flex flex-column">
+                        <p class="mb-0 text-primary"><small>Business Location</small></p>
+                        <input type="text" class="form-control-sm border" placeholder="Enter Business Location">
+                      </li>
+                      <li class="dropdown-item px-2 text-primary bg-light">
+                        <small>Select Business Location</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Location 1</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Location 2</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Location 3</small>
+                      </li>
+                      <li class="dropdown-item px-2 py-0">
+                        <input type="checkbox">
+                        <small>Business Location 4</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-2 mb-5">
+            <button class="btn active-tab w-100 mx-auto my-2 search-btn" style="border-radius: 5px;">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="d-flex justify-content-between mt-3 px-3">
+            <p class="my-auto">
+                <strong>Alumni Become a Mentor</strong>
+            </p>
+            <a href="./alumni-mentoring-step2.html" class="btn btn-sm btn-success w-25">Join</a>
+        </div> -->
+  </div>
+
+  <div class="fixed-bottom border-top">
+    <div class="d-flex bg-white tinypb-1">
+      <div class="col-sm p-1 tiny-m border">
+        <a href="friends-page.html" class="text-dark font-weight-bold">
+          <div class="text-center">
+            <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
+          </div>
+          <p class="xm-font text-center mb-0">Alumni</p>
+        </a>
+      </div>
+      <div class="col-sm p-1 tiny-m border">
+        <a href="index.html" class="text-dark font-weight-bold text-success">
+          <div class="text-center">
+            <img src="./images/svg000-friends.svg" width="30" class="my-auto" />
+          </div>
+          <p class="xm-font text-center mb-0">Network</p>
+        </a>
+      </div>
+      <div class="col-sm p-1 tiny-m">
+        <a href="posts-page.html" class="text-dark font-weight-bold text-center">
+          <div class="text-center">
+            <img src="./images/svg000-home.svg" width="30" class="my-auto" />
+          </div>
+          <p class="xm-font text-center mb-0">Posts</p>
+        </a>
+      </div>
+      <div class="col-sm p-1 tiny-m border active-tab">
+        <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
+          <div class="text-center">
+            <img src="./images/svg000-sport-coach-white.svg" width="30" class="my-auto" />
+          </div>
+          <p class="xm-font text-center mb-0 text-white">Members</p>
+        </a>
+      </div>
+      <div class="col-sm p-1 tiny-m border">
+        <a href="./chat-list-recent.html" class="text-dark font-weight-bold">
+          <div class="text-center">
+            <img src="./images/000msg-icon.svg" class="my-auto" />
+            <div class="icon-value-footer"><small><strong>0</strong></small></div>
+          </div>
+          <p class="xm-font text-center mb-0">Messages</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <!-- add an api key to the link -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="./js/actions.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(document).on("change", ".gfield_select", function () {
+        $(".select-search-btn").addClass('btn-success').removeClass('btn-secondary')
+      });
+    });
+  </script>
+
+  <script>
+    $('#side-menu').click(function () {
+      $('.overlay').toggleClass('hidden');
+    });
+  </script>
+  <script>
+    $('.search-btn').click(function () {
+      $('.search-results').removeClass('d-none').addClass('d-block')
+      $('.search-btn').html("Results (xxx)")
+      $('.mentor-desc').removeClass('d-flex').addClass('d-none')
+    });
+
+    // acc-btn
+    $('.acc-btn').click(function () {
+      $('.search-filters-acc-btn').removeClass('d-none').addClass('d-block')
+      $('.search-filters-car-btn').addClass('d-none').removeClass('d-block')
+      $('.search-filters-strtup-btn').addClass('d-none').removeClass('d-block')
+      $('.acc-btn').removeClass('bg-dark').addClass('active-tab')
+      $('.car-btn').addClass('bg-dark').removeClass('active-tab')
+      $('.strtup-btn').addClass('bg-dark').removeClass('active-tab')
+    });
+
+    $('.car-btn').click(function () {
+      $('.search-filters-car-btn').removeClass('d-none').addClass('d-block')
+      $('.search-filters-acc-btn').addClass('d-none').removeClass('d-block')
+      $('.search-filters-strtup-btn').addClass('d-none').removeClass('d-block')
+      $('.car-btn').removeClass('bg-dark').addClass('active-tab')
+      $('.acc-btn').addClass('bg-dark').removeClass('active-tab')
+      $('.strtup-btn').addClass('bg-dark').removeClass('active-tab')
+    });
+
+    $('.strtup-btn').click(function () {
+      $('.search-filters-strtup-btn').removeClass('d-none').addClass('d-block')
+      $('.search-filters-car-btn').addClass('d-none').removeClass('d-block')
+      $('.search-filters-acc-btn').addClass('d-none').removeClass('d-block')
+      $('.strtup-btn').removeClass('bg-dark').addClass('active-tab')
+      $('.acc-btn').addClass('bg-dark').removeClass('active-tab')
+      $('.car-btn').addClass('bg-dark').removeClass('active-tab')
+    });
+
+    $('.send-request-btn').click(
+      function () {
+        $('.request-btn').removeClass('btn-connect-outline').addClass('btn-secondary')
+        $('.request-btn').html('Meeting Requested')
+      });
+  </script>
+</body>
+
+</html>

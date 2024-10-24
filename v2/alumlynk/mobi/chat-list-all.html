@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sport Social App</title>
+	<link rel="shortcut icon" href="../favicon.ico" />
+
+	<!--   CSS  -->
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.min.css" />
+
+	<link rel="stylesheet" href="flags/build/css/intlTelInput.css" />
+	<link rel="stylesheet" href="flags/build/css/demo.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/g/jquery.owlcarousel@1.31(owl.carousel.css+owl.theme.css)" />
+	<link rel="stylesheet" type="text/css" href="css/css.css" />
+	<link rel="stylesheet" href="./css/page-styles.css">
+
+	<!--   JS   -->
+	<script src="./jquery/3.5.1/jquery.min.js"></script>
+	<script src="./popper/popper.min.js"></script>
+	<script src="./bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="./js/modernizr.custom.js"></script>
+	<script src="./js/jquery.owlcarousel.js"></script>
+	<script src="data.js"></script>
+</head>
+
+<body>
+	<div class="wrapper gray-wrapper">
+		<div class="container full-container">
+			<div class="header">
+				<div id="gn-menu" class="gn-menu-main">
+					<div class="row ss-nav pad-0 mx-0">
+						<!-- <div class="">
+											<li class="com-name login-logo"><span class="com-l com-l-index"><img src="images/logo.png" class="com-logo"></span></li>
+										</div> -->
+						<a href="my-posts.html">
+							<div class="nav-logo text-success">
+								<img src="./images/ss-square-logo.jpg" />
+							</div>
+						</a>
+
+						<span class="top-nav-icon">
+							<a href="friends-search.html">
+								<img src="./images/svg000-search.svg" height="25" width="25" />
+							</a>
+						</span>
+						<span class="top-nav-icon">
+							<a href="calendar.html">
+								<img src="./images/svg000-calendar.svg" height="25" width="25" />
+								<span class="counter-top-nav">0</span>
+							</a>
+						</span>
+						<span class="top-nav-icon">
+							<a href="chat-list-recent.html">
+								<img src="./images/svg000-message.svg" height="25" width="25" />
+								<span class="counter-top-nav">0</span>
+							</a>
+						</span>
+						<span class="py-1 profile-dropdown" id="top-profile-drop">
+							<div id="secondarySideNav"></div>
+						</span>
+						<div class="nav-toggler">
+							<span data-toggle="toggle" data-target="#demo"
+								class="gn-trigger sub-header-icon text-center"><a href="javascript:void(0)"
+									class="gn-burger"><i class="fa fa-bars fs-30 text-center"></i></a></span>
+							<div id="side-nav"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content c-home top-60">
+				<div class="intro">
+					<div class="row nmarg">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 npad">
+							<div class="toned-grey-bg px-3 py-1 d-flex">
+								<span class="bg-light rounded-circle px-3 py-2"
+									onclick="window.history.go(-1); return false;">
+									<i class="fa fa-chevron-left"></i>
+								</span>
+								<span class="w-100 text-center">
+									<h2 class="my-0">Chats</h2>
+								</span>
+							</div>
+
+							<div class="p-1">
+								<div class="mb-5" id="my-friends">
+									<a href="chat-inbox.html" class="d-flex bg-light border my-1 text-dark">
+										<span class="p-2">
+											<img class="rounded-circle" width="60" height="60"
+												src="./images/img23.jpg" />
+										</span>
+										<span class="p-2">
+											<p class="my-1">
+												<strong>{1st name, last name}</strong>
+											</p>
+											<p class="my-1">
+												<small>{Last Previous message}</small>
+											</p>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
+					</div>
+				</div>
+				<!-- /intro -->
+			</div>
+			<!-- /content -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /wrapper -->
+
+	<div class="fixed-bottom border-top">
+		<div class="sub-header">
+			<div class="row nmarg ss-bottom-nav d-flex">
+				<div class="d-flex npad text-center">
+					<span class="sub-header-icon w-100">
+						<a href="contact-list-all.html">
+							<img src="./images/000-contact.svg" />
+						</a>
+					</span>
+				</div>
+				<div class="d-flex npad text-center">
+					<span class="sub-header-icon w-100">
+						<a href="chat-list-recent.html">
+							<img src="./images/000-chat.svg" />
+						</a>
+						<span class="counter">0</span>
+					</span>
+				</div>
+				<div class="d-flex npad text-center">
+					<span class="sub-header-icon w-100">
+						<a href="chat-group-list-all.html">
+							<img src="./images/000-group.svg" />
+						</a>
+						<span class="counter">0</span>
+					</span>
+				</div>
+				<div class="d-flex npad text-center">
+					<span class="sub-header-icon w-100">
+						<a href="chat-camera.html">
+							<img src="./images/000-camera.svg" />
+						</a>
+					</span>
+				</div>
+				<div class="d-flex npad text-center">
+					<span class="sub-header-icon w-100">
+						<a href="chat-location.html">
+							<img src="./images/000-location.svg" />
+						</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="d-flex bg-white tinypb-1">
+			<div class="col-sm p-1 tiny-m border">
+				<a href="friends-page.html" class="text-dark font-weight-bold">
+					<div class="text-center">
+						<img src="./images/svg000-connect.svg" width="30" class="my-auto" />
+					</div>
+					<p class="xm-font text-center mb-0">Alumni</p>
+				</a>
+			</div>
+			<div class="col-sm p-1 tiny-m border border">
+				<a href="index.html" class="text-dark font-weight-bold text-success">
+					<div class="text-center">
+						<img src="./images/svg000-friends.svg" width="30" class="my-auto" />
+					</div>
+					<p class="xm-font text-center mb-0">Network</p>
+				</a>
+			</div>
+			<div class="col-sm p-1 tiny-m">
+				<a href="posts-page.html" class="text-dark font-weight-bold text-center">
+					<div class="text-center">
+						<img src="./images/svg000-home.svg" width="30" class="my-auto" />
+					</div>
+					<p class="xm-font text-center mb-0">Posts</p>
+				</a>
+			</div>
+			<div class="col-sm p-1 tiny-m border">
+				<a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
+					<div class="text-center">
+						<img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
+					</div>
+					<p class="xm-font text-center mb-0">Mentors</p>
+				</a>
+			</div>
+			<div class="col-sm p-1 tiny-m border active-tab">
+				<a href="#" class="text-dark font-weight-bold">
+					<div class="text-center">
+						<img src="./images/svg000-messages-blue.svg
+								  " width="30" class="my-auto" />
+						<div class="icon-value-footer"><small><strong>0</strong></small></div>
+					</div>
+					<p class="xm-font text-center mb-0 text-white">Messages</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/classie.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/gnmenu.js"></script>
+	<script src="js/general-friend-request.js"></script>
+	<script src="js/sports-social/statistics.js"></script>
+	<script src="js/main.js"></script>
+	<!-- <script src="js/message.js"></script> -->
+	<script>
+		$(".popover-dismiss").popover({
+			trigger: "focus",
+		});
+		$(function () {
+			$('[data-toggle="popover"]').popover();
+		});
+	</script>
+	<script>
+		// js for secondary navigation
+		$("[data-toggle='toggle']").click(function () {
+			var selector = $(this).data("target");
+			$(selector).toggleClass("in");
+		});
+
+		new gnMenu(document.getElementById("gn-menu"));
+	</script>
+</body>
+
+</html>

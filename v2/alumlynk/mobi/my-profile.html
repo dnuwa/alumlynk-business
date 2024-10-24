@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sport Social App</title>
+  <link rel="shortcut icon" href="../favicon.ico" />
+
+
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="flags/build/css/intlTelInput.css" />
+  <!-- <link rel="stylesheet" href="flags/build/css/demo.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/g/jquery.owlcarousel@1.31(owl.carousel.css+owl.theme.css)" /> -->
+  <link rel="stylesheet" type="text/css" href="css/css.css" />
+  <link rel="stylesheet" href="./css/page-styles.css">
+
+  <script src="./jquery/3.5.1/jquery.min.js"></script>
+  <script src="./popper/popper.min.js"></script>
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- <script src="./js/modernizr.custom.js"></script>
+  <script src="./js/jquery.owlcarousel.js"></script>
+  <script src="data.js"></script> -->
+</head>
+
+<body>
+  <div class="fixed-top bg-white mb-5 bottom-shadow">
+    <div class="d-flex p-2 w-100 mb-2 justify-content-between">
+      <div class="d-flex">
+        <div class="p-1 tiny-m">
+          <div class="text-center logo-toggle">
+            <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+          </div>
+        </div>
+
+        <a href="#" class="text-success my-auto">
+          <img src="./images/preview-school-logo-free-vector-design.jpg" width="150" />
+        </a>
+      </div>
+      <div class="d-flex">
+        <div href="search-page.html" class="my-auto mr-2">
+          <i class="fa fa-search fa-sm text-center text-dark my-auto  bg-gray-light p-2 rounded-circle"
+            data-toggle="dropdown"></i>
+          <div class="dropdown-menu search-view-section px-2">
+            <input class="nosubmit" type="search" placeholder="Search...">
+            <div class="bg-light">
+              <a href="homeSportMyProfile-connected.html" class="text-dark text-decoration-none">
+                <div class="d-flex justify-content-between m-1 py-1">
+                  <div class="d-flex">
+                    <i class="fa fa-search mx-2"></i>
+                    <div class="">
+                      <p class="mb-0"><small>Mark <strong>Cuban</strong> .(City), (State)</small>
+                      </p>
+                      <small>Connected</small>
+                    </div>
+                  </div>
+                  <img src="images/ss2.PNG" alt="" width="25" height="25" class="rounded-circle m-1">
+                </div>
+              </a>
+              <a href="homeSportMyProfile-notconnected.html" class="text-dark text-decoration-none">
+                <div class="d-flex justify-content-between m-1 py-1">
+                  <div class="d-flex">
+                    <i class="fa fa-search mx-2"></i>
+                    <div class="">
+                      <p class="mb-0"><small>Mark<strong>holley</strong> .(Business Name) (Title)
+                          (City),
+                          (State)</small></p>
+                      <small>Not Connected</small>
+                    </div>
+                  </div>
+                  <img src="images/ss6.PNG" alt="" width="25" height="25" class="rounded-circle m-1">
+                </div>
+              </a>
+              <a href="homeSportMyProfile-notconnected.html" class="text-dark text-decoration-none">
+                <div class="d-flex m-1 py-1">
+                  <i class="fa fa-search mx-2"></i>
+                  <div class="">
+                    <p class="mb-0"><small>Mark<strong>eting director</strong></small></p>
+                    <small>Not Connected</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="calendar.html" class="my-auto mr-2">
+          <i class="fa fa-calendar fa-sm text-center text-dark bg-gray-light p-2 rounded-circle"></i>
+        </a>
+        <div class="text-center my-auto position-relative bg-gray-light p-2 rounded-circle mr-2">
+          <a href="chat-list-recent.html" class="d-flex">
+            <i class="fa fa-bell fa-sm text-center text-dark my-auto"></i>
+          </a>
+          <span class="mb-0 icon-value position-absolute" style="left: 20px; top: -2px; font-size: 10px;">0</span>
+        </div>
+
+        <span class="text-center my-auto">
+          <div id="side-menu">
+            <i class="fa fa-gear fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+          </div>
+        </span>
+        <div id="overlay" class="overlay hidden" role="navigation">
+          <ul class="list-unstyled mb-0">
+            <li class="px-3 py-2 border-bottom fs-12 fw-500 mt-3">
+              <a href="my-profile.html" class="text-dark text-decoration-none">My Profile</a>
+            </li>
+            <li class="px-3 py-2 border-bottom fs-12 fw-500">
+              <a href="invites-recieved.html" class="text-dark text-decoration-none">Meeting Invites
+                Received (xx)</a>
+            </li>
+            <li class="px-3 py-2 border-bottom fs-12 fw-500">
+              <a href="invites-sent.html" class="text-dark text-decoration-none">Meeting Invites Sent
+                (xx)</a>
+            </li>
+            <li class="px-3 py-2 border-bottom fs-12 fw-500">
+              <a href="chat-list-recent.html" class="text-dark text-decoration-none">New Messages (xx)</a>
+            </li>
+            <li class="px-3 py-2 border-bottom fs-12 fw-500">
+              <a href="alumni-connection-requests.html" class="text-dark text-decoration-none">My Alumni
+                Connections
+                (xx)</a>
+            </li>
+            <li class="px-3 py-2 border-bottom fs-12 fw-500">
+              <a href="connection-requests-recieved.html" class="text-dark text-decoration-none">Connection Requests
+                Received (xx)</a>
+            </li>
+            <li class="px-3 py-2 border-bottom fs-12 fw-500">
+              <a href="connection-requests-sent.html" class="text-dark text-decoration-none">Connection
+                Requests Sent
+                (xx)</a>
+            </li>
+            <li class="px-3 py-2 border-bottom fs-12 fw-500">
+              <a href="following.html" class="text-dark text-decoration-none">Following (xx)</a>
+            </li>
+            <li class="px-3 py-2 border-bottom fs-12 fw-500">
+              <a href="followers.html" class="text-dark text-decoration-none">Followers (xx)</a>
+            </li>
+            <li class="px-3 py-2 border-bottom fs-12 fw-500">
+              <div class="d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion"
+                href="#ssboutusdesk">
+                <span class="my-auto">About Alumlynk</span>
+                <i class="fa fa-angle-down my-auto"></i>
+              </div>
+              <div id="ssboutusdesk" class="panel-collapse collapse mt-2">
+                <div class="px-2 py-0 ourmissiondesk"><a href="#" class="text-secondary">Our Mission</a>
+                </div>
+                <div class="px-2 py-0 communitydesk"><a href="#" class="text-secondary">Our
+                    Community</a></div>
+                <div class="px-2 py-0 codeofconductdesk"><a href="#" class="text-secondary">Code Of
+                    Conduct</a></div>
+                <div class="px-2 py-0 ourteamdesk"><a href="#" class="text-secondary">Our Team</a></div>
+                <div class="px-2 py-0 verifiedusers"><a href="#" class="text-secondary">Verified
+                    User</a></div>
+              </div>
+            </li>
+            <li class="px-3 py-2 border-bottom fs-12 fw-500">
+              <div class="d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion"
+                href="#accountsettingsdesk">
+                <span class="my-auto">Account Settings</span>
+                <i class="fa fa-angle-down my-auto"></i>
+              </div>
+              <div id="accountsettingsdesk" class="panel-collapse collapse mt-2">
+                <div class="px-2 py-0 deskaccountaccess"><a href="#" class="text-secondary">Edit
+                    Profile</a></div>
+                <div class="px-2 py-0 deskaccountpass"><a href="#" class="text-secondary">Account
+                    Access</a></div>
+                <div class="px-2 py-0 notificationsdesk"><a href="#" class="text-secondary">Notification</a></div>
+                <div class="px-2 py-0 languagedesk"><a href="#" class="text-secondary">Language and
+                    Format</a></div>
+                <div class="px-2 py-0 locationdesk"><a href="#" class="text-secondary">Location</a>
+                </div>
+                <div class="px-2 py-0 dsktermsandconditions"><a href="#" class="text-secondary">User
+                    Terms and
+                    Conditions</a></div>
+                <div class="px-2 py-0 privacypolicy"><a href="#" class="text-secondary">Privacy
+                    Policy</a></div>
+              </div>
+            </li>
+            <li class="px-3 py-2 border-bottom fs-12 fw-500">
+              <div class="d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion"
+                href="#contactusdeskcollapse">
+                <span class="my-auto">Contact Us</span>
+                <i class="fa fa-angle-down my-auto"></i>
+              </div>
+              <div id="contactusdeskcollapse" class="panel-collapse collapse mt-2">
+                <div class="px-2 py-0 feedbackdesk"><a href="#" class="text-secondary">Give Us Your
+                    Feedback</a></div>
+                <div class="px-2 py-0 reportproblemdesk"><a href="#" class="text-secondary">Report a
+                    Feature Problem</a>
+                </div>
+                <div class="px-2 py-0 reportspamdesk"><a href="#" class="text-secondary">Report Spam &
+                    Abuse</a></div>
+                <div class="px-2 py-0 businesspartnershipsdesk"><a href="#" class="text-secondary">Business
+                    Partnerships</a></div>
+                <div class="px-2 py-0 emailusdesk"><a href="#" class="text-secondary">Email Us</a></div>
+                <div class="px-2 py-0 careeropportunitydesk"><a href="#" class="text-secondary">Career
+                    Oppotunities</a>
+                </div>
+              </div>
+            </li>
+            <li class="px-3 py-2 border-bottom fs-12 fw-500">Sign Out</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sibar-left">
+      <div class="d-flex flex-column px-2">
+        <ul class="list-unstyled px-2 w-100 br-5 mb-1">
+          <li class="lg-font">
+            <a href="friends-page.html" class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+              <span>Alumni Directory</span> <span class="ml-auto">(xxx)</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+            <span class="text-blue">My Alumni Network</span><span class="ml-auto">(xxx)</span>
+          </li>
+          <li class="fs-14">
+            <a href="connection-requests-recieved.html" class="text-decoration-none d-flex text-dark">
+              <span>Connection Requests</span><span class="ml-auto">(xxx)</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+            <span class=" text-blue">Meetings</span><span>(xxx)</span>
+          </li>
+          <li class="fs-14"><a href="meetings.html" class="text-decoration-none text-dark d-flex"><span>Meeting
+                Invites</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="meeting-requests.html" class="text-decoration-none text-dark d-flex"><span>Meeting
+                Requests</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+            <span class="text-blue">Alumni Mentors</span><span>(xxx)</span>
+          </li>
+          <li class="fs-14"><a href="meeting-requests.html" class="text-decoration-none text-dark d-flex"><span>Meeting
+                Requests</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+            Alum Center
+          </li>
+          <li class="fs-14"><a href="alumni-events.html" class="text-decoration-none text-dark d-flex"><span>Alumni
+                Events</span> <span class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="class-notes.html" class="text-decoration-none text-dark d-flex"><span>Class
+                Notes</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14">
+            Reunion Information
+          </li>
+          <li class="fs-14"><a href="shop-swag.html" class="text-decoration-none text-dark">Shop for Swag</a>
+          </li>
+          <li class="fs-14"><a href="support.html" class="text-decoration-none text-dark">Support (School
+              Name)</a>
+          </li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+            View
+          </li>
+          <li class="fs-14"><a href="my-profile.html" class="text-decoration-none text-dark">My Profile</a>
+          </li>
+          <li class="fs-14"><a href="chat-list-recent.html" class="text-decoration-none text-dark d-flex"><span>Alum
+                Messages</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="posts-page.html" class="text-decoration-none text-dark d-flex"><span>My
+                Posts</span> <span class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="bookmarks.html" class="text-decoration-none text-dark d-flex"><span>My
+                Bookmarks</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper gray-wrapper">
+    <div class="container full-container">
+      <div class="content c-home top-60">
+        <div class="intro">
+          <div class="row nmarg">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 npad">
+              <div class="main-view">
+                <div class="d-flex w-100 active-tab py-2">
+                  <button class="border-0 bg-transparent text-white my-auto" onclick="window.history.back();"><i
+                      class="fa fa-chevron-left"></i></button>
+                  <span class="mx-auto text-white">My Profile</span>
+                </div>
+                <div class="d-flex flex-wrap pt-2">
+                  <div class="bg-white p-3 m-auto border w-100 d-flex flex-column">
+                    <div class="d-flex flex-column">
+                      <div class="d-flex w-100">
+                        <img src="./images/img04.jpg" alt="" height="100" class="w-100">
+                      </div>
+                      <div class="mobi">
+                        <div class="d-flex profile-header">
+                          <div class="">
+                            <img src="./images/ss2.PNG" alt="" width="100" height="100" class="rounded-circle">
+                          </div>
+                          <div class="w-100 mt-5 pl-4">
+                            <div class="">
+                              <small> 1st Name Last Name </small>
+                            </div>
+                            <p class="mb-0">
+                              <img src="./images/ss5.PNG" alt="" width="20" height="20" class="rounded-circle">
+                              <img src="./images/ss4.PNG" alt="" width="20" height="20" class="rounded-circle ml--1">
+                              <img src="./images/ss4.PNG" alt="" width="20" height="20" class="rounded-circle ml--1">
+                              <img src="./images/ss4.PNG" alt="" width="20" height="20" class="rounded-circle ml--1">
+                              <span class="text-secondary sm-font">
+                                <small>10 mutual connections</small>
+                              </span>
+                            </p>
+                            <div class="">
+                              <p class="mb-0 sm-font text-secondary"><small> 922
+                                  followers</small></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex m-auto justify-content-center">
+                          <button class="btn btn-connect-outline mx-auto my-2 font-11 w-75"><i
+                              class="fa fa-comment mr-1"></i>Connect</button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                  <div class="col-sm p-0 mt-2">
+                    <div class="bg-white p-2 mb-2">
+                      <div class="d-block">
+                        <div class="d-flex justify-content-between">
+                          <span class="py-1 px-3">
+                            <h4 class="my-0">Intro</h4>
+                          </span>
+                          <div class="d-flex">
+                            <button class="btn btn-light mr-3 toggle-privacy-options-intro py-1">
+                              Edit Privacy
+                            </button>
+                            <h4 data-target="#editGeneralInformationModal" data-toggle="modal" class="pt-3">
+                              <i class="fa fa-pencil-square-o"></i>
+                            </h4>
+                          </div>
+                        </div>
+                        <div class="d-flex p-2">
+                          <span class="mr-3">
+                            <i class="fa fa-clock-o"></i>
+                          </span>
+                          <span class="d-flex justify-content-between w-100">
+                            <span class="d-flex">
+                              <span class="mr-2">Member since</span>
+                              <span>{XXXX}</span>
+                            </span>
+                            <span class="ml-2 wrap-privacy-options-intro">
+                              <i class="fa fa-globe mr-1"></i>
+                              <span class="bg-light pb-1 px-1 rounded-circle" data-target="#editPrivacyModal"
+                                data-toggle="modal">...</span>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="d-block">
+                        <div class="d-flex p-2">
+                          <span class="mr-3">
+                            <i class="fa fa-briefcase"></i>
+                          </span>
+                          <span class="d-flex justify-content-between w-100">
+                            <span class="d-flex">
+                              <span class="mr-2"><span>{CEO}</span>
+                                at:</span>
+                              <span>{Company Name}</span>
+                            </span>
+                            <span class="ml-2 wrap-privacy-options-intro">
+                              <i class="fa fa-globe mr-1"></i>
+                              <span class="bg-light pb-1 px-1 rounded-circle" data-target="#editPrivacyModal"
+                                data-toggle="modal">...</span>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="d-block">
+                        <div class="d-flex p-2">
+                          <span class="mr-3">
+                            <i class="fa fa-graduation-cap"></i>
+                          </span>
+                          <span class="d-flex justify-content-between w-100">
+                            <span class="d-flex">
+                              <span class="mr-2">University :</span>
+                              <span>{University of Michigan}</span>
+                            </span>
+                            <span class="ml-2 wrap-privacy-options-intro">
+                              <i class="fa fa-globe mr-1"></i>
+                              <span class="bg-light pb-1 px-1 rounded-circle" data-target="#editPrivacyModal"
+                                data-toggle="modal">...</span>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="d-block">
+                        <div class="d-flex p-2">
+                          <span class="mr-3">
+                            <i class="fa fa-graduation-cap"></i>
+                          </span>
+                          <span class="d-flex justify-content-between w-100">
+                            <span class="d-flex">
+                              <span class="mr-2">High Scool :</span>
+                              <span>{XX High Xcooh}</span>
+                            </span>
+                            <span class="ml-2 wrap-privacy-options-intro">
+                              <i class="fa fa-globe mr-1"></i>
+                              <span class="bg-light pb-1 px-1 rounded-circle" data-target="#editPrivacyModal"
+                                data-toggle="modal">...</span>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="d-block">
+                        <div class="d-flex p-2">
+                          <span class="mr-3">
+                            <i class="fa fa-birthday-cake"></i>
+                          </span>
+                          <span class="d-flex justify-content-between w-100">
+                            <span class="d-flex">
+                              <span class="mr-2">Birthday :</span>
+                              <span>{ xx April, 2021}</span>
+                            </span>
+                            <span class="ml-2 wrap-privacy-options-intro">
+                              <i class="fa fa-globe mr-1"></i>
+                              <span class="bg-light pb-1 px-1 rounded-circle" data-target="#editPrivacyModal"
+                                data-toggle="modal">...</span>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="d-block">
+                        <div class="d-flex p-2">
+                          <span class="mr-3">
+                            <i class="fa fa-phone"></i>
+                          </span>
+                          <span class="d-flex justify-content-between w-100">
+                            <span class="d-flex">
+                              <span class="mr-2">Telephone:</span>
+                              <span class="mr-2">{0000 0000 0000 }</span>
+                              <span>
+                                <small><i>(Only visible to you)</i></small>
+                              </span>
+                            </span>
+                            <span class="ml-2 wrap-privacy-options-intro">
+                              <i class="fa fa-globe mr-1"></i>
+                              <span class="bg-light pb-1 px-1 rounded-circle" data-target="#editPrivacyModal"
+                                data-toggle="modal">...</span>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="d-block">
+                        <div class="d-flex p-2">
+                          <span class="mr-3">
+                            <i class="fa fa-venus-mars"></i>
+                          </span>
+                          <span class="d-flex justify-content-between w-100">
+                            <span class="d-flex">
+                              <span class="mr-2">Sex:</span>
+                              <span>{Male}</span>
+                            </span>
+                            <span class="ml-2 wrap-privacy-options-intro">
+                              <i class="fa fa-globe mr-1"></i>
+                              <span class="bg-light pb-1 px-1 rounded-circle" data-target="#editPrivacyModal"
+                                data-toggle="modal">...</span>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="d-block">
+                        <div class="d-flex p-2">
+                          <span class="mr-3">
+                            <i class="fa fa-male"></i>
+                          </span>
+                          <span class="d-flex justify-content-between w-100">
+                            <span class="d-flex">
+                              <span class="mr-2">Relationship :</span>
+                              <span class="mr-2">{Male}</span>
+                              <span>
+                                <small><i>(Only visible to you)</i></small>
+                              </span>
+                            </span>
+                            <span class="ml-2 wrap-privacy-options-intro">
+                              <i class="fa fa-globe mr-1"></i>
+                              <span class="bg-light pb-1 px-1 rounded-circle" data-target="#editPrivacyModal"
+                                data-toggle="modal">...</span>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Places Lived -->
+                    <div class="bg-white p-2 mb-2">
+                      <div class="d-block">
+                        <div class="d-flex justify-content-between">
+                          <span class="py-1 px-3">
+                            <h4 class="my-0">Location</h4>
+                          </span>
+                          <div class="d-flex">
+                            <button class="btn btn-light mr-3 toggle-privacy-options-places py-1">
+                              Edit Privacy
+                            </button>
+                            <h4 data-target="#editLocationsModal" data-toggle="modal" class="pt-3">
+                              <i class="fa fa-pencil-square-o"></i>
+                            </h4>
+                          </div>
+                        </div>
+                        <div class="d-flex p-2">
+                          <span class="mr-3">
+                            <i class="fa fa-map-marker"></i>
+                          </span>
+                          <span class="d-flex justify-content-between w-100">
+                            <span class="d-flex">
+                              <span class="mr-2">Current city: </span>
+                              <span>{City, Country}</span>
+                            </span>
+                            <span class="ml-2 wrap-privacy-options-places">
+                              <i class="fa fa-globe mr-1"></i>
+                              <span class="bg-light pb-1 px-1 rounded-circle" data-target="#editPrivacyModal"
+                                data-toggle="modal">...</span>
+                            </span>
+                          </span>
+                        </div>
+                        <div class="d-flex p-2">
+                          <span class="mr-3">
+                            <i class="fa fa-home"></i>
+                          </span>
+                          <span class="d-flex justify-content-between w-100">
+                            <span class="d-flex">
+                              <span class="mr-2">Home Town: </span>
+                              <span>{City, Country}</span>
+                            </span>
+                            <span class="ml-2 wrap-privacy-options-places">
+                              <i class="fa fa-globe mr-1"></i>
+                              <span class="bg-light pb-1 px-1 rounded-circle" data-target="#editPrivacyModal"
+                                data-toggle="modal">...</span>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- All My Sports -->
+                    <!-- <div class="bg-white p-2 mb-2">
+                            <div class="d-block">
+                              <div class="d-flex justify-content-between">
+                                <span class="py-1 px-3">
+                                  <h4 class="my-0">All My Sports</h4>
+                                </span>
+                                <div>
+                                  <div class="d-flex">
+                                    <button class="btn btn-light mr-3 toggle-privacy-options-all-sports py-1">
+                                      Edit Privacy
+                                    </button>
+                                    <a href="sportEdit.html" class="text-dark my-1">
+                                      <h4><i class="fa fa-pencil-square-o"></i></h4>
+                                    </a>
+                                  </div>
+                                  <p class="mb-0">Only visible to you</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="d-flex">
+            
+                              <div class="table-responsive">
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col" class="mobi text-center px-0">Sport & <br> Skill Level</th>
+                                      <th scope="col" class="desk">Sport</th>
+                                      <th scope="col" class="desk">Skill Level</th>
+                                      <th scope="col" class="">Active Now</th>
+                                      <th scope="col" class="px-0 text-center">Days & Times</th>
+                                      <th scope="col" class="border-left text-center">Visibility Preferences</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td class="mobi px-0 text-center"><small>{Basket Ball} <br>(Skill Level)</small></td>
+                                      <td class="desk">{Basket Ball}</td>
+                                      <td class="desk">{Advanced}</td>
+                                      <td class="text-center">{Active}</td>
+                                      <td class="">
+                                        <button class="btn btn-secondary br-5" data-toggle="modal"
+                                          data-target="#editSportPreferencesModalStepTwo">
+                                          Add
+                                        </button>
+                                      </td>
+                                      <td class="border-left text-center">
+                                        <button class="btn btn-secondary br-5 px-3" data-toggle="modal"
+                                          data-target="#sportPreferencesModal">
+                                          Add
+                                        </button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="mobi px-0 text-center"><small>{Basket Ball} <br>(Skill Level)</small></td>
+                                      <td class="desk">{Volley Ball}</td>
+                                      <td class="desk">{Advanced}</td>
+                                      <td class="text-center">{Active}</td>
+                                      <td class="">
+                                        <button class="btn btn-secondary br-5" data-toggle="modal"
+                                          data-target="#editSportPreferencesModalStepTwo">
+                                          Add
+                                        </button>
+                                      </td>
+                                      <td class="border-left d-flex">
+                                        <span class="mb-0 mx-2">(xx)</span>
+                                        <button class="btn text-white bg-dark-green3 br-5" data-toggle="modal"
+                                          data-target="#sportPreferencesModal">
+                                          View
+                                        </button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="mobi px-0 text-center"><small>{Basket Ball} <br>(Skill Level)</small></td>
+                                      <td class="desk">{Tennis}</td>
+                                      <td class="desk">{Advanced}</td>
+                                      <td class="text-center">{Not Active}</td>
+                                      <td class="">
+                                        <button class="btn text-white bg-dark-green3 br-5" data-toggle="modal"
+                                          data-target="#editSportPreferencesModalStepTwo">
+                                          View
+                                        </button>
+                                      </td>
+                                      <td class="border-left text-center">
+                                        <button class="btn btn-secondary br-5 px-3" data-toggle="modal"
+                                          data-target="#sportPreferencesModal">
+                                          Add
+                                        </button>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+            
+                              <span class="ml-2 wrap-privacy-options-all-sports">
+                                <div class="d-flex">
+                                  <i class="fa fa-globe mr-1"></i>
+                                  <span class="bg-light pb-1 px-1 rounded-circle" data-target="#editPrivacyModal"
+                                    data-toggle="modal">...</span>
+                                </div>
+                              </span>
+            
+                            </div>
+                          </div> -->
+                  </div>
+                  <div class="col-sm p-0">
+                    <div class="rounded mb-3">
+                      <div class="tab-content bg-white block-area">
+                        <div>
+                          <div class="text-center">
+                            <h5 class="mb-0 mt-2">Create a Sport Post</h3>
+                          </div>
+                          <div class="">
+                            <div class="d-flex my-2 w-100">
+                              <div class="pulbishImg mr-2">
+                                <img src="./images/scott.jpg" alt="" class="rounded-circle w-100" />
+                              </div>
+                              <div class="w-100 p-1">
+                                <div class="w-100 mb-3">
+                                  <textarea cols="10" rows="2" id="post-textarea" class="form-control rounded-md py-2"
+                                    placeholder="Post Your Sport Activity to those that follow you or to specific people"></textarea>
+                                  <!-- <textarea cols="10" rows="2" id="post-textarea-mobi"
+                                          class="form-control rounded-md py-2 mobi"
+                                          placeholder="Post Your Sport Activity to those that follow you or to specific people"></textarea> -->
+                                </div>
+                                <div class="w-100 justify-content-between post-buttons d-none">
+                                  <div class="d-flex">
+                                    <div>
+                                      <button type="button"
+                                        class="btn btn-sm border-black bg-transparent mr-1 br-20 dropdown-toggle-split"
+                                        data-toggle="dropdown" title="Photo">
+                                        <i class="fa fa-camera text-dark"></i>
+                                      </button>
+                                      <div class="dropdown-menu px-0 right">
+                                        <ul class="px-0 mb-0">
+                                          <li class="dropdown-item px-2 d-flex justify-content-between">
+                                            <strong>Photo Library</strong>
+                                            <i class="fa fa-image"></i>
+                                          </li>
+                                          <hr class="my-0" />
+                                          <li class="dropdown-item px-2 d-flex justify-content-between">
+                                            <strong>Take Photo</strong> <i class="fa fa-camera"></i>
+                                          </li>
+                                          <!-- <hr class="my-0" />
+                                                        <li class="dropdown-item px-2 d-flex justify-content-between">
+                                                          <strong>Choose File</strong> <i class="fa fa-folder"></i>
+                                                        </li> -->
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <button type="button"
+                                        class="btn btn-sm border-black bg-transparent mr-1 br-20 dropdown-toggle-split"
+                                        data-toggle="dropdown" title="Video">
+                                        <i class="fa fa-video-camera text-dark"></i>
+                                      </button>
+                                      <div class="dropdown-menu px-0 right">
+                                        <ul class="px-0 mb-0">
+                                          <li class="dropdown-item px-2 d-flex justify-content-between">
+                                            <strong>Video Library</strong>
+                                            <i class="fa fa-video-camera"></i>
+                                          </li>
+                                          <hr class="my-0" />
+                                          <li class="dropdown-item px-2 d-flex justify-content-between">
+                                            <strong>Take Video</strong> <i class="fa fa-film"></i>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <button class="btn btn-sm border-black bg-transparent text-dark mr-1 br-20"
+                                        data-target="#tagPeopleModal" data-toggle="modal" title="Tag People">
+                                        Tag
+                                      </button>
+                                    </div>
+                                    <div>
+                                      <button type="button"
+                                        class="btn btn-sm border-black bg-transparent mr-1 br-20 dropdown-toggle-split"
+                                        data-toggle="dropdown" title="Location">
+                                        <i class="fa fa-map-marker text-dark"></i>
+                                      </button>
+                                      <div class="dropdown-menu px-0 right">
+                                        <div class="px-2">
+                                          <div class="d-flex">
+                                            <p class="mb-1 text-dark">
+                                              <strong>Select
+                                                Location</strong>
+                                            </p>
+                                          </div>
+                                          <div class="col-sm p-0">
+                                            <input type="text" name="" id="" class="form-control"
+                                              placeholder="Your City">
+                                          </div>
+                                          <ul class="list-unstyled mb-0">
+                                            <li class="border-bottom my-2">
+                                              <i class="fa fa-map-marker mr-2"></i>
+                                              Salem MA, USA
+                                            </li>
+                                            <li class="border-bottom my-2">
+                                              <i class="fa fa-map-marker mr-2"></i>
+                                              Salem MA, USA
+                                            </li>
+                                            <li class="border-bottom mt-2">
+                                              <i class="fa fa-map-marker mr-2"></i>
+                                              Salem MA, USA
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <button type="button"
+                                        class="btn btn-sm border-black bg-transparent text-dark mr-1 br-20 dropdown-toggle-split"
+                                        data-toggle="dropdown" title="Audience">
+                                        My Contacts
+                                      </button>
+                                      <div class="dropdown-menu px-0 right">
+                                        <ul class="px-0 mb-0">
+                                          <li class="dropdown-item px-2 d-flex justify-content-between"
+                                            data-target="#publicModal" data-toggle="modal">
+                                            <div class="d-flex">
+                                              <div>
+                                                <input type="radio" name="privacy" class="form-control">
+                                              </div>
+                                              <i class="fa fa-users fa-lg mx-1"></i>
+                                              Public
+                                            </div>
+                                            <i class="fa fa-angle-right ml-2 my-auto fa-lg"></i>
+                                          </li>
+                                          <li class="dropdown-item px-2 d-flex">
+                                            <div>
+                                              <input type="radio" name="privacy" class="form-control">
+                                            </div>
+                                            <i class="fa fa-users fa-lg mx-1"></i>
+                                            All Contacts
+                                          </li>
+                                          <li class="dropdown-item px-2 d-flex" data-target="#contactsModal"
+                                            data-toggle="modal">
+                                            <div>
+                                              <input type="radio" name="privacy" class="form-control">
+                                            </div>
+                                            <i class="fa fa-users fa-lg mx-1"></i>
+                                            Specific Contacts
+                                            <i class="fa fa-angle-right ml-2 my-auto fa-lg"></i>
+                                          </li>
+                                          <li class="dropdown-item px-2 d-flex justify-content-between"
+                                            data-target="#contactsModal" data-toggle="modal">
+                                            <div class="d-flex">
+                                              <div>
+                                                <input type="radio" name="privacy" class="form-control">
+                                              </div>
+                                              <i class="fa fa-users fa-lg mx-1"></i>
+                                              Contacts Except
+                                            </div>
+                                            <i class="fa fa-angle-right ml-2 my-auto fa-lg"></i>
+                                          </li>
+                                          <li class="dropdown-item px-2 d-flex">
+                                            <div>
+                                              <input type="radio" name="privacy" class="form-control">
+                                            </div>
+                                            <i class="fa fa-lock fa-lg mx-1"></i>
+                                            Only Me
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <button class="btn btn-sm br-20 btn-dark text-white px-4">Publish</button>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <form enctype="multipart/form-data" class="d-flex flex-column">
+                                      <div class="d-flex">
+                                        <div class="d-flex mr-1">
+                                          <img src="./images/default-user-image.png" class="rounded-circle border" alt="" width="40"
+                                            height="40">
+                                        </div>
+                                        <textarea type="text" class="form-control" placeholder="Post Alumni News"></textarea>
+                                      </div>
+                                      <div class="d-flex mx-auto w-100 justify-content-between mt-1">
+                                        <button class="btn btn-sm btn-outline-primary col-sm mr-1" data-target="#postModal"
+                                          data-toggle="modal">
+                                          <i class="fa fa-camera"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-primary col-sm mr-1" data-target="#postModal"
+                                          data-toggle="modal">
+                                          <i class="fa fa-video-camera"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-primary col-sm mr-1" data-target="#postModal"
+                                          data-toggle="modal">
+                                          <small>Tag</small>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-primary col-sm mr-1" data-target="#postModal"
+                                          data-toggle="modal">
+                                          <i class="fa fa-map-marker"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-primary col-sm mr-1" data-target="#postModal"
+                                          data-toggle="modal">
+                                          <small>Friends</small>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-success col-sm" data-target="#postModal"
+                                          data-toggle="modal">
+                                          <small>Publish</small>
+                                        </button>
+                                      </div>
+                                    </form> -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+
+                    <div class="feeds">
+                      <div class="bg-white rounded block-area">
+                        <div class="feed-header">
+                          <div class="media">
+                            <a class="user-feeds-profile-img pull-left mr-2" href="other-user-profile.html">
+                              <img src="images/ss2.PNG" class="img" alt="Photo">
+                            </a>
+
+                            <div class="media-body">
+                              <div class="user-details">
+                                <p class="user-name"><a href="other-user-profile.html">
+                                    Denis
+                                    Ford
+                                  </a></p>
+                                <p class="feed-date gray-text fs-14"> 20 July 2018 </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="feed-photo">
+                          <img src="images/ss6.PNG" class="img" alt="Photo">
+                        </div>
+
+                        <div class="feed-footer">
+                          <div class="impressions text-center">
+                            <div class="row nmarg">
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 xs-pad">
+                                <div class="impression">
+                                  <i class="fa fa-thumbs-up"></i> Like
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 xs-pad">
+                                <div class="impression">
+                                  <i class="fa fa-comment-o"></i> Comment
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 xs-pad">
+                                <div class="impression">
+                                  <i class="fa fa-share"></i> Share
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="impressions-summary">
+                            <p class="bold-text"> Lorem Ipsum, John Doe and 80 others</p>
+                          </div>
+                          <div class="write-comment">
+                            <div class="media d-flex">
+                              <a class="user-feeds-profile-img pull-left mr-2" href="other-user-profile.html">
+                                <img src="images/ss2.PNG" class="user-img" alt="Photo">
+                              </a>
+                              <div class="media-body mr-2 my-auto">
+                                <div class="comment-field">
+                                  <input name="" class="form-control" placeholder="Write a comment">
+                                </div>
+                              </div>
+                              <span class="mx-1">
+                                <button class="btn btn-success">
+                                  Post
+                                </button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="bg-white rounded block-area">
+                        <div class="feed-header">
+                          <div class="media">
+                            <a class="user-feeds-profile-img pull-left mr-2" href="other-user-profile.html">
+                              <img src="images/ss2.PNG" class="img" alt="Photo">
+                            </a>
+
+                            <div class="media-body">
+                              <div class="user-details">
+                                <p class="user-name"><a href="other-user-profile.html">
+                                    Denis
+                                    Ford
+                                  </a></p>
+                                <p class="feed-date gray-text fs-14"> 20 July 2018 </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="feed-photo">
+                          <img src="images/ss7.PNG" class="img" alt="Photo">
+                        </div>
+
+                        <div class="feed-footer">
+                          <div class="impressions text-center">
+                            <div class="row nmarg">
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 xs-pad">
+                                <div class="impression">
+                                  <i class="fa fa-thumbs-up"></i> Like
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 xs-pad">
+                                <div class="impression">
+                                  <i class="fa fa-comment-o"></i> Comment
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 xs-pad">
+                                <div class="impression">
+                                  <i class="fa fa-share"></i> Share
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="impressions-summary">
+                            <p class="bold-text"> Lorem Ipsum, John Doe and 80 others</p>
+                          </div>
+                          <div class="write-comment">
+                            <div class="media d-flex">
+                              <a class="user-feeds-profile-img pull-left mr-2" href="other-user-profile.html">
+                                <img src="images/ss2.PNG" class="user-img" alt="Photo">
+                              </a>
+                              <div class="media-body mr-2 my-auto">
+                                <div class="comment-field">
+                                  <input name="" class="form-control" placeholder="Write a comment">
+                                </div>
+                              </div>
+                              <span class="mx-1">
+                                <button class="btn btn-success">
+                                  Post
+                                </button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="mb-5 d-flex pb-5 load-more-feed m-3">
+                        <button class="btn btn-success">Load more stories</button>
+                      </div>
+                    </div>
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="fixed-bottom border-top">
+    <!-- <div class="sub-header">
+      <div class="row nmarg ss-bottom-nav d-flex">
+        <div class="d-flex npad text-center">
+          <span class="sub-header-icon w-100">
+            <a href="contact-list-all.html">
+              <img src="./images/000-contact.svg" />
+            </a>
+          </span>
+        </div>
+        <div class="d-flex npad text-center">
+          <span class="sub-header-icon w-100">
+            <a href="chat-list-recent.html">
+              <img src="./images/000-chat.svg" />
+            </a>
+            <span class="counter">0</span>
+          </span>
+        </div>
+        <div class="d-flex npad text-center">
+          <span class="sub-header-icon w-100">
+            <a href="chat-group-list-all.html">
+              <img src="./images/000-group.svg" />
+            </a>
+            <span class="counter">0</span>
+          </span>
+        </div>
+        <div class="d-flex npad text-center">
+          <span class="sub-header-icon w-100">
+            <a href="chat-camera.html">
+              <img src="./images/000-camera.svg" />
+            </a>
+          </span>
+        </div>
+        <div class="d-flex npad text-center">
+          <span class="sub-header-icon w-100">
+            <a href="chat-location.html">
+              <img src="./images/000-location.svg" />
+            </a>
+          </span>
+        </div>
+      </div>
+    </div> -->
+    <div class="d-flex bg-white tinypb-1">
+      <div class="col-sm p-1 tiny-m border">
+        <a href="friends-page.html" class="text-dark font-weight-bold">
+          <div class="text-center">
+            <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
+          </div>
+          <p class="xm-font text-center mb-0">Alumni</p>
+        </a>
+      </div>
+      <div class="col-sm p-1 tiny-m border border">
+        <a href="index.html" class="text-dark font-weight-bold text-success">
+          <div class="text-center">
+            <img src="./images/svg000-friends.svg" width="30" class="my-auto" />
+          </div>
+          <p class="xm-font text-center mb-0">Network</p>
+        </a>
+      </div>
+      <div class="col-sm p-1 tiny-m">
+        <a href="posts-page.html" class="text-dark font-weight-bold text-center">
+          <div class="text-center">
+            <img src="./images/svg000-home.svg" width="30" class="my-auto" />
+          </div>
+          <p class="xm-font text-center mb-0">Posts</p>
+        </a>
+      </div>
+      <div class="col-sm p-1 tiny-m border">
+        <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
+          <div class="text-center">
+            <img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
+          </div>
+          <p class="xm-font text-center mb-0">Mentors</p>
+        </a>
+      </div>
+      <div class="col-sm p-1 tiny-m border active-tab">
+        <a href="#" class="text-dark font-weight-bold">
+          <div class="text-center">
+            <img src="./images/msg-icon-white.svg" class="my-auto" />
+            <div class="icon-value-footer"><small><strong>0</strong></small></div>
+          </div>
+          <p class="xm-font text-center mb-0 text-white">Messages</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/actions.js"></script>
+  <script>
+    $('#side-menu').click(function () {
+      $('.overlay').toggleClass('hidden');
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="intelTelInput/js/intlTelInput.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="./css/page-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+
+    <title>Alumlynk</title>
+    <style type="text/css">
+        .profileImgBgSmall {
+            background-image: url("./images/img04.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 78px;
+            display: flex;
+            position: relative;
+        }
+
+        .profileImgBgSmall>div {
+            position: absolute;
+            top: 8px;
+            display: flex;
+        }
+
+        .profileImgBgSmall div img {
+            border: 2px solid #fff;
+        }
+
+        .rounded-custom {
+            border-radius: 10px;
+        }
+    </style>
+
+    <script>// Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: -25.344, lng: 131.036 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="maroon-bg bottom-shadow fixed">
+        <div class="d-flex bg-white px-2 py-18 w-100">
+            <div class="d-flex">
+                <a href="#" class="text-success w-50 mr-2">
+                    <img src="./images/preview-school-logo-free-vector-design.jpg" class="w-100" />
+                </a>
+                <a href="search-page.html">
+                    <i class="fa fa-search fa-lg text-center text-dark my-auto"></i>
+                </a>
+            </div>
+            <div class="w-50 d-flex justify-content-between">
+                <a href="calendar.html" class="d-flex">
+                    <i class="fa fa-calendar fa-lg text-center text-dark my-auto"></i>
+                </a>
+                <div class="col-sm text-center d-flex">
+                    <a href="chat-list-recent.html" class="d-flex">
+                        <i class="fa fa-bell fa-lg text-center text-dark my-auto"></i>
+
+                    </a>
+                    <div class="icon-value"><small><strong>0</strong></small></div>
+                </div>
+                <div>
+                    <span class="text-center">
+                        <div id="side-menu">
+                            <i class="fa fa-bars fa-lg text-center text-dark"></i>
+                        </div>
+                    </span>
+                    <div id="overlay" class="overlay hidden" role="navigation">
+                        <div class="mobileNav">
+                            <!--.mobile-menu-->
+                            <div class="d-flex flex-column">
+                                <h5 class="p-3 mb-0">Navigation</h5>
+                                <ul class="list-unstyled px-3 gn-menu">
+                                    <li> <a href="./friends-page.html"><small>Alumni Directory</small></a></li>
+                                    <li> <a href="./alumni-connection-requests.html"><small> Alumni Connection Requests
+                                                (xxx)</small></a></li>
+                                    <li> <a href="./index.html"><small>Alumni Network</small></a></li>
+                                    <li> <a href="#" class="text-secondary"><small>Alum Mentoring</small></a></li>
+                                    <li> <a href="./chat-list-recent.html"><small>Messages</small></a></li>
+                                    <li> <a href="#" class="text-secondary"><small>Notices(xxx)</small></a></li>
+                                    <li> <a href="#" class="text-secondary"><small>Profile Page</small></a></li>
+                                    <li> <a href="./alumni-events.html"><small>Alumni Events</small></a></li>
+                                    <li> <a href="./class-notes.html"><small>Class Notes</small></a></li>
+                                    <li> <a href="#" class="text-secondary"><small>Reunion Information</small></a></li>
+                                    <li> <a href="#" class="text-secondary"><small>Shop Online</small></a></li>
+                                    <li> <a href="./support.html"><small>Support (School Name)</small></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <h2 class="pt-3 text-center mb-0 maroon-txt"><strong>ALUMNI EVENTS</strong></h2>
+        <h2 class="px-3 pb-3 text-center mb-0 maroon-txt"><strong>CALENDAR</strong></h2>
+    </div>
+
+    <div class="d-flex flex-column">
+        <img src="./images/Awesome-surf.jpg" alt="" class="w-100 events-img">
+        <p class="mb-0 bg-dark text-white px-3 py-2 mt-2">Upcoming Events</p>
+        <div class="px-3 bg-lightgrey pt-2">
+            <div class="d-flex text-center" data-toggle="modal" data-target="#exampleModal">
+                <div class="d-flex flex-column pr-3">
+                    <p class="mb-0"><small><strong>FEB</strong></small></p>
+                    <h4 class="text-success"><strong>15</strong></h4>
+                </div>
+                <p class="mb-0">Annual Blood Drive in the Stone Chapel.</p>
+            </div>
+            <div class="d-flex text-center" data-toggle="modal" data-target="#exampleModal">
+                <div class="d-flex flex-column pr-3">
+                    <p class="mb-0"><small><strong>FEB</strong></small></p>
+                    <h4 class="text-success"><strong>18</strong></h4>
+                </div>
+                <p class="mb-0">Winter Play</p>
+            </div>
+            <div class="d-flex text-center" data-toggle="modal" data-target="#exampleModal">
+                <div class="d-flex flex-column pr-3">
+                    <p class="mb-0"><small><strong>FEB</strong></small></p>
+                    <h4 class="text-success"><strong>19</strong></h4>
+                </div>
+                <p class="mb-0">Winter Play</p>
+            </div>
+            <div class="d-flex text-center" data-toggle="modal" data-target="#exampleModal">
+                <div class="d-flex flex-column pr-3">
+                    <p class="mb-0"><small><strong>FEB</strong></small></p>
+                    <h4 class="text-success"><strong>5</strong></h4>
+                </div>
+                <p class="mb-0">Spring Break</p>
+            </div>
+            <div class="d-flex text-center" data-toggle="modal" data-target="#exampleModal">
+                <div class="d-flex flex-column pr-3">
+                    <p class="mb-0"><small><strong>MAR</strong></small></p>
+                    <h4 class="text-success"><strong>22</strong></h4>
+                </div>
+                <p class="mb-0">Project Period</p>
+            </div>
+            <div class="d-flex text-center" data-toggle="modal" data-target="#exampleModal">
+                <div class="d-flex flex-column pr-3">
+                    <p class="mb-0"><small><strong>APRIL</strong></small></p>
+                    <h4 class="text-success"><strong>21</strong></h4>
+                </div>
+                <p class="mb-0">Lorem.</p>
+            </div>
+            <div class="d-flex text-center" data-toggle="modal" data-target="#exampleModal">
+                <div class="d-flex flex-column pr-3">
+                    <p class="mb-0"><small><strong>JUN</strong></small></p>
+                    <h4 class="text-success"><strong>15</strong></h4>
+                </div>
+                <p class="mb-0">Lorem, ipsum dolor.</p>
+            </div>
+            <div class="d-flex text-center" data-toggle="modal" data-target="#exampleModal">
+                <div class="d-flex flex-column pr-3">
+                    <p class="mb-0"><small><strong>JULY</strong></small></p>
+                    <h4 class="text-success"><strong>15</strong></h4>
+                </div>
+                <p class="mb-0">Lorem, ipsum </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  p-2" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="maroon-txt mb-0">#TaborTime - Tabor's Day of Giving</p>
+                    <p class="text-secondary mb-0"><small>2/12/222 8:00 AM to 2/12/222 9:00 PM</small></p>
+                   <small> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis magni totam amet quos laudantium.
+                    Odio, quae quia eligendi sed quidem molestias dolore quos saepe. Itaque, consequatur praesentium?
+                    Doloremque, unde reprehenderit. </small>
+                    <p class="maroon-txt"><small>Odio, quae quia eligendi sed quidem molestias dolore</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- add an api key to the link -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(document).on("change", ".gfield_select", function () {
+                $(".select-search-btn").addClass('btn-success').removeClass('btn-secondary')
+            });
+        });
+    </script>
+
+    <script>
+        $('#side-menu').click(function () {
+            $('.overlay').toggleClass('hidden');
+        });
+    </script>
+</body>
+
+</html>

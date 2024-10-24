@@ -1,0 +1,57 @@
+// general small elements, wrappers (main wrappers, badges, btns etc)
+
+html{
+  background-color: $white;
+}
+
+/* #page styles */
+#page {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  //min-height: 9999px;
+}
+
+/* main styles */
+main{
+  padding-bottom: 35px;
+
+  @include media-breakpoint-up(xl){
+    padding-bottom: 62px;
+  }
+}
+
+/* bgCover styles */
+.bgCover{
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* h styles */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6{
+
+  a{
+    color: inherit;
+
+    &:hover{
+      color: $link-hover-color;
+    }
+  }
+}
+
+/* btn styles */
+.btn{
+  border-radius: 55px;
+}
+
+/* btn-secondary styles */
+.btn-secondary{
+  background-color: transparent;
+  border-color: $gray-600;
+  color: $body-color;
+}

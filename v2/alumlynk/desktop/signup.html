@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Alumlynk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!--   CSS  -->
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/css.css" />
+  <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
+  <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
+  <link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    .h100vh {
+      height: 100vh;
+    }
+
+    @media only screen and (max-width: 767px) {
+
+      .w-50,
+      .w-40,
+      .w-60,
+      .w-25,
+      .w-75 {
+        width: 100% !important;
+      }
+
+      .p-5 {
+        padding: 24px !important;
+      }
+
+      .container {
+        padding: 0px !important;
+      }
+
+      .my-auto {
+        margin: 0px !important;
+      }
+
+      .my-5 {
+        margin: 0 !important;
+      }
+
+      .py-5 {
+        padding: 20px 0 !important;
+      }
+
+      .pt-5 {
+        padding: 20px 0 !important;
+      }
+
+      .m-auto {
+        margin: 0px !important;
+      }
+
+      .mb-5 {
+        margin-bottom: 2px;
+      }
+
+      .h100vh {
+        height: 100%;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container d-flex h100vh">
+    <div class="d-flex flex-wrap m-auto border bg-white w-75">
+      <div class="col-lg-5 col-sm-12 text-white" style="background-color: #385898;">
+        <div class="py-5 px-2 text-center">
+          <h4 class="py-4">Alumlynk</h4>
+          <div class="border-bottom border-top text-center desk">
+            <h4 class="pt-3">Sign-up your</h4>
+            <h5 class="py-3 w-50 mx-auto">School, College or University</h5>
+          </div>
+          <p class="w-75 mx-auto pt-5 desk">
+            Provide your alumni with an
+            easier way to connect with
+            their fellow alumni and to
+            grow their alumni network
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-7 col-sm-12 d-flex flex-column">
+        <div id="step1">
+          <div class="d-flex flex-column justify-content-center w-100 mx-0">
+            <div class="mx-auto w-100">
+              <div class="py-5">
+                <h5 class="my-5 text-center" style="color: #555555;">
+                  <strong> Sign Up</strong>
+                </h5>
+                <div class="d-flex flex-wrap justify-content-center mb-3">
+                  <label for="" class="w-25">Enter State:</label>
+                  <input type="text" class="form-control-sm border w-50 mb-4" placeholder="Select State">
+                </div>
+                <div class="d-flex flex-wrap justify-content-center mb-3">
+                  <label for="" class="w-25">School Name:</label>
+                  <input type="text" class="form-control-sm border w-50 mb-4" placeholder="Enter School Name">
+                </div>
+                <div class="d-flex flex-wrap justify-content-center mb-3">
+                  <label for="" class="w-25">School Type:</label>
+                  <input type="email" class="form-control-sm border w-50 mb-4" placeholder="Enter Email">
+                </div>
+
+                <div class="d-flex w-50 mx-auto justify-content-between">
+                  <button class="btn btn-sm border-0 bg-transparent w-100 mr-3">Cancel</button>
+                  <button class="btn btn-sm btn-success w-100" style="border-radius: 16px;"
+                    id="continueTo2">Next</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="step2" style="display: none;">
+          <div class="py-5 px-3 text-center">
+            <h5 class="mb-5" style="color: #555555;">
+              <strong>Authorized School Contact</strong>
+            </h5>
+            <div class="d-flex flex-wrap mb-3 justify-content-between">
+              <label for="" class="">Full Name:</label>
+              <div class="d-flex w-60">
+                <input type="text" class="form-control-sm border w-50 mr-2" placeholder="1st Name">
+                <input type="text" class="form-control-sm border w-50" placeholder="2nd Name">
+              </div>
+            </div>
+            <div class="d-flex flex-wrap mb-3 justify-content-between">
+              <label for="" class="">Position at School:</label>
+              <select name="" id="" class="form-control-sm w-60 border">
+                <option value=""></option>
+              </select>
+            </div>
+            <div class="d-flex flex-wrap mb-3 justify-content-between">
+              <label for="" class="">Your School Email:</label>
+              <input type="email" class="form-control-sm border w-60" placeholder="Enter Email">
+            </div>
+
+            <div class="d-flex flex-wrap mb-3 justify-content-between">
+              <label for="" class="">Work Phone #:</label>
+              <input type="email" class="form-control-sm border w-60" placeholder="Enter Email">
+            </div>
+
+            <div class="d-flex flex-wrap mb-3 justify-content-between">
+              <label for="" class="">Cell Phone #:</label>
+              <div class="mb-4 w-60">
+                <input type="tel" id="phone" class="form-control py-1" placeholder="+1 738 029 9388">
+              </div>
+            </div>
+
+            <div class="d-flex w-50 mx-auto justify-content-between">
+              <button class="btn btn-sm border-0 bg-transparent w-100 mr-3" style="color: #343A40;"
+                id="backTo1"><strong>Back</strong></button>
+              <button class="btn btn-sm btn-success w-100" style="border-radius: 16px;" id="continueTo3">Next</button>
+            </div>
+          </div>
+        </div>
+        <div id="step3" style="display: none;">
+          <div class="py-5 px-2">
+            <h5 class="mb-5 text-center" style="color: #555555;">
+              <strong>Create a login and Password</strong>
+            </h5>
+
+            <div class="d-flex flex-column w-60 mx-auto">
+              <label for="" class="mb-2" style="color: #555555;"><strong>Your School Email</strong></label>
+              <input type="email" class="form-control-sm border mb-4" placeholder="Enter Email">
+
+              <input type="password" class="form-control-sm border" placeholder="Password">
+              <p class="mb-4 text-secondary" style="font-size: 12px;"><small>Use 8 Characters or more for your
+                  Password</small></p>
+              <input type="password" class="form-control-sm border mb-4" placeholder="Re-type Password">
+
+              <p class="mb-2 text-secondary" style="font-size: 12px;"><small>By Clicking Continue, You agree to Sport
+                  Social’s <span class="text-info"> User Agreement</span></small></p>
+              <p class="mb-4 text-secondary d-flex" style="font-size: 12px;">
+                <span class="bg-warning p-2 d-flex br-5 mr-2">
+                  <i class="fa fa-lock m-auto"></i>
+                </span>
+                <small class="my-auto">We never share your email with anyone
+              </p>
+            </div>
+
+            <div class="d-flex w-50 mx-auto justify-content-between">
+              <button class="btn btn-sm border-0 bg-transparent w-100 mr-3" style="color: #343A40;"
+                id="backTo2"><strong>Back</strong></button>
+              <button class="btn btn-sm btn-success w-100" style="border-radius: 16px;" id="continueTo4">Next</button>
+            </div>
+          </div>
+        </div>
+        <div id="step4" style="display: none;">
+          <div class="p-5 text-center">
+            <h5 class="mb-1" style="color: #555555;">
+              <strong>Account Information</strong>
+            </h5>
+            <h5 class="mb-3" style="color: #555555;">
+              <strong>(School Name)</strong>
+            </h5>
+            <div class="d-flex flex-wrap justify-content-between mb-3">
+              <label for="" class="">Address:</label>
+              <input type="email" class="form-control-sm border w-60" placeholder="">
+            </div>
+
+            <div class="d-flex w-100 mb-3">
+              <label for="" class="w-25 my-auto">Country:</label>
+              <div class="drop w-50">
+                <button type="button"
+                  class="btn bg-white border text-secondary w-100 text-left d-flex justify-content-between text-dark"
+                  style="padding: 4px 8px;" data-toggle="dropdown">
+                  <span class="mr-1" id="list-by"><small>Select</small></span>
+                  <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                </button>
+                <div class="dropdown-menu p-0 right">
+                  <ul class="px-0 inviteTypeOptions mb-0">
+                    <li class="dropdown-item px-2 flex flex-column">
+                      <p class="mb-0 text-primary"><small>Filter</small></p>
+                      <input type="text" class="form-control-sm border" placeholder="Enter Country">
+                    </li>
+                    <li class="dropdown-item px-2 text-primary bg-light">
+                      <small>Select Country</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>Country 1</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>Country 2</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>Country 3</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>Country 4</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <label for="" class="w-25 my-auto">State:</label>
+              <div class="drop w-50">
+                <button type="button"
+                  class="btn bg-white border text-secondary w-100 text-left d-flex justify-content-between text-dark"
+                  style="padding: 4px 8px;" data-toggle="dropdown">
+                  <span class="mr-1" id="list-by"><small>Select</small></span>
+                  <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                </button>
+                <div class="dropdown-menu p-0 right">
+                  <ul class="px-0 inviteTypeOptions mb-0">
+                    <li class="dropdown-item px-2 flex flex-column">
+                      <p class="mb-0 text-primary"><small>Filter</small></p>
+                      <input type="text" class="form-control-sm border" placeholder="Enter State">
+                    </li>
+                    <li class="dropdown-item px-2 text-primary bg-light">
+                      <small>Select State</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>State 1</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>State 2</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>State 3</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>State 4</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex w-100 mb-3">
+              <label for="" class="w-25 my-auto">City:</label>
+              <div class="drop w-50">
+                <button type="button"
+                  class="btn bg-white border text-secondary w-100 text-left d-flex justify-content-between text-dark"
+                  style="padding: 4px 8px;" data-toggle="dropdown">
+                  <span class="mr-1" id="list-by"><small>Select</small></span>
+                  <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                </button>
+                <div class="dropdown-menu p-0 right">
+                  <ul class="px-0 inviteTypeOptions mb-0">
+                    <li class="dropdown-item px-2 flex flex-column">
+                      <p class="mb-0 text-primary"><small>Filter</small></p>
+                      <input type="text" class="form-control-sm border" placeholder="">
+                    </li>
+                    <li class="dropdown-item px-2 text-primary bg-light">
+                      <small>Select</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>City</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>City</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>City</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>City</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <label for="" class="w-25 my-auto">Zip code:</label>
+              <div class="drop w-50">
+                <button type="button"
+                  class="btn bg-white border text-secondary w-100 text-left d-flex justify-content-between text-dark"
+                  style="padding: 4px 8px;" data-toggle="dropdown">
+                  <span class="mr-1" id="list-by"><small>Select</small></span>
+                  <strong><i class="fa fa-angle-down my-auto"></i></strong>
+                </button>
+                <div class="dropdown-menu p-0 right">
+                  <ul class="px-0 inviteTypeOptions mb-0">
+                    <li class="dropdown-item px-2 flex flex-column">
+                      <p class="mb-0 text-primary"><small>Filter</small></p>
+                      <input type="text" class="form-control-sm border" placeholder="Enter Zip code">
+                    </li>
+                    <li class="dropdown-item px-2 text-primary bg-light">
+                      <small>Select</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>Zip code 1</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>Zip code 2</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>Zip code 3</small>
+                    </li>
+                    <li class="dropdown-item px-2 py-0">
+                      <input type="checkbox">
+                      <small>Zip code 4</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap mb-2 justify-content-between">
+              <label for="" class="">Business Phone:</label>
+              <div class="w-60">
+                <input type="tel" id="phone1" class="form-control py-1" placeholder="+1 738 029 9388">
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap mb-2 justify-content-between">
+              <label for="" class="">Business Email:</label>
+              <input type="email" class="form-control-sm border w-60" placeholder="">
+            </div>
+
+            <div class="d-flex flex-wrap mb-4 justify-content-between">
+              <label for="" class="">Website:</label>
+              <input type="email" class="form-control-sm border w-60" placeholder="">
+            </div>
+
+            <div class="d-flex w-50 mx-auto justify-content-between">
+              <button class="btn btn-sm border-0 bg-transparent w-100 mr-3" style="color: #343A40;"
+                id="backTo3"><strong>Back</strong></button>
+              <button class="btn btn-sm btn-success w-100" style="border-radius: 16px;" id="continueTo5">Next</button>
+            </div>
+          </div>
+        </div>
+        <div id="step5" class="my-auto" style="display: none;">
+          <div class="p-5 text-center">
+            <h5 class="mb-5" style="color: #555555;">
+              <strong>Verify your email Address</strong>
+            </h5>
+
+            <div class="d-flex flex-column w-60 mx-auto">
+              <label for="" class="mb-2">Enter code we sent to your email</label>
+              <input type="text" class="form-control border mb-2" placeholder="">
+              <small class="text-info text-left mb-5">Didn’t get the email?</small>
+            </div>
+
+            <div class="d-flex w-50 mx-auto justify-content-between">
+              <button class="btn btn-sm border-0 bg-transparent w-100 mr-3" style="color: #343A40;"
+                id="backTo4"><strong>Back</strong></button>
+              <button class="btn btn-sm btn-success w-100" style="border-radius: 16px;" id="continueTo6">Next</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="step6" class="my-auto" style="display: none;">
+          <div class="p-5 text-center">
+            <h5 class="mb-4" style="color: #555555;">
+              <strong>Welcome to Alumlynk</strong>
+            </h5>
+
+            <div class="d-flex flex-column mx-auto mb-3">
+              <h5 class="mb-2 text-secondary">Click below to access your free account and select the specific features
+                you want your alumni network to have</h5>
+            </div>
+
+            <div class="mx-auto">
+              <a class="btn btn-success br-5 mb-4 px-3" style="border-radius: 16px;" href="friends-page.html">View My
+                Free Alumni Account</a>
+              <button class="btn btn-sm border-0 bg-transparent w-100 mr-3" style="color: #343A40;"
+                id="backTo5"><strong>Back</strong></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <script src="./js/actions.js"></script>
+  <script type="text/javascript" src="./slick/slick.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="intlTelInput//js/intlTelInput.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      // Hide all steps except the first one
+      $("div[id^='step']").not("#step1").hide();
+
+      // Function to show a specific step and hide others
+      function showStep(stepNumber) {
+        $("div[id^='step']").hide();
+        $("#step" + stepNumber).show();
+      }
+
+      // Navigation buttons (both continue and back)
+      $("button[id^='continueTo'], button[id^='backTo']").click(function (e) {
+        e.preventDefault();
+        var stepNumber = this.id.replace("continueTo", "").replace("backTo", "");
+        showStep(stepNumber);
+      });
+
+      // Specific button handlers
+      $("#continueTo2").click(function () { showStep(2); });
+      $("#continueTo3").click(function () { showStep(3); });
+      $("#continueTo4").click(function () { showStep(4); });
+      $("#continueTo5").click(function () { showStep(5); });
+
+      $("#backTo1").click(function () { showStep(1); });
+      $("#backTo2").click(function () { showStep(2); });
+      $("#backTo3").click(function () { showStep(3); });
+      $("#backTo4").click(function () { showStep(4); });
+    });
+  </script>
+  <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      // any initialisation options go here
+    });
+
+    var input1 = document.querySelector("#phone1");
+    window.intlTelInput(input1, {
+      // any initialisation options go here
+    });
+  </script>
+</body>
+
+</html>

@@ -191,6 +191,10 @@
   font-size: normal;
 }
 
+.border-2{
+  border: solid 2px #c4c4c4;
+}
+
 @media only screen and (max-width: 767px) {
   .desk {
     display: none !important;

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Alumlynk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--   CSS  -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css2.css" />
+
+    <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="intelTelInput/js/intlTelInput.min.js"></script>
+
+    <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
+    <link rel="stylesheet" href="./css/page-styles.css">
+
+    <!--   JS   -->
+</head>
+
+<body>
+    <div class="navbar-inverse d-flex py-3 px-1">
+        <div class="d-flex school-name-wrapper">School name</div>
+        <div class="d-flex">
+            <a href="#" class="btn btn-default btn-arrow-right active">
+                Profile
+            </a>
+            <a href="#" class="btn btn-default btn-arrow-right text-secondary">
+                Profession
+            </a>
+        </div>
+    </div>
+
+    <div class="d-flex">
+        <div class="px-3 w-100">
+            <p class="mb-0 text-center my-4 card-shadow p-2">
+                <strong>Perfect (First Name)</strong>
+            </p>
+            <div class="card-shadow p-5">
+                <div class="border text-center rounded mb-2">
+                    <img src="./images/timeline.jpg" alt="" height="80" class="w-100">
+                    <img src="./images/scott.jpg" alt="" width="100" class="profile-picture">
+                    <p class="mb-0">{First Name}{Last Name}</p>
+                    <p class="mb-0">{Biz Name}</p>
+                    <button class="btn btn-sm btn-primary sm-font">Department</button>
+                    <p>{Title}</p>
+                </div>
+                <div class="d-flex">
+                    <a href="./signup-step-7.html" class="btn btn-sm bg-lightgrey text-secondary w-100">Back</a>
+                    <a href="/" class="btn btn-sm btn-info w-100">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="intlTelInput//js/intlTelInput.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            // any initialisation options go here
+        });
+    </script>
+</body>
+
+</html>

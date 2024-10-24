@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="intelTelInput/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/page-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+
+    <title>Alumlynk</title>
+    <style type="text/css">
+        .profileImgBgSmall {
+            background-image: url("./images/img04.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 78px;
+            display: flex;
+            position: relative;
+        }
+
+        .profileImgBgSmall>div {
+            position: absolute;
+            top: 8px;
+            display: flex;
+        }
+
+        .profileImgBgSmall div img {
+            border: 2px solid #fff;
+        }
+
+        .rounded-custom {
+            border-radius: 10px;
+        }
+    </style>
+
+    <script>// Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: -25.344, lng: 131.036 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="fixed bg-white mb-5 bottom-shadow">
+        <div class="d-flex bg-white px-2 py-18 w-100">
+            
+            <a class="w-50 d-flex text-dark" href="https://tender-shannon-edbaf6.netlify.app/features.html">
+                <i class="fa fa-arrow-left mr-5 my-auto"></i> <strong>Back</strong>
+            </a>
+        </div>
+
+        <div class="d-flex bg-dark text-white justify-content-between pl-2">
+            <div class="w-75 my-auto"><strong>(School Name) Alumni Directory</strong></div>
+            <div class="w-25 d-flex justify-content-between">
+                <button class="btn btn-sm btn-light m-1" data-toggle="modal" data-target="#location">
+                    <i class="fa fa-map-marker fa-lg text-center"></i>
+                </button>
+                <a class="btn btn-secondary search-btn" href="/search-page.html"><i
+                        class="fa fa-search fa-lg text-center text-white my-auto"></i></a>
+            </div>
+        </div>
+
+        <div class="d-flex bg-white text-center text-dark px-3 pt-3">
+            Connect with (school name) alumni
+        </div>
+
+        <div class="d-flex px-2 py-2">
+            <select class="form-control sm-font p-1 mr-1 gfield_select">
+                <option value="">Department</option>
+                <option value="">option 1</option>
+                <option value="">option 2</option>
+                <option value="">option 3</option>
+            </select>
+            <select class="form-control sm-font p-1 mr-1 gfield_select">
+                <option value="">Job title</option>
+                <option value="">option 1</option>
+                <option value="">option 2</option>
+                <option value="">option 3</option>
+            </select>
+            <select class="form-control sm-font p-1 mr-1 gfield_select">
+                <option value="">Industry</option>
+                <option value="">option 1</option>
+                <option value="">option 2</option>
+                <option value="">option 3</option>
+            </select>
+            <select class="form-control sm-font p-1 mr-1 gfield_select">
+                <option value="">Class year</option>
+                <option value="">option 1</option>
+                <option value="">option 2</option>
+                <option value="">option 3</option>
+            </select>
+            <!-- <div class="d-flex border border-success rounded sm-font text-center my-auto py-1 px-2">
+                Requests(xxx)
+            </div> -->
+        </div>
+
+        <div class="d-flex px-2 pb-2">
+            <select class="form-control sm-font p-1 mr-1 gfield_select">
+                <option value="">Country</option>
+                <option value="">option 1</option>
+                <option value="">option 2</option>
+                <option value="">option 3</option>
+            </select>
+            <select class="form-control sm-font p-1 mr-1 gfield_select">
+                <option value="">City</option>
+                <option value="">option 1</option>
+                <option value="">option 2</option>
+                <option value="">option 3</option>
+            </select>
+            <select class="form-control sm-font p-1 mr-1 gfield_select">
+                <option value="">Interests</option>
+                <option value="">option 1</option>
+                <option value="">option 2</option>
+                <option value="">option 3</option>
+            </select>
+            <select class="form-control sm-font p-1 mr-1 gfield_select">
+                <option value="">Schoolmates</option>
+                <option value="">option 1</option>
+                <option value="">option 2</option>
+                <option value="">option 3</option>
+            </select>
+            <!-- <Button class="btn btn-sm btn-secondary ml-auto mb-1 py-1 px-4 select-search-btn">
+                Search
+            </Button> -->
+        </div>
+        <div class="d-flex px-2 pb-2">
+            <p class="mb-0"><strong>(xxx) (School Name) Alumni</strong></p>
+            <Button class="btn btn-sm btn-secondary ml-auto mb-1 py-1 px-4 select-search-btn">
+                Search
+            </Button>
+        </div>
+    </div>
+
+    <div class="d-flex top-margin px-2 pt-3"><strong>(xxx) (School Name) Alumni Classmates</strong></div>
+    <div class="d-flex flex-wrap p-2 ">
+        <div class="p-1 w-50">
+            <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
+                <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
+                    <div class="d-flex w-100 mt-3">
+                        <div class="d-flex mx-auto position-relative">
+                            <img src="./images/default-user-image.png" alt="" width="100" height="100"
+                                class="mx-auto rounded-circle">
+                            <img src="./images/vaccinated.svg" alt="" width="100" height="100"
+                                class="border-0 position-absolute m-0">
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="btn btn-sm btn-success w-25 xm-font border-0 radius-0">Friends</button> -->
+                <div class="position-relative mt-40">
+                    <a href="#" class="sm-font">Shahid hussain</a>
+                    <p class="mb-0 sm-font ">Proctor Class of 1998</p>
+                    <p class="mb-0 sm-font">(Company Name)</p>
+                    <p class="mb-0 sm-font"><small>(Title)</small></p>
+                    <p class="mb-0 sm-font"><i class="fa fa-users mr-1"></i><small> 3 Alumni connections</small></p>
+                    <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small> 1 Mutual
+                            connections</small>
+                    </p>
+                </div>
+                <div class="d-flex">
+                    <button class="btn btn-connect-outline mx-auto my-2 font-11"><i
+                            class="fa fa-comment mr-1"></i>Message</button>
+                    <button class="btn btn-connect-outline mx-auto my-2 font-11"><i
+                            class="fa fa-rss mr-1"></i>Follow</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-1 w-50">
+            <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
+                <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
+                    <div class="d-flex w-100 mt-3">
+                        <div class="d-flex mx-auto position-relative">
+                            <img src="./images/default-user-image.png" alt="" width="100" height="100"
+                                class="mx-auto rounded-circle">
+                            <img src="./images/vaccinated.svg" alt="" width="100" height="100"
+                                class="border-0 position-absolute m-0">
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="btn btn-sm btn-success w-25 xm-font border-0 radius-0">Friends</button> -->
+                <div class="position-relative mt-40">
+                    <a href="#" class="sm-font">Shahid hussain</a>
+                    <p class="mb-0 sm-font">Proctor Class of 1998</p>
+                    <p class="mb-0 sm-font">(Company Name)</p>
+                    <p class="mb-0 sm-font"><small>(Title)</small></p>
+                    <p class="mb-0 sm-font"><i class="fa fa-users mr-1"></i><small> 3 Alumni connections</small></p>
+                    <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small> 1 Mutual
+                            connections</small>
+                    </p>
+                </div>
+                <div class="d-flex">
+                    <button class="btn btn-connect-outline mx-auto my-2 font-11"><i
+                            class="fa fa-comment mr-1"></i>Message</button>
+                    <button class="btn btn-connect-outline mx-auto my-2 font-11"><i
+                            class="fa fa-rss mr-1"></i>Follow</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-1 w-50">
+            <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
+                <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
+                    <div class="d-flex w-100 mt-3">
+                        <div class="d-flex mx-auto position-relative">
+                            <img src="./images/default-user-image.png" alt="" width="100" height="100"
+                                class="mx-auto rounded-circle">
+                            <img src="./images/vaccinated.svg" alt="" width="100" height="100"
+                                class="border-0 position-absolute m-0">
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="btn btn-sm btn-success w-25 xm-font border-0 radius-0">Friends</button> -->
+                <div class="position-relative mt-40">
+                    <a href="#" class="sm-font">Shahid hussain</a>
+                    <p class="mb-0 sm-font">Proctor Class of 1998</p>
+                    <p class="mb-0 sm-font">(Company Name)</p>
+                    <p class="mb-0 sm-font"><small>(Title)</small></p>
+                    <p class="mb-0 sm-font"><i class="fa fa-users mr-1"></i><small> 3 Alumni connections</small></p>
+                    <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small> 1 Mutual
+                            connections</small>
+                    </p>
+                </div>
+                <div class="d-flex">
+                    <button class="btn btn-connect-outline mx-auto my-2 font-11"><i
+                            class="fa fa-comment mr-1"></i>Message</button>
+                    <button class="btn btn-connect-outline mx-auto my-2 font-11"><i
+                            class="fa fa-rss mr-1"></i>Follow</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-1 w-50">
+            <div class="d-flex flex-column text-center border p-0 rounded-custom position-relative bg-white mb-1">
+                <div class="d-flex mb-1 profileImgBgSmall rounded-custom">
+                    <div class="d-flex w-100 mt-3">
+                        <div class="d-flex mx-auto position-relative">
+                            <img src="./images/default-user-image.png" alt="" width="100" height="100"
+                                class="mx-auto rounded-circle">
+                            <img src="./images/vaccinated.svg" alt="" width="100" height="100"
+                                class="border-0 position-absolute m-0">
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="btn btn-sm btn-success w-25 xm-font border-0 radius-0">Friends</button> -->
+                <div class="position-relative mt-40">
+                    <a href="#" class="sm-font">Shahid hussain</a>
+                    <p class="mb-0 sm-font">Proctor Class of 1998</p>
+                    <p class="mb-0 sm-font">(Company Name)</p>
+                    <p class="mb-0 sm-font"><small>(Title)</small></p>
+                    <p class="mb-0 sm-font"><i class="fa fa-users mr-1"></i><small> 3 Alumni connections</small></p>
+                    <p class="mb-0 sm-font"><img src="./images/svg000-double-circle.svg" /><small> 1 Mutual
+                            connections</small>
+                    </p>
+                </div>
+                <div class="d-flex">
+                    <button class="btn btn-connect-outline mx-auto my-2 font-11"><i
+                            class="fa fa-comment mr-1"></i>Message</button>
+                    <button class="btn btn-connect-outline mx-auto my-2 font-11"><i
+                            class="fa fa-rss mr-1"></i>Follow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="fixed-bottom border-top">
+        <div class="d-flex bg-white tinypb-1">
+            <div class="col-sm p-1 tiny-m">
+                <a href="posts-page.html" class="text-dark font-weight-bold text-center text-decoration-none">
+                    <div class="text-center">
+                        <img src="./images/svg000-home.svg" width="30" class="my-auto" />
+                    </div>
+                    <p class="xm-font text-center mb-0">Posts</p>
+                </a>
+            </div>
+            <div class="col-sm p-1 tiny-m border">
+                <a href="index.html" class="text-dark font-weight-bold text-decoration-none">
+                    <div class="text-center">
+                        <img src="./images/svg000-friends.svg" width="30" class="my-auto" />
+                    </div>
+                    <p class="xm-font text-center mb-0">Network</p>
+                </a>
+            </div>
+            <div class="col-sm p-1 tiny-m border active-tab">
+                <a href="friends-page.html" class="text-dark font-weight-bold text-decoration-none">
+                    <div class="text-center">
+                        <img src="./images/svg000-connect-white.svg" width="30" class="my-auto" />
+                    </div>
+                    <p class="xm-font text-center mb-0 text-white">Alumni</p>
+                </a>
+            </div>
+            <div class="col-sm p-1 tiny-m border">
+                <a href="./alumni-mentoring.html" class="text-dark font-weight-bold text-decoration-none">
+                    <div class="text-center">
+                        <img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
+                    </div>
+                    <p class="xm-font text-center mb-0">Mentors</p>
+                </a>
+            </div>
+            <div class="col-sm p-1 tiny-m border">
+                <a href="./chat-list-recent.html" class="text-dark font-weight-bold text-decoration-none">
+                    <div class="text-center">
+                        <img src="./images/000msg-icon.svg" class="my-auto" />
+                        <div class="icon-value-footer"><small><strong>0</strong></small></div>
+                    </div>
+                    <p class="xm-font text-center mb-0">Messages</p>
+                </a>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="modal fade" id="location" tabindex="-1" role="dialog" aria-labelledby="location" aria-hidden="true"
+        data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-body p-0">
+                <div class="bg-white p-2 m-auto border-2 w-100">
+                    <label class="text-secondary">
+                        <i class="fa fa-map-marker-alt fa-lg mr-2"></i><span class="text-success"><strong>Current
+                                location or add a
+                                city</strong></span>
+                    </label>
+                    <form class="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Address">
+                        </div>
+                        <div class="form-group d-flex">
+                            <div class="col p-0 pr-1">
+                                <input type="text" class="form-control" placeholder="City">
+                            </div>
+                        </div>
+                        <div id="map"></div>
+                    </form>
+                    <div class="d-flex justify-content-end mt-4">
+                        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- add an api key to the link -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="intlTelInput//js/intlTelInput.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(document).on("change", ".gfield_select", function () {
+                $(".select-search-btn").addClass('btn-success').removeClass('btn-secondary')
+            });
+        });
+    </script>
+
+    <script>
+        $('#side-menu').click(function () {
+            $('.overlay').toggleClass('hidden');
+        });
+    </script>
+</body>
+
+</html>

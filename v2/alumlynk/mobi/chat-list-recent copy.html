@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sport Social App</title>
+  <link rel="shortcut icon" href="../favicon.ico" />
+
+
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="flags/build/css/intlTelInput.css" />
+  <link rel="stylesheet" href="flags/build/css/demo.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/g/jquery.owlcarousel@1.31(owl.carousel.css+owl.theme.css)" />
+  <link rel="stylesheet" type="text/css" href="css/css.css" />
+  <link rel="stylesheet" href="./css/page-styles.css">
+
+  <script src="./jquery/3.5.1/jquery.min.js"></script>
+  <script src="./popper/popper.min.js"></script>
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- <script src="./js/modernizr.custom.js"></script>
+  <script src="./js/jquery.owlcarousel.js"></script>
+  <script src="data.js"></script> -->
+</head>
+
+<body>
+  <div class="fixed-top bg-white mb-5 bottom-shadow">
+    <div class="d-flex p-2 w-100 mb-2 justify-content-between">
+      <div class="d-flex">
+        <div class="p-1 tiny-m">
+          <div class="text-center logo-toggle">
+            <i class="fa fa-bars fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+          </div>
+        </div>
+
+        <a href="#" class="text-success my-auto">
+          <img src="./images/preview-school-logo-free-vector-design.jpg" width="150" />
+        </a>
+      </div>
+      <div class="d-flex">
+        <div href="search-page.html" class="my-auto mr-2">
+          <i class="fa fa-search fa-sm text-center text-dark my-auto  bg-gray-light p-2 rounded-circle"  data-toggle="dropdown"></i>
+          <div class="dropdown-menu search-view-section px-2">
+            <input class="nosubmit" type="search" placeholder="Search...">
+            <div class="bg-light">
+              <a href="homeSportMyProfile-connected.html" class="text-dark text-decoration-none">
+                <div class="d-flex justify-content-between m-1 py-1">
+                  <div class="d-flex">
+                    <i class="fa fa-search mx-2"></i>
+                    <div class="">
+                      <p class="mb-0"><small>Mark <strong>Cuban</strong> .(City), (State)</small></p>
+                      <small>Connected</small>
+                    </div>
+                  </div>
+                  <img src="images/ss2.PNG" alt="" width="25" height="25" class="rounded-circle m-1">
+                </div>
+              </a>
+              <a href="homeSportMyProfile-notconnected.html" class="text-dark text-decoration-none">
+                <div class="d-flex justify-content-between m-1 py-1">
+                  <div class="d-flex">
+                    <i class="fa fa-search mx-2"></i>
+                    <div class="">
+                      <p class="mb-0"><small>Mark<strong>holley</strong> .(Business Name) (Title) (City),
+                          (State)</small></p>
+                      <small>Not Connected</small>
+                    </div>
+                  </div>
+                  <img src="images/ss6.PNG" alt="" width="25" height="25" class="rounded-circle m-1">
+                </div>
+              </a>
+              <a href="homeSportMyProfile-notconnected.html" class="text-dark text-decoration-none">
+                <div class="d-flex m-1 py-1">
+                  <i class="fa fa-search mx-2"></i>
+                  <div class="">
+                    <p class="mb-0"><small>Mark<strong>eting director</strong></small></p>
+                    <small>Not Connected</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="calendar.html" class="my-auto mr-2">
+          <i class="fa fa-calendar fa-sm text-center text-dark bg-gray-light p-2 rounded-circle"></i>
+        </a>
+        <div class="text-center my-auto position-relative bg-gray-light p-2 rounded-circle mr-2">
+          <a href="chat-list-recent.html" class="d-flex">
+            <i class="fa fa-bell fa-sm text-center text-dark my-auto"></i>
+          </a>
+          <span class="mb-0 icon-value position-absolute" style="left: 20px; top: -2px; font-size: 10px;">0</span>
+        </div>
+
+        <span class="text-center my-auto">
+          <div id="side-menu">
+            <i class="fa fa-gear fa-sm text-center text-dark my-auto bg-gray-light p-2 rounded-circle"></i>
+          </div>
+        </span>
+        <div id="overlay" class="overlay hidden" role="navigation">
+          <ul class="list-unstyled mb-0">
+        <li class="px-3 py-2 border-bottom fs-12 fw-500 mt-3">
+          <a href="my-profile.html" class="text-dark text-decoration-none">My Profile</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="invites-recieved.html" class="text-dark text-decoration-none">Meeting Invites Received (xx)</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="invites-sent.html" class="text-dark text-decoration-none">Meeting Invites Sent (xx)</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="chat-list-recent.html" class="text-dark text-decoration-none">New Messages (xx)</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="alumni-connection-requests.html" class="text-dark text-decoration-none">My Alumni Connections
+            (xx)</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="connection-requests-recieved.html" class="text-dark text-decoration-none">Connection Requests
+            Received (xx)</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="connection-requests-sent.html" class="text-dark text-decoration-none">Connection Requests Sent
+            (xx)</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="following.html" class="text-dark text-decoration-none">Following (xx)</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <a href="followers.html" class="text-dark text-decoration-none">Followers (xx)</a>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <div class="d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion"
+            href="#ssboutusdesk">
+            <span class="my-auto">About Alumlynk</span>
+            <i class="fa fa-angle-down my-auto"></i>
+          </div>
+          <div id="ssboutusdesk" class="panel-collapse collapse mt-2">
+            <div class="px-2 py-0 ourmissiondesk"><a href="#" class="text-secondary">Our Mission</a></div>
+            <div class="px-2 py-0 communitydesk"><a href="#" class="text-secondary">Our Community</a></div>
+            <div class="px-2 py-0 codeofconductdesk"><a href="#" class="text-secondary">Code Of Conduct</a></div>
+            <div class="px-2 py-0 ourteamdesk"><a href="#" class="text-secondary">Our Team</a></div>
+            <div class="px-2 py-0 verifiedusers"><a href="#" class="text-secondary">Verified User</a></div>
+          </div>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <div class="d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion"
+            href="#accountsettingsdesk">
+            <span class="my-auto">Account Settings</span>
+            <i class="fa fa-angle-down my-auto"></i>
+          </div>
+          <div id="accountsettingsdesk" class="panel-collapse collapse mt-2">
+            <div class="px-2 py-0 deskaccountaccess"><a href="#" class="text-secondary">Edit Profile</a></div>
+            <div class="px-2 py-0 deskaccountpass"><a href="#" class="text-secondary">Account Access</a></div>
+            <div class="px-2 py-0 notificationsdesk"><a href="#" class="text-secondary">Notification</a></div>
+            <div class="px-2 py-0 languagedesk"><a href="#" class="text-secondary">Language and Format</a></div>
+            <div class="px-2 py-0 locationdesk"><a href="#" class="text-secondary">Location</a></div>
+            <div class="px-2 py-0 dsktermsandconditions"><a href="#" class="text-secondary">User Terms and Conditions</a></div>
+            <div class="px-2 py-0 privacypolicy"><a href="#" class="text-secondary">Privacy Policy</a></div>
+          </div>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">
+          <div class="d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion"
+            href="#contactusdeskcollapse">
+            <span class="my-auto">Contact Us</span>
+            <i class="fa fa-angle-down my-auto"></i>
+          </div>
+          <div id="contactusdeskcollapse" class="panel-collapse collapse mt-2">
+            <div class="px-2 py-0 feedbackdesk"><a href="#" class="text-secondary">Give Us Your Feedback</a></div>
+            <div class="px-2 py-0 reportproblemdesk"><a href="#" class="text-secondary">Report a Feature Problem</a></div>
+            <div class="px-2 py-0 reportspamdesk"><a href="#" class="text-secondary">Report Spam & Abuse</a></div>
+            <div class="px-2 py-0 businesspartnershipsdesk"><a href="#" class="text-secondary">Business Partnerships</a></div>
+            <div class="px-2 py-0 emailusdesk"><a href="#" class="text-secondary">Email Us</a></div>
+            <div class="px-2 py-0 careeropportunitydesk"><a href="#" class="text-secondary">Career Oppotunities</a></div>
+          </div>
+        </li>
+        <li class="px-3 py-2 border-bottom fs-12 fw-500">Sign Out</li>
+      </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sibar-left">
+      <div class="d-flex flex-column px-2">
+        <ul class="list-unstyled px-2 w-100 br-5 mb-1">
+          <li class="lg-font">
+            <a href="friends-page.html" class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+              <span>Alumni Directory</span> <span class="ml-auto">(xxx)</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+            <span class="text-blue">My Alumni Network</span><span class="ml-auto">(xxx)</span>
+          </li>
+          <li class="fs-14">
+            <a href="connection-requests-recieved.html" class="text-decoration-none d-flex text-dark">
+              <span>Connection Requests</span><span class="ml-auto">(xxx)</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+            <span class=" text-blue">Meetings</span><span>(xxx)</span>
+          </li>
+          <li class="fs-14"><a href="meetings.html" class="text-decoration-none text-dark d-flex"><span>Meeting
+                Invites</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="meeting-requests.html"
+              class="text-decoration-none text-dark d-flex"><span>Meeting Requests</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+            <span class="text-blue">Alumni Mentors</span><span>(xxx)</span>
+          </li>
+          <li class="fs-14"><a href="meeting-requests.html"
+              class="text-decoration-none text-dark d-flex"><span>Meeting Requests</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+            Alum Center
+          </li>
+          <li class="fs-14"><a href="alumni-events.html" class="text-decoration-none text-dark d-flex"><span>Alumni
+                Events</span> <span class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="class-notes.html" class="text-decoration-none text-dark d-flex"><span>Class
+                Notes</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14">
+            Reunion Information
+          </li>
+          <li class="fs-14"><a href="shop-swag.html" class="text-decoration-none text-dark">Shop for Swag</a></li>
+          <li class="fs-14"><a href="support.html" class="text-decoration-none text-dark">Support (School Name)</a>
+          </li>
+        </ul>
+        <ul class="list-unstyled px-2 border w-100 br-5 mb-2 py-2">
+          <li class="lg-font mb-0 justify-content-between d-flex fw-500 fs-14 text-blue">
+            View
+          </li>
+          <li class="fs-14"><a href="my-profile.html" class="text-decoration-none text-dark">My Profile</a></li>
+          <li class="fs-14"><a href="chat-list-recent.html"
+              class="text-decoration-none text-dark d-flex"><span>Alum Messages</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="posts-page.html" class="text-decoration-none text-dark d-flex"><span>My
+                Posts</span> <span class="ml-auto">(xxx)</span></a></li>
+          <li class="fs-14"><a href="bookmarks.html" class="text-decoration-none text-dark d-flex"><span>My
+                Bookmarks</span>
+              <span class="ml-auto">(xxx)</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper gray-wrapper">
+    <div class="container full-container">
+      <div class="content c-home top-60">
+        <div class="intro">
+          <div class="row nmarg">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 npad">
+              <div class="mt-2 main-view">
+                <div class="intro">
+      
+                  <div class="standard-light-gray pb-2" style="height: 100vh;">
+      
+                    <div class="w-100 d-flex text-center bg-blue text-white"
+                      style="border-radius: 8px 8px 0 0; font-size: 18px; height: 58px;">
+                      <p class="m-auto">Alumni Chats</p>
+                    </div>
+                    <!-- <div class="d-flex ss-bottom-nav d-flex bg-white py-1">
+                      <div class="d-flex flex-column npad text-center">
+                        <span class="sub-header-icon w-100">
+                          <a href="contact-list-all.html">
+                            <img src="./images/000-contact.svg" />
+                          </a>
+                        </span>
+                        <p class="xm-font text-center mb-0 text-dark bold">A to Z</p>
+                      </div>
+                      <div class="d-flex flex-column npad text-center active-tab">
+                        <span class="sub-header-icon w-100">
+                          <a href="chat-list-recent.html">
+                            <img src="./images/000-chat.svg" />
+                          </a>
+                          <span class="counter">0</span>
+                        </span>
+                        <p class="xm-font text-center mb-0 bold">Recent</p>
+                      </div>
+                      <div class="d-flex flex-column npad text-center">
+                        <span class="sub-header-icon w-100">
+                          <a href="chat-group-list-all.html">
+                            <img src="./images/000-group.svg" />
+                          </a>
+                          <span class="counter">0</span>
+                        </span>
+                        <p class="xm-font text-center mb-0 text-dark bold">Groups</p>
+                      </div>
+                      <div class="d-flex flex-column npad text-center">
+                        <span class="sub-header-icon w-100">
+                          <a href="chat-camera.html">
+                            <img src="./images/000-camera.svg" />
+                          </a>
+                        </span>
+                        <p class="xm-font text-center mb-0 text-dark bold">Camera</p>
+                      </div>
+                      <div class="d-flex flex-column npad text-center">
+                        <span class="sub-header-icon w-100">
+                          <a href="chat-location.html">
+                            <img src="./images/000-location.svg" />
+                          </a>
+                        </span>
+                        <p class="xm-font text-center mb-0 text-dark bold">Location</p>
+                      </div>
+                    </div> -->
+                    <!-- </div> -->
+                    <div class="bg-white d-flex p-2 m-2 br-5">
+                      <button id="btn-recent-chats" class="btn btn-sm active-tab br-5 border-0 px-3 mr-1">Recent Chats (xx)</button>
+                      <button id="btn-my-network" class="btn btn-sm btn-secondary border-0 br-5 px-3">My Network (xx)</button>
+                    </div>
+      
+                    <div class="d-flex justify-content-between bg-white py-2 px-3 m-2 br-5">
+                      <p class="my-auto text-dark"><small><strong>Recent Chats (xx)</strong></small></p>
+                      <div class="d-flex">
+                        <input type="text" class="form-control" placeholder="Quick search" id="filterValue"
+                          style="border-radius: 5px 0 0 5px; font-size: 12px;" />
+                        <button class="btn btn-secondary" onclick="onhandleFilters()" style="border-radius: 0 5px 5px 0;">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </div>
+                    </div>
+      
+                    <div class="mb-5">
+      
+                      <a href="chat-inbox.html" class="d-flex bg-white br-5 mx-2 mb-2 p-3 text-dark text-decoration-none">
+                        <span class="mr-2">
+                          <img class="rounded-circle" width="70" height="70" src="./images/msg-img.svg" />
+                        </span>
+                        <span class="d-flex justify-content-between w-100">
+                          <div class="">
+                            <strong>{1st name, last name}</strong>
+                            <div>
+                              <img src="./images/hugeicons_tick-double-01.svg" width="20" height="20" alt="">
+                              <small>Hey, this is a demo message</small>
+                            </div>                      
+                          </div>
+                          <div class="">
+                            <small class="text-dark mt-1">Thursday</small>
+                            <div class="d-flex py-1">
+                              <small class="text-white bg-success rounded-circle px-2 py-1 mx-auto">xx</small>
+                            </div>
+                          </div>
+                        </span>
+                      </a>
+                      <a href="chat-inbox.html" class="d-flex bg-white br-5 mx-2 mb-2 p-3 text-dark text-decoration-none">
+                        <span class="mr-2">
+                          <img class="rounded-circle" width="70" height="70" src="./images/msg-img.svg" />
+                        </span>
+                        <span class="d-flex justify-content-between w-100">
+                          <div class="">
+                            <strong>{1st name, last name}</strong>
+                            <div>
+                              <img src="./images/hugeicons_tick-double-01.svg" width="20" height="20" alt="">
+                              <small>Hey, this is a demo message</small>
+                            </div>                      
+                          </div>
+                          <div class="">
+                            <small class="text-dark mt-1">Thursday</small>
+                            <div class="d-flex py-1">
+                              <small class="text-white bg-success rounded-circle px-2 py-1 mx-auto">xx</small>
+                            </div>
+                          </div>
+                        </span>
+                      </a>
+                      <a href="chat-inbox.html" class="d-flex bg-white br-5 mx-2 mb-2 p-3 text-dark text-decoration-none">
+                        <span class="mr-2">
+                          <img class="rounded-circle" width="70" height="70" src="./images/msg-img.svg" />
+                        </span>
+                        <span class="d-flex justify-content-between w-100">
+                          <div class="">
+                            <strong>{1st name, last name}</strong>
+                            <div>
+                              <img src="./images/hugeicons_tick-double-01.svg" width="20" height="20" alt="">
+                              <small>Hey, this is a demo message</small>
+                            </div>                      
+                          </div>
+                          <div class="">
+                            <small class="text-dark mt-1">Thursday</small>
+                          </div>
+                        </span>
+                      </a>
+                      <a href="chat-inbox.html" class="d-flex bg-white br-5 mx-2 mb-2 p-3 text-dark text-decoration-none">
+                        <span class="mr-2">
+                          <img class="rounded-circle" width="70" height="70" src="./images/msg-img.svg" />
+                        </span>
+                        <span class="d-flex justify-content-between w-100">
+                          <div class="">
+                            <strong>{1st name, last name}</strong>
+                            <div>
+                              <img src="./images/hugeicons_tick-double-01.svg" width="20" height="20" alt="">
+                              <small>Hey, this is a demo message</small>
+                            </div>                      
+                          </div>
+                          <div class="">
+                            <small class="text-dark mt-1">Thursday</small>
+                          </div>
+                        </span>
+                      </a> 
+                      <a href="chat-inbox.html" class="d-flex bg-white br-5 mx-2 mb-2 p-3 text-dark text-decoration-none">
+                        <span class="mr-2">
+                          <img class="rounded-circle" width="70" height="70" src="./images/msg-img.svg" />
+                        </span>
+                        <span class="d-flex justify-content-between w-100">
+                          <div class="">
+                            <strong>{1st name, last name}</strong>
+                            <div>
+                              <img src="./images/hugeicons_tick-double-01.svg" width="20" height="20" alt="">
+                              <small>Hey, this is a demo message</small>
+                            </div>                      
+                          </div>
+                          <div class="">
+                            <small class="text-dark mt-1">Thursday</small>
+                            <div class="d-flex py-1">
+                              <small class="text-white bg-success rounded-circle px-2 py-1 mx-auto">xx</small>
+                            </div>
+                          </div>
+                        </span>
+                      </a>               
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fixed-bottom border-top">
+    <!-- <div class="sub-header">
+      <div class="row nmarg ss-bottom-nav d-flex">
+        <div class="d-flex npad text-center">
+          <span class="sub-header-icon w-100">
+            <a href="contact-list-all.html">
+              <img src="./images/000-contact.svg" />
+            </a>
+          </span>
+        </div>
+        <div class="d-flex npad text-center">
+          <span class="sub-header-icon w-100">
+            <a href="chat-list-recent.html">
+              <img src="./images/000-chat.svg" />
+            </a>
+            <span class="counter">0</span>
+          </span>
+        </div>
+        <div class="d-flex npad text-center">
+          <span class="sub-header-icon w-100">
+            <a href="chat-group-list-all.html">
+              <img src="./images/000-group.svg" />
+            </a>
+            <span class="counter">0</span>
+          </span>
+        </div>
+        <div class="d-flex npad text-center">
+          <span class="sub-header-icon w-100">
+            <a href="chat-camera.html">
+              <img src="./images/000-camera.svg" />
+            </a>
+          </span>
+        </div>
+        <div class="d-flex npad text-center">
+          <span class="sub-header-icon w-100">
+            <a href="chat-location.html">
+              <img src="./images/000-location.svg" />
+            </a>
+          </span>
+        </div>
+      </div>
+    </div> -->
+    <div class="d-flex bg-white tinypb-1">
+      <div class="col-sm p-1 tiny-m border">
+        <a href="friends-page.html" class="text-dark font-weight-bold">
+          <div class="text-center">
+            <img src="./images/svg000-connect.svg" width="30" class="my-auto" />
+          </div>
+          <p class="xm-font text-center mb-0">Alumni</p>
+        </a>
+      </div>
+      <div class="col-sm p-1 tiny-m border border">
+        <a href="index.html" class="text-dark font-weight-bold text-success">
+          <div class="text-center">
+            <img src="./images/svg000-friends.svg" width="30" class="my-auto" />
+          </div>
+          <p class="xm-font text-center mb-0">Network</p>
+        </a>
+      </div>
+      <div class="col-sm p-1 tiny-m">
+        <a href="posts-page.html" class="text-dark font-weight-bold text-center">
+          <div class="text-center">
+            <img src="./images/svg000-home.svg" width="30" class="my-auto" />
+          </div>
+          <p class="xm-font text-center mb-0">Posts</p>
+        </a>
+      </div>
+      <div class="col-sm p-1 tiny-m border">
+        <a href="./alumni-mentoring.html" class="text-dark font-weight-bold">
+          <div class="text-center">
+            <img src="./images/svg000-sport-coach.svg" width="30" class="my-auto" />
+          </div>
+          <p class="xm-font text-center mb-0">Mentors</p>
+        </a>
+      </div>
+      <div class="col-sm p-1 tiny-m border active-tab">
+        <a href="#" class="text-dark font-weight-bold">
+          <div class="text-center">
+            <img src="./images/msg-icon-white.svg" class="my-auto" />
+            <div class="icon-value-footer"><small><strong>0</strong></small></div>
+          </div>
+          <p class="xm-font text-center mb-0 text-white">Messages</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/actions.js"></script>
+  <script>
+    $('#side-menu').click(function () {
+      $('.overlay').toggleClass('hidden');
+    });
+  </script>
+</body>
+
+</html>
